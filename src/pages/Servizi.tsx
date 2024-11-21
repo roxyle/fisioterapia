@@ -1,8 +1,17 @@
+"use Client"
+
+import Footer from '@/components/Footer'
 import React from 'react'
+import Navbar  from '@/components/Navbar'
 
 const Servizi = () => {
   return (
-    <div>Servizi</div>
+    <>
+    <Navbar/>
+  
+
+    <Footer/>
+  </>
   )
 }
 

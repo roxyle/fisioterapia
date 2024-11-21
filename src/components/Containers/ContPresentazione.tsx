@@ -14,7 +14,7 @@ export default function ContPresentazione(props: Props){
 
             <CardIntro text={txt.text} id={txt.id} 
             immagine={`${txt.immagine}`} alt={'txt.alt'} 
-            bottone={`${txt.bottone}`} goTo={'txt.goTo'} />
+            bottone={`${txt.bottone}`} goToPage={`${txt.goToPage}`} />
         )) 
         }
     </div>

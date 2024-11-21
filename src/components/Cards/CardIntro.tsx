@@ -10,7 +10,7 @@ type MyProps = {
   immagine: string,
   text: string,
   bottone: string,
-  goTo: string
+  goToPage: string
 
 }
 
@@ -33,7 +33,7 @@ export default function CardIntro(testo: MyProps){
         </div>
 
         <div className='flex flex-row justify-end p-5'>
-          <Btn bottone={testo.bottone} goTo={testo.goTo}/>
+          <Btn bottone={testo.bottone} goToPage={`${testo.goToPage}`} id={testo.id}/>
         </div>
 
       </fieldset>

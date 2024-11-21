@@ -1,8 +1,18 @@
+"use Client"
+
+
+import Footer from '@/components/Footer'
 import React from 'react'
+import Navbar  from '@/components/Navbar'
 
 const About = () => {
   return (
-    <div>About</div>
+    <>
+      <Navbar/>
+    
+
+      <Footer/>
+    </>
   )
 }
 

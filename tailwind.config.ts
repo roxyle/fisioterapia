@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       backgroundImage: {
         'hero-pattern': "url('/Fisio1920mirr.jpg')",
+        'terapie-pattern':"url('/Fisio1921.jpg')",
       },
       colors: {
         background: "var(--background)",

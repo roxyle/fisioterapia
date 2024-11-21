@@ -19,6 +19,8 @@ export default function ContCardIntro(props: Props){
 
 
   return (
+    <>
+{/*     
     <Swiper
         effect={'cards'}
         grabCursor={true}
@@ -31,13 +33,13 @@ export default function ContCardIntro(props: Props){
 
         {props.cardIntroTxt.map((txt, i)=>(
             <SwiperSlide key = {i}>
-                <CardIntro text={txt.text} id={txt.id} immagine={txt.image} alt={txt.alt}></CardIntro>
+                <CardIntro text={txt.text} id={txt.id} immagine={txt.immagine} alt={txt.alt} bottone={txt.bottone} goToPage={`${txt.goToPage}`}/>
             </SwiperSlide>
             )) 
         }
 
-    </Swiper>
-
+    </Swiper> */}
+    </>
   )
 }
 

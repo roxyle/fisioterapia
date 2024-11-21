@@ -12,6 +12,25 @@ export type TextContent = {
     immagine: string,
     text: string,
     bottone: string,
-    goTo: string
+    goToPage: string
+}
+
+export type ParagrContent = {
+    id: string,
+    titolo: string,
+    testo: string
+}
+
+export type Servizi = {
+    id: string,
+    tipologia: string,
+    immagine: string
+}
+
+export type Terapie = {
+    id: string,
+    tipologia: string,
+    nomeTerapia: string,
+    descrizione: string
 }
 
