@@ -66,18 +66,6 @@ export const Paragrafi: ParagrContent[] = [
     }
 ]
 
-export const ServiziOfferti: Servizi[] = [
-    {
-        id: "ts",
-        tipologia: "Terapie Strumentali",
-        immagine: "/Fisio32.jpg"
-    },
-    {
-        id: "tm",
-        tipologia: "Terapie Maniali",
-        immagine: "/Fisio1921.jpg"
-    }
-]
 
 export const TerapieStrumentali: Terapie[] = [
     {
@@ -174,4 +162,19 @@ export const TerapieManuali: Terapie[] = [
         nomeTerapia: "Riabilitazione e Gestione del Dolore",
         descrizione: ""},    
 
+    ]
+
+    export const ServiziOfferti: Servizi[] = [
+        {
+            id: "ts",
+            tipologia: "Terapie Strumentali",
+            immagine: "/Fisio32.jpg",
+            elenco: TerapieStrumentali
+        },
+        {
+            id: "tm",
+            tipologia: "Terapie Manuali",
+            immagine: "/Fisio1921.jpg",
+            elenco: TerapieManuali
+        }
     ]

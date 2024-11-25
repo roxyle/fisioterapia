@@ -7,12 +7,14 @@ import BtnTel from './Buttons/BtnTel';
 
 const Navbar = () => {
     return (
-    <div className='flex flex-row flex-wrap justify-center items-center w-full mx-auto px-10 bg-sky-500 sticky'>
-                
-                    <BtnLogo/>
-                    <BtnMenu/>
-                    <BtnTel/>       
-    </div>
+
+        <div className='flex flex-row flex-wrap justify-center items-center px-10 bg-sky-500 sticky top-0 z-[100]'>
+                    
+                        <BtnLogo/>
+                        <BtnMenu/>
+                        <BtnTel/>       
+        </div>
+
     )
 }
 

@@ -21,16 +21,17 @@ export type ParagrContent = {
     testo: string
 }
 
-export type Servizi = {
-    id: string,
-    tipologia: string,
-    immagine: string
-}
-
 export type Terapie = {
     id: string,
     tipologia: string,
     nomeTerapia: string,
     descrizione: string
+}
+
+export type Servizi = {
+    id: string,
+    tipologia: string,
+    immagine: string,
+    elenco: Terapie[]
 }
 

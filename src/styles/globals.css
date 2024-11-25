@@ -49,14 +49,10 @@ body {
   align-items: center;
 }
 
-.servizio-card {
-  perspective: 1000px;
-}
-
 .card{
   position: relative;
-  width: 500px;
-  height: 420px;
+  width: 280px;
+  height: 380px;
   transition: transform 1s;
   transform-style: preserve-3d;
 }
@@ -75,7 +71,7 @@ body {
   transform: rotate3d(-1,-1,0.04,180deg);
 }
 
-
+/* 
 .swiper {
   width: 420px;
   height: fit-content;
@@ -88,7 +84,7 @@ body {
   border-radius: 18px;
   font-size: px;
   /* font-weight: bold; */
-  color: #fff;
+  /*color: #fff;
 }
 
 .swiper-slide:nth-child(1n) {
@@ -105,6 +101,6 @@ body {
 
 .swiper-slide:nth-child(4n) {
   background-color: white;
-}
+} */
 
 

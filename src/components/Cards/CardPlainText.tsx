@@ -1,8 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Paragrafi } from '@/constants/data'
+
 
 const CardPlainText = () => {
+
+  const [p, setP] = useState('')
+
   return (
-    <div>CardPlainText</div>
+    <div className='w-screen flex flex-col items-center justify-center flex-wrap p-10'>
+      <p>
+
+      </p>
+    </div>
   )
 }
 

@@ -10,47 +10,44 @@ type MyProps = {
     alt: string,
     immagine: string,
     text: string,
+    elenco: Terapie[]
   }
 
-  type Props = {
-    terapie: Terapie[],
-}
 
-export default function CardTerapie (imgTerapia: MyProps, listaTerapia: Props) {
+export default function CardTerapie (dettagliTerapia: MyProps) {
   const [isFlipped, setIsFlipped] = useState(false)
   const handleImageChange = () => {setIsFlipped(!isFlipped)}
 
 
   return (
-    <div className='flex flex-col md:flex-row items-center z-[20]'>
-        <div className='servizio-card'>
+    <div className='flex flex-row justify-center items-center p-10'>
           <div className={`card ${isFlipped? "flipped" : ""}`}>
-            <div className='bg-white card-face card-front flex flex-col gap-2 items-center'>  
+            <div className='bg-white card-face card-front'>  
                 
                 <Image className='' 
-                  key={imgTerapia.id}
-                  src={imgTerapia.immagine} alt={imgTerapia.alt} width={500} height={500}
+                  key={dettagliTerapia.id}
+                  src={dettagliTerapia.immagine} alt={dettagliTerapia.alt} width={500} height={500}
                   onClick={handleImageChange}/>    
                     
-                
-                  <h2>{imgTerapia.text}</h2>                
-                  <p className='text-black txt-md animate-pulse'>Clicca e Scopri la Lista!</p>
+                  <div className='flex flex-col items-center py-10 flex-wrap'>
+                    <h2>{dettagliTerapia.text}</h2>                
+                    <p className='text-black animate-pulse'>
+                      Clicca e Scopri la Lista!
+                    </p>
+                  </div>
                 
             </div>
 
-            <div className='bg-white card-face card-back flex flex-col gap-2 items-center'
+            <div className='bg-white card-face card-back flex flex-col gap-2 items-center justify-center'
             onClick={handleImageChange}>  
-                  <h2>{imgTerapia.text}:</h2>                
-                  <p>
-                    {/* {listaTerapia.terapie.map((elenco)=>{
-                        <li>
-                          
-                        </li>
-                    })} */}
-                  </p>
+                  <h2 className='underline'>{dettagliTerapia.text}:</h2>                
+                  
+                  <ul className='text-center'>
+                  {dettagliTerapia.elenco.map((e) => ( <li key={e.id}>{e.nomeTerapia}</li> ))}
+                  </ul>
+                  
                 
             </div>
-          </div>
         </div>
     </div>
   )

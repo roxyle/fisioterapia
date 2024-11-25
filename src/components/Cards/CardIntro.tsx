@@ -16,7 +16,7 @@ type MyProps = {
 
 export default function CardIntro(testo: MyProps){
   return (
-    <div className='px-10 text-black '>
+    <div className='flex items-center justify-center px-10 text-black '>
 
       <fieldset className='bg-gradient-to-t from-white to-90% rounded-lg' 
       style={{ borderWidth: 3, borderColor: '#04A4D4', borderRadius: 4 }} >
