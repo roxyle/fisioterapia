@@ -169,12 +169,14 @@ export const TerapieManuali: Terapie[] = [
             id: "ts",
             tipologia: "Terapie Strumentali",
             immagine: "/Fisio32.jpg",
-            elenco: TerapieStrumentali
+            elenco: TerapieStrumentali,
+            descrizione: "Con l'impiego di strumenti e apparecchiature di ultima generazione, il personale del centro Fisioterapia Bruno a Caserta è in grado di eseguire terapie strumentali come tecarterapia, laserterapia e magnetoterapia, anche a domicilio."
         },
         {
             id: "tm",
             tipologia: "Terapie Manuali",
             immagine: "/Fisio1921.jpg",
-            elenco: TerapieManuali
+            elenco: TerapieManuali,
+            descrizione: "L'esperto staff dello studio Fisioterapia Bruno a Caserta esegue terapie manuali per la rieducazione posturale sia nei bambini che negli adulti. Inoltre si eseguono massaggi linfodrenanti, rilassanti e decontratturanti."
         }
     ]

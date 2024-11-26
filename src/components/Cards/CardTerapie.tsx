@@ -10,6 +10,7 @@ type MyProps = {
     alt: string,
     immagine: string,
     text: string,
+    descrizione: string,
     elenco: Terapie[]
   }
 
@@ -21,7 +22,7 @@ export default function CardTerapie (dettagliTerapia: MyProps) {
 
   return (
     <div className='flex flex-row justify-center items-center p-10'>
-          <div className={`card ${isFlipped? "flipped" : ""}`}>
+          <div className={`cursor-pointer card ${isFlipped? "flipped" : ""}`}>
             <div className='bg-white card-face card-front'>  
                 
                 <Image className='' 
@@ -29,23 +30,24 @@ export default function CardTerapie (dettagliTerapia: MyProps) {
                   src={dettagliTerapia.immagine} alt={dettagliTerapia.alt} width={500} height={500}
                   onClick={handleImageChange}/>    
                     
-                  <div className='flex flex-col items-center py-10 flex-wrap'>
-                    <h2>{dettagliTerapia.text}</h2>                
-                    <p className='text-black animate-pulse'>
+                  <div className='flex flex-col items-center py-5 flex-wrap'>
+                    <h2 className='font-bold underline'>{dettagliTerapia.text}</h2>     
+                    <p className='text-center p-2'>{dettagliTerapia.descrizione}</p>           
+                    <p className='text-black animate-pulse p-5'>
+
                       Clicca e Scopri la Lista!
                     </p>
-                  </div>
-                
+                  </div>               
             </div>
 
-            <div className='bg-white card-face card-back flex flex-col gap-2 items-center justify-center'
-            onClick={handleImageChange}>  
-                  <h2 className='underline'>{dettagliTerapia.text}:</h2>                
-                  
-                  <ul className='text-center'>
+            <div className='bg-white card-face card-back flex flex-col gap-2 
+              items-center'
+              onClick={handleImageChange}>  
+
+                  <h2 className='underline'>{dettagliTerapia.text}:</h2>                                  
+                  <ul className='text-justify'>
                   {dettagliTerapia.elenco.map((e) => ( <li key={e.id}>{e.nomeTerapia}</li> ))}
                   </ul>
-                  
                 
             </div>
         </div>

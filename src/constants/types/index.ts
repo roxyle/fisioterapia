@@ -32,6 +32,7 @@ export type Servizi = {
     id: string,
     tipologia: string,
     immagine: string,
-    elenco: Terapie[]
+    descrizione: string,
+    elenco: Terapie[],
 }
 
