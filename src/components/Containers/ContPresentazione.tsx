@@ -13,7 +13,7 @@ export default function ContPresentazione(props: Props){
 
         {props.cardIntroTxt.map((txt)=>(
 
-            <CardIntro text={txt.text} id={txt.id} 
+            <CardIntro text={txt.text} key= {txt.id} id={txt.id} 
             immagine={`${txt.immagine}`} alt={'txt.alt'} 
             bottone={`${txt.bottone}`} goToPage={`${txt.goToPage}`} />
         )) 

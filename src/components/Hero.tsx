@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import CardIntro from './Cards/CardIntro'
-import { TextContent } from '@/constants/types'
 import { cardIntroTxt } from '@/constants/data'
 import ContPresentazione from './Containers/ContPresentazione'
 
