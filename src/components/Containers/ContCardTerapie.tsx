@@ -18,7 +18,7 @@ export default function ContCardTerapie (props: Props) {
               
               {props.servizi.map((tipologia)=>(
                   
-                  <CardTerapie id={tipologia.id} alt={tipologia.tipologia}
+                  <CardTerapie key={tipologia.id} id={tipologia.id} alt={tipologia.tipologia}
                 immagine={tipologia.immagine} text={tipologia.tipologia}
                 elenco={tipologia.elenco} descrizione={tipologia.descrizione} />
               )) 

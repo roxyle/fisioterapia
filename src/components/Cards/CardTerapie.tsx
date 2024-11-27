@@ -23,12 +23,12 @@ export default function CardTerapie (dettagliTerapia: MyProps) {
   return (
     <div className='flex flex-row justify-center items-center p-10'>
           <div className={`cursor-pointer card ${isFlipped? "flipped" : ""}`}>
-            <div className='bg-white card-face card-front'>  
+            <div className='bg-white card-face card-front' onClick={handleImageChange} >  
                 
                 <Image className='' 
                   key={dettagliTerapia.id}
                   src={dettagliTerapia.immagine} alt={dettagliTerapia.alt} width={500} height={500}
-                  onClick={handleImageChange}/>    
+                  />    
                     
                   <div className='flex flex-col items-center py-5 flex-wrap'>
                     <h2 className='font-bold underline'>{dettagliTerapia.text}</h2>     
@@ -44,10 +44,12 @@ export default function CardTerapie (dettagliTerapia: MyProps) {
               items-center'
               onClick={handleImageChange}>  
 
-                  <h2 className='underline'>{dettagliTerapia.text}:</h2>                                  
-                  <ul className='text-justify'>
-                  {dettagliTerapia.elenco.map((e) => ( <li key={e.id}>{e.nomeTerapia}</li> ))}
-                  </ul>
+                  <h2 className='underline py-8'>{dettagliTerapia.text}:</h2>                                  
+                  <div className='flex flex-col items-center justify-center py-8'> 
+                    <ul className='list-disc'>
+                    {dettagliTerapia.elenco.map((e) => ( <li key={e.id}>{e.nomeTerapia}</li> ))}
+                    </ul>
+                  </div>
                 
             </div>
         </div>
