@@ -10,10 +10,10 @@ const Hero = () => {
   return (
 
     
-      <div className="flex flex-col items-center justify-center flex-wrap p-10 bg-hero-pattern bg-cover"> 
+      <div className="flex flex-col items-center justify-center flex-wrap p-10 bg-hero-pattern"> 
         <div className='flex flex-row flex-wrap items-center justify-center'>
-          <h1 className="text-black text-center text-4xl font-bold">
-            Farti tornare in forma <br/>è la nostra missione
+          <h1 className="title text-center text-4xl font-bold">
+            Farti tornare in forma è la nostra missione
           </h1> 
 
           <div>
