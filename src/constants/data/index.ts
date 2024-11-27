@@ -50,17 +50,17 @@ export const cardIntroTxt: TextContent[] = [
 
 export const Paragrafi: ParagrContent[] = [
     {
-        id: "par1",
+        id: "/",
         titolo: "A Caserta, fisioterapista esperto in riabilitazione sportiva",
         testo: "A dirigere con successo lo studio Fisioterapia Bruno a Caserta, il fisioterapista Beniamino Bruno, che insieme ai suoi qualificati collaboratori è in grado di fornire un servizio completo e professionale a chi necessita di risolvere patologie acute e croniche anche molto dolorose. Il fisioterapista è un esperto di osteopatia, riabilitazione da patologie ortopediche e riabilitazione sportiva e parallelamente alla professione svolta presso il centro è medico ufficiale della Casertana Calcio e della Volalto 2.0 Caserta. Inoltre lavora per la squadra di pallavolo di serie A1."
     },
     {
-        id: "par2",
+        id: "/Servizi",
         titolo: "Un moderno e attrezzato ambulatorio di fisioterapia a Caserta",
         testo: "L'obiettivo del centro Fisioterapia Bruno a Caserta è, sin dalla sua apertura, il benessere dei suoi pazienti: al centro del suo operato vi è infatti la piena soddisfazione del cliente, che può sentirsi a suo completo agio sapendo di poter contare su un sostegno solido e sempre presente per la cura delle patologie ossee, muscolari e articolari, oltre che per la riabilitazione sportiva e da patologie ortopediche. Lo studio è specializzato in fisioterapia e osteopatia e aiuta migliaia di pazienti con trattamenti personalizzati: ascolto, disponibilità e sensibilità caratterizzano lo staff dell'ambulatorio di fisioterapia, pronto a formulare percorsi ad personam per aiutare ogni paziente nel recupero della salute e della forma fisica secondo le sue più specifiche necessità."
     },
     {
-        id: "par3",
+        id: "/About",
         titolo: "Trattamenti personalizzati di fisioterapia a Caserta",
         testo: "Lo studio Fisioterapia Bruno a Caserta è un punto di riferimento per tutti coloro che desiderano affidarsi a veri esperti nella riabilitazione sportiva e nella rieducazione posturale. Presso il centro è possibile rivolgersi a fisioterapisti dalla lunga esperienza, attenti alle necessità dei pazienti e disponibili nel trovare il percorso fisioterapico più idoneo alle loro necessità, con terapie manuali e strumentali come la terapia a onde d'urto, la ionoforesi, l'elettroterapia e la magnetoterapia, anche a domicilio. Per richiedere una visita presso lo studio chiamate il nostro recapito telefonico."
     }
