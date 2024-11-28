@@ -14,7 +14,7 @@ const BodyH = () => {
         <ContPlainTxt txt={Paragrafi}/>
         <ContCardTerapie servizi={ServiziOfferti}/>
       </div>
-      </div>
+    </div>
   )
 }
 

@@ -1,6 +1,6 @@
 import { Contacts, ParagrContent, TextContent, Servizi, Terapie } from "../types";
 
-export const ourContact: Contacts[] = [
+export const ourContact: Contacts= 
     {
         id: '1ufficio',
         company: 'Fisioterapia Bruno',
@@ -9,7 +9,7 @@ export const ourContact: Contacts[] = [
         email: 'brunonero74@gmail.com',
     }
 
-]
+
 
 export const cardIntroTxt: TextContent[] = [
     {
