@@ -17,7 +17,7 @@ export const cardIntroTxt: TextContent[] = [
         alt: "icona laurea",
         immagine: '/certified1.svg',
         text: "Laureato in Scienze Motorie e Fisioterapia presso il Policlinico di Napoli, l'esperto specialista dello studio Fisioterapia Bruno è disposizione di ogni paziente con trattamenti su misura.",
-        bottone: 'Contattaci > ',
+        bottone: 'Contattaci ►',
         goToPage: '/Contatti',
     },
     {
@@ -25,7 +25,7 @@ export const cardIntroTxt: TextContent[] = [
         alt: 'icona servizi',
         immagine: '/servizi.svg',
         text: "Dalla riabilitazione ai traumi sportivi, lo Studio di Fisioterapia Bruno è certo di fornire la massima assistenza ai suoi pazienti che cercano di alleviare il dolore e le difficoltà di movimento.",
-        bottone: 'Esplora i Servizi > ',
+        bottone: 'Esplora i Servizi ►',
         goToPage: '/Servizi'
         
     },
@@ -34,7 +34,7 @@ export const cardIntroTxt: TextContent[] = [
         alt: 'icona team',
         immagine: '/equipe.svg',
         text: 'Guidato da Beniamino Bruno, lo studio comprende anche i veterani della fisioterapia Carandente Giovanni e Fabio Viscardi, oltre alla preparatissima fisioterapista Tonia Piccolo. ',
-        bottone: 'Scopri il Team >',
+        bottone: 'Scopri il Team ►',
         goToPage: '/About'
 
     },
@@ -43,7 +43,7 @@ export const cardIntroTxt: TextContent[] = [
         alt: "icona equip",
         immagine: '/equipe.svg',
         text: "Con quattro fisioterapisti altamente qualificati ed esperti, lo Studio di Fisioterapia Caserta (CE) Bruno è una destinazione imbattibile per chi ha bisogno di cure terapeutiche.",
-        bottone: 'Contattaci >',
+        bottone: 'Contattaci ►',
         goToPage: '/Contatti'
     },
 ]

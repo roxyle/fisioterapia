@@ -7,7 +7,7 @@ const CardPlainText = () => {
   const [p, setP] = useState('')
 
   return (
-    <div className='w-screen flex flex-col items-center justify-center flex-wrap p-10'>
+    <div className='max-w-12 flex flex-row items-center justify-center flex-wrap p-10'>
       <p>
 
       </p>

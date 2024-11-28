@@ -8,9 +8,8 @@ type Props = {
 
 export default function ContPresentazione(props: Props){
   return (
-  <div className=''>  
-    <div className='grid grid-cols-1 md:grid-cols-2 gap-10 p-10'>
-
+    
+    <div className='flex flex-row flex-wrap items-center justify-center'>
         {props.cardIntroTxt.map((txt)=>(
 
             <CardIntro text={txt.text} key= {txt.id} id={txt.id} 
@@ -19,7 +18,6 @@ export default function ContPresentazione(props: Props){
         )) 
         }
     </div>
-  </div>
   )
 }
 

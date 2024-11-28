@@ -8,16 +8,16 @@ const Hero = () => {
   return (
 
     
-      <div className="flex flex-col items-center justify-center flex-wrap p-10 bg-hero-pattern"> 
-        <div className='flex flex-row flex-wrap items-center justify-center'>
+      <div className="bg-hero-pattern bg-no-repeat bg-cover"> 
+        <div className='flex flex-col items-center justify-center p-5'>
           <h1 className="title text-center text-4xl font-bold">
             Farti tornare in forma è la nostra missione
           </h1> 
 
-          <div>
+          
             <ContPresentazione cardIntroTxt={cardIntroTxt}/>
           </div>
-        </div>
+        
       </div>
 
   )

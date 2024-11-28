@@ -19,7 +19,7 @@ export default function Btn(testo: MyProps){
     <div className=''>
         <button className='bg-sky-500 rounded-sm py-2 px-2 w-64'>
             <Link href={`${testo.goToPage}`} id={testo.id} className='text-white'>
-                {testo.bottone}
+                {testo.bottone} 
             </Link>
         </button>
     </div>
