@@ -13,7 +13,7 @@ export default function ContCardTerapie (props: Props) {
         <div className='flex flex-col items-center'>
           <h2 className='font-bold underline text-white text-4xl title'>I Trattamenti </h2>
 
-          <div className='flex flex-row flex-wrap'>                      
+          <div className='flex flex-row flex-wrap justify-center'>                      
               
               
               {props.servizi.map((tipologia)=>(
