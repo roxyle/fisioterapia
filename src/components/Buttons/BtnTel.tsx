@@ -7,7 +7,7 @@ import { ourContact } from '@/constants/data';
 const BtnTel = () => {
     
     const [isClicked, setIsClicked] = useState(false)
-    const BtnTxtContent = isClicked? ourContact[0].telephone : `Chiamaci!`
+    const BtnTxtContent = isClicked? ourContact.telephone : `Chiamaci!`
     
     
   return (

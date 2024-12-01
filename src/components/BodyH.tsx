@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react'
 import ContCardTerapie from './Containers/ContCardTerapie'
-import { Paragrafi, ServiziOfferti, TerapieManuali, TerapieStrumentali } from "@/constants/data";
+import { Paragrafi, ServiziOfferti} from "@/constants/data";
 import ContPlainTxt from './Containers/ContPlainTxt';
 
 
@@ -12,7 +11,7 @@ const BodyH = () => {
     <div className='bg-terapie-pattern bg-cover'>
       <div className="p-2 flex flex-col items-center justify-center flex-wrap gap-2"> 
         <ContPlainTxt txt={Paragrafi}/>
-        <ContCardTerapie servizi={ServiziOfferti}/>
+        <ContCardTerapie terapie={ServiziOfferti}/>
       </div>
     </div>
   )

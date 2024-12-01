@@ -1,10 +1,9 @@
 import React from 'react'
 import CardTerapie from '../Cards/CardTerapie'
-import { Servizi, Terapie } from '@/constants/types'
-import {TerapieManuali, TerapieStrumentali } from "@/constants/data";
+import { ElencoTerapie} from '@/constants/types'
 
 type Props = {
-    servizi: Servizi[],
+    terapie: ElencoTerapie[],
 }
 
 export default function ContCardTerapie (props: Props) {
@@ -16,7 +15,7 @@ export default function ContCardTerapie (props: Props) {
           <div className='flex flex-row flex-wrap justify-center'>                      
               
               
-              {props.servizi.map((tipologia)=>(
+              {props.terapie.map((tipologia)=>(
                   
                   <CardTerapie key={tipologia.id} id={tipologia.id} alt={tipologia.tipologia}
                 immagine={tipologia.immagine} text={tipologia.tipologia}

@@ -35,7 +35,7 @@ export default function CardTerapie (dettagliTerapia: MyProps) {
                     <p className='text-center p-5'>{dettagliTerapia.descrizione}</p>           
                     <p className='animate-pulse p-5'>
 
-                      Clicca e Scopri la Lista!
+                      Clicca per approfondire!
                     </p>
                   </div>               
             </div>
