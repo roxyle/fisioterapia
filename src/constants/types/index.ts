@@ -25,14 +25,20 @@ export type Terapie = {
     id: string,
     tipologia: string,
     nomeTerapia: string,
-    descrizione: string
 }
 
-export type Servizi = {
+export type ElencoTerapie = {
     id: string,
     tipologia: string,
     immagine: string,
     descrizione: string,
     elenco: Terapie[],
+}
+
+export type DettaglioServizi = {
+    id: string,
+    titolo: string,
+    testo: string
+    immagine: string
 }
 

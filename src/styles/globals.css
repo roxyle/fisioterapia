@@ -30,17 +30,31 @@ body, html {
 
 
 .card{
+  position: relative;
   width: 75vw;
   max-width: 420px;
   height: 550px;
   transition: transform 1s;
+  transform-style: preserve-3d;  
+}
+
+.card-serv{
+  position: relative;
+  width: 75vw;
+  max-width: 420px;
+  min-height: 530px;
+  transition: transform 1s;
   transform-style: preserve-3d;
-  
+
 }
 
 .card-face{
   position: absolute;
   backface-visibility: hidden;
+  height: 100%;
+  border: double 3px; 
+  border-radius: 6px; 
+  border-color: rgb(56 189 248);
 }
 
 .card-back{
@@ -63,37 +77,4 @@ body, html {
   border-color: white;
   border-radius: 8px;
 }
-
-/* 
-.swiper {
-  width: 420px;
-  height: fit-content;
-}
-
-.swiper-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 18px;
-  font-size: px;
-  /* font-weight: bold; */
-  /*color: #fff;
-}
-
-.swiper-slide:nth-child(1n) {
-  background-color: white;
-}
-
-.swiper-slide:nth-child(2n) {
-  background-color: white;
-}
-
-.swiper-slide:nth-child(3n) {
-  background-color: white;
-}
-
-.swiper-slide:nth-child(4n) {
-  background-color: white;
-} */
-
 

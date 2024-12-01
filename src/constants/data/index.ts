@@ -1,4 +1,4 @@
-import { Contacts, ParagrContent, TextContent, Servizi, Terapie } from "../types";
+import { Contacts, ParagrContent, TextContent, ElencoTerapie, Terapie, DettaglioServizi } from "../types";
 
 export const ourContact: Contacts= 
     {
@@ -72,57 +72,57 @@ export const TerapieStrumentali: Terapie[] = [
         id: "ts1",
         tipologia: "Terapia Strumentale",
         nomeTerapia: "Onde d'urto",
-        descrizione: ""},
+        },
     {
         id: "ts2",
         tipologia: "Terapia Strumentale",
         nomeTerapia: "Tecarterapia",
-        descrizione: ""},
+        },
     {
         id: "ts3",
         tipologia: "Terapia Strumentale",
         nomeTerapia: "Laserterapia",
-        descrizione: ""},
+        },
     {
         id: "ts4",
         tipologia: "Terapia Strumentale",
         nomeTerapia: "Magnetoterapia",
-        descrizione: ""},
+        },
     {
         id: "ts5",
         tipologia: "Terapia Strumentale",
         nomeTerapia: "Elettroterapia",
-        descrizione: ""},
+        },
     {
         id: "ts6",
         tipologia: "Terapia Strumentale",
         nomeTerapia: "TENS",
-        descrizione: ""},
+        },
     {
         id: "ts7",
         tipologia: "Terapia Strumentale",
         nomeTerapia: "Quadrangolari",
-        descrizione: ""},
+       },
     {
         id: "ts8",
         tipologia: "Terapia Strumentale",
         nomeTerapia: "Esponenziali",
-        descrizione: ""},
+       },
     {
         id: "ts8",
         tipologia: "Terapia Strumentale",
         nomeTerapia: "Ionoforesi",
-        descrizione: ""},
+       },
     {
         id: "ts9",
         tipologia: "Terapia Strumentale",
         nomeTerapia: "Faratiche",
-        descrizione: ""},
+       },
     {
         id: "ts10",
         tipologia: "Terapia Strumentale",
         nomeTerapia: "Ultrasuoni",
-        descrizione: ""},
+        },
 ]
 
 export const TerapieManuali: Terapie[] = [
@@ -130,41 +130,41 @@ export const TerapieManuali: Terapie[] = [
         id: "tm1",
         tipologia: "Terapia Manuale",
         nomeTerapia: "Massaggi Linfodrenanti",
-        descrizione: ""},
+    },
     {
         id: "tm2",
         tipologia: "Terapia Manuale",
         nomeTerapia: "Massaggi Rilassanti",
-        descrizione: ""},
+    },
     {
         id: "tm3",
         tipologia: "Terapia Manuale",
         nomeTerapia: "Massaggi Decontratturanti",
-        descrizione: ""},
+    },
     {
         id: "tm4",
         tipologia: "Terapia Manuale",
         nomeTerapia: "Rieducazione Posturale Globale",
-        descrizione: ""},
+    },
     {
         id: "tm5",
         tipologia: "Terapia Manuale",
         nomeTerapia: "Metodo Kabat",
-        descrizione: "conosciuto anche come F.N.P. (Facilitazioni Neuroconetiche Progressive"},
+    },
     {
         id: "tm6",
         tipologia: "Terapia Manuale",
         nomeTerapia: "Massoterapia",
-        descrizione: ""},
+    },
     {
         id: "tm7",
         tipologia: "Terapia Manuale",
         nomeTerapia: "Riabilitazione e Gestione del Dolore",
-        descrizione: ""},    
+    },    
 
     ]
 
-    export const ServiziOfferti: Servizi[] = [
+    export const ServiziOfferti: ElencoTerapie[] = [
         {
             id: "ts",
             tipologia: "Terapie Strumentali",
@@ -179,4 +179,43 @@ export const TerapieManuali: Terapie[] = [
             elenco: TerapieManuali,
             descrizione: "L'esperto staff dello studio Fisioterapia Bruno a Caserta esegue terapie manuali per la rieducazione posturale sia nei bambini che negli adulti. Inoltre si eseguono massaggi linfodrenanti, rilassanti e decontratturanti."
         }
+    ]
+
+    export const DescServizi: DettaglioServizi[] = [
+        {
+            id: "p1",
+            titolo: "Massaggi e Rieducazione Posturale Globale",
+            testo: "Presso lo studio di fisiokinesiterapia e fisioterapia Bruno troverai un personale altamente qualificato e preparato, composto da medici, ortopedici, fisioterapisti e osteopati dalla lunga esperienza. L'équipe del centro di Caserta è in grado di rispondere con precisione e puntualità a ogni genere di necessità dei pazienti, fornendo soluzioni nel campo della gestione del dolore e sedute di terapia fisica finalizzate alla risoluzione di patologie che colpiscono ossa, muscoli e articolazioni. Per tali disturbi e per la rieducazione posturale, inoltre, lo studio coinvolge il metodo introdotto negli anni '80 dal Prof. Philippe E. Souchard, ovvero la Rieducazione Posturale Globale, terapia manuale che considera l'essere umano nella sua globalità e che, lavorando su postura, muscoli e mobilità articolare, elimina o riduce le disfunzioni che sono alla base della patologia. ",
+            immagine: "/Fisiok5.jpg"
+        },
+        {
+            id: "p2",
+            titolo: "Terapie con tecnologie all'avanguardia",
+            testo: "Il centro Fisioterapia Bruno a Caserta è attrezzato con le più innovative tecnologie e sempre aggiornato sulle novità tecniche, scientifiche e tecnologiche del settore, per seguire ogni paziente con trattamenti ortopedici e fisioterapici di ultima generazione. Grazie alla costante formazione e all'aggiornamento alle ultime novità del settore, lo staff dello studio è oggi specializzato in fisiokinesiterapia, fisioterapia, tecarterapia, laserterapia, osteopatia, massoterapia ed elettroterapia antalgica. Inoltre si effettuano sedute di riatletizzazione, terapia propriocettiva, ginnastica posturale, elettrostimolazione muscolare e tante, diverse tecniche di terapia strumentale.",
+            immagine: "/shockwave6.jpg"
+        },
+        {
+            id: "p3",
+            titolo: "Riabilitazione e gestione del dolore",
+            testo: "I professionisti dell'ambulatorio di fisioterapia di Caserta pongono molta attenzione nell'ascolto del paziente, che sa di potersi affidare a un team multidisciplinare e di poter godere di un ambiente rilassato e professionale sin dal primo colloquio. In base alle sue esigenze, i fisioterapisti e osteopati della Fisioterapia Bruno saranno in grado di proporre terapie su misura, trattando con successo ogni tipo di condizione e lesione con interventi ad hoc di riabilitazione sportiva, rieducazione posturale e gestione del dolore.",
+            immagine: "/Fisiok.jpg"
+        },
+        {
+            id: "p4",
+            titolo: "Sedute di terapia fisica e riabilitazione",
+            testo: "La presenza di tecnologie all’avanguardia e di personale qualificato rende l'ambulatorio di fisioterapia di Caserta una realtà innovativa, ma al contempo esperta, in grado di soddisfare ogni genere di esigenza nel campo della riabilitazione. In sede si eseguono infatti terapie sia manuali che strumentali, sedute di terapia fisica e riabilitazione per patologie ortopediche, reumatiche, neurologiche e post-traumatiche, ma anche trattamenti per la cura delle patologie acute e croniche di ossa, muscoli e articolazioni.",
+            immagine: "/Fisiok2.jpg"
+        },
+        {
+            id: "p5",
+            titolo: "Sedute di laserterapia a domicilio",
+            testo: "Dotato dei più moderni macchinari per la fisioterapia e di uno staff altamente qualificato, lo studio Fisioterapia Bruno a Caserta è in grado di offrire alla sua clientela prestazioni altamente efficaci per la cura delle tendinopatie e delle patologie che colpiscono ossa, muscoli e articolazioni. Il fisioterapista Bruno con la sua valida équipe di osteopati e fisioterapisti assiste il paziente con trattamenti personalizzati e terapie sia manuali che strumentali, come la ionoforesi, la tecarterapia, l'elettroterapia antalgica e la laserterapia. Inoltre, l'esperto specialista è a disposizione, a Caserta, con sedute di fisioterapia a domicilio, soddisfacendo tutte le necessità di chi non può muoversi.",
+            immagine: "/Fisio32.jpg"
+        },
+        {
+            id: "p6",
+            titolo: "Rieducazione Posturale e Massoterapia",
+            testo: "Tra le terapie proposte presso il centro Fisioterapia Bruno a Caserta, è possibile richiedere il metodo Mézières, chiamato anche Rieducazione Posturale: tramite l'accorciamento e la retrazione delle catene muscolari, con il metodo Mézières è possibile risolvere disfmorfismi come la scoliosi, l'iperlordosi e la cifosi agendo tramite l'allentamento delle tensioni muscolari. Altre terapie manuali eseguite presso lo studio sono la Rieducazione Posturale Globale, volta all'eliminazione delle disfunzioni che sono alla base della patologia, il metodo Kabata, la massoterapia e i massaggi, come quello linfodrenante, quello decontratturante e quello rilassante.",
+            immagine: "/Fisiok4.jpg"
+        },
     ]
