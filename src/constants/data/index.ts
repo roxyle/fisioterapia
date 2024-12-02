@@ -186,7 +186,7 @@ export const TerapieManuali: Terapie[] = [
             id: "p1",
             titolo: "Massaggi e Rieducazione Posturale Globale",
             testo: "Presso lo studio di fisiokinesiterapia e fisioterapia Bruno troverai un personale altamente qualificato e preparato, composto da medici, ortopedici, fisioterapisti e osteopati dalla lunga esperienza. L'équipe del centro di Caserta è in grado di rispondere con precisione e puntualità a ogni genere di necessità dei pazienti, fornendo soluzioni nel campo della gestione del dolore e sedute di terapia fisica finalizzate alla risoluzione di patologie che colpiscono ossa, muscoli e articolazioni. Per tali disturbi e per la rieducazione posturale, inoltre, lo studio coinvolge il metodo introdotto negli anni '80 dal Prof. Philippe E. Souchard, ovvero la Rieducazione Posturale Globale, terapia manuale che considera l'essere umano nella sua globalità e che, lavorando su postura, muscoli e mobilità articolare, elimina o riduce le disfunzioni che sono alla base della patologia. ",
-            immagine: "/Fisiok5.jpg"
+            immagine: "/Fisiok2.jpg"
         },
         {
             id: "p2",
@@ -198,13 +198,13 @@ export const TerapieManuali: Terapie[] = [
             id: "p3",
             titolo: "Riabilitazione e gestione del dolore",
             testo: "I professionisti dell'ambulatorio di fisioterapia di Caserta pongono molta attenzione nell'ascolto del paziente, che sa di potersi affidare a un team multidisciplinare e di poter godere di un ambiente rilassato e professionale sin dal primo colloquio. In base alle sue esigenze, i fisioterapisti e osteopati della Fisioterapia Bruno saranno in grado di proporre terapie su misura, trattando con successo ogni tipo di condizione e lesione con interventi ad hoc di riabilitazione sportiva, rieducazione posturale e gestione del dolore.",
-            immagine: "/Fisiok.jpg"
+            immagine: "/Fisiok4.jpg"
         },
         {
             id: "p4",
             titolo: "Sedute di terapia fisica e riabilitazione",
             testo: "La presenza di tecnologie all’avanguardia e di personale qualificato rende l'ambulatorio di fisioterapia di Caserta una realtà innovativa, ma al contempo esperta, in grado di soddisfare ogni genere di esigenza nel campo della riabilitazione. In sede si eseguono infatti terapie sia manuali che strumentali, sedute di terapia fisica e riabilitazione per patologie ortopediche, reumatiche, neurologiche e post-traumatiche, ma anche trattamenti per la cura delle patologie acute e croniche di ossa, muscoli e articolazioni.",
-            immagine: "/Fisiok2.jpg"
+            immagine: "/Fisiok.jpg"
         },
         {
             id: "p5",
@@ -216,6 +216,6 @@ export const TerapieManuali: Terapie[] = [
             id: "p6",
             titolo: "Rieducazione Posturale e Massoterapia",
             testo: "Tra le terapie proposte presso il centro Fisioterapia Bruno a Caserta, è possibile richiedere il metodo Mézières, chiamato anche Rieducazione Posturale: tramite l'accorciamento e la retrazione delle catene muscolari, con il metodo Mézières è possibile risolvere disfmorfismi come la scoliosi, l'iperlordosi e la cifosi agendo tramite l'allentamento delle tensioni muscolari. Altre terapie manuali eseguite presso lo studio sono la Rieducazione Posturale Globale, volta all'eliminazione delle disfunzioni che sono alla base della patologia, il metodo Kabata, la massoterapia e i massaggi, come quello linfodrenante, quello decontratturante e quello rilassante.",
-            immagine: "/Fisiok4.jpg"
+            immagine: "/Fisiok5.jpg"
         },
     ]
