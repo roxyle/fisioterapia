@@ -10,9 +10,9 @@ export default function ContCardServizi (props: Props) {
   return (
 
         <div className='flex flex-col items-center'>
-          <h2 className='font-bold underline text-white text-4xl title'>I Nostri Servizi </h2>
+          <h2 className='font-bold underline text-white text-4xl title'>Alcuni Dei Nostri Servizi </h2>
 
-             <div className='flex flex-row flex-wrap justify-center'> 
+             <div className='flex flex-col sm:flex-row flex-wrap justify-center'> 
               {props.dettaglioServizi.map((tipologia)=>(                  
                   
                     <CardServizi key={tipologia.id} id={tipologia.id}
