@@ -42,3 +42,9 @@ export type DettaglioServizi = {
     immagine: string
 }
 
+export type Staff = {
+    id: string,
+    nome: string,
+    foto: string,
+    
+}

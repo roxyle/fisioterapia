@@ -4,16 +4,16 @@
 import Footer from '@/components/Footer'
 import React from 'react'
 import Navbar  from '@/components/Navbar'
-import ContPlainTxt from '@/components/Containers/ContPlainTxt'
-import { Paragrafi } from '@/constants/data'
+import BodyA from '@/components/BodyA'
 
 const About = () => {
   return (
     <>
-      <Navbar/>
-      <ContPlainTxt txt={Paragrafi}/>
+    <Navbar/>
+    <BodyA/>
+    
 
-      <Footer/>
+    <Footer/>
     </>
   )
 }

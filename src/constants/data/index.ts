@@ -1,4 +1,4 @@
-import { Contacts, ParagrContent, TextContent, ElencoTerapie, Terapie, DettaglioServizi } from "../types";
+import { Contacts, ParagrContent, TextContent, ElencoTerapie, Terapie, DettaglioServizi, Staff } from "../types";
 
 export const ourContact: Contacts= 
     {
@@ -217,5 +217,26 @@ export const TerapieManuali: Terapie[] = [
             titolo: "Rieducazione Posturale e Massoterapia",
             testo: "Tra le terapie proposte presso il centro Fisioterapia Bruno a Caserta, è possibile richiedere il metodo Mézières, chiamato anche Rieducazione Posturale: tramite l'accorciamento e la retrazione delle catene muscolari, con il metodo Mézières è possibile risolvere disfmorfismi come la scoliosi, l'iperlordosi e la cifosi agendo tramite l'allentamento delle tensioni muscolari. Altre terapie manuali eseguite presso lo studio sono la Rieducazione Posturale Globale, volta all'eliminazione delle disfunzioni che sono alla base della patologia, il metodo Kabata, la massoterapia e i massaggi, come quello linfodrenante, quello decontratturante e quello rilassante.",
             immagine: "/Fisiok5.jpg"
+        },
+    ]
+
+    export const OurStaff: Staff[] = [
+        {
+            id: "Giovanni",
+            nome: "Giovanni Carandente",
+            foto: "/Carandente.jpeg"
+        },
+        {
+            id: "Fabio",
+            nome: "Fabio Viscardi",
+            foto: "/Viscardi.jpeg"
+        },        {
+            id: "Beniamino",
+            nome: "Beniamino Bruno",
+            foto: "/Bruno.jpeg"
+        },        {
+            id: "Tonia",
+            nome: "Tonia Piccolo",
+            foto: "/Piccolo.jpeg"
         },
     ]
