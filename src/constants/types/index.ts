@@ -48,3 +48,9 @@ export type Staff = {
     foto: string,
     
 }
+
+export type ImgEspProf = {
+    id: number,
+    image: string,
+    testo: string
+}

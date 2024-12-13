@@ -8,13 +8,23 @@ const BtnTel = () => {
     
     const [isClicked, setIsClicked] = useState(false)
     const BtnTxtContent = isClicked? ourContact.telephone : `Chiamaci!`
-    
+    const [isWhite, setIsWhite] = useState(true);
+    const Icona = isWhite? '/phone.png':'/phone2.png'
+    setTimeout(() => {
+      setIsWhite(!isWhite)   
+    },500)
     
   return (
     <div className='flex flex-row items-center text-white p-5'>
-        <button onClick={() => {setIsClicked(!isClicked)}} className='outline outline-white rounded-sm py-2 px-2 w-64'>
-            <span id='textButton' className='flex flex-row items-center justify-center hover:invert animate-pulse'>
-                <Image src='/phone.png' alt='home' className='hidden md:flex mr-2 ' width={30} height={30}></Image>
+        <button onClick={() => {setIsClicked(!isClicked)}} 
+        className='flex flex-row items-center justify-center 
+        outline outline-white rounded-sm 
+        py-2 px-2 w-64
+        hover:bg-white hover:text-sky-500'>
+          <Image src={`${Icona}`} alt='home' className='sm:flex mr-2' 
+                width={30} height={30}/>
+            <span id='textButton' className='text-lg'
+            >
                 {BtnTxtContent}
             </span>
         </button>

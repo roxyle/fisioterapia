@@ -1,4 +1,4 @@
-import { Contacts, ParagrContent, TextContent, ElencoTerapie, Terapie, DettaglioServizi, Staff } from "../types";
+import { Contacts, ParagrContent, TextContent, ElencoTerapie, Terapie, DettaglioServizi, Staff, ImgEspProf } from "../types";
 
 export const ourContact: Contacts= 
     {
@@ -63,6 +63,11 @@ export const Paragrafi: ParagrContent[] = [
         id: "/About",
         titolo: "Trattamenti personalizzati di fisioterapia a Caserta",
         testo: "Lo studio Fisioterapia Bruno a Caserta è un punto di riferimento per tutti coloro che desiderano affidarsi a veri esperti nella riabilitazione sportiva e nella rieducazione posturale. Presso il centro è possibile rivolgersi a fisioterapisti dalla lunga esperienza, attenti alle necessità dei pazienti e disponibili nel trovare il percorso fisioterapico più idoneo alle loro necessità, con terapie manuali e strumentali come la terapia a onde d'urto, la ionoforesi, l'elettroterapia e la magnetoterapia, anche a domicilio. Per richiedere una visita presso lo studio chiamate il nostro recapito telefonico."
+    },
+    {
+        id: "/Contatti",
+        titolo: "Fisioterapia, Osteopatia e Fisiokinesiterapia",
+        testo: "Se stai cercando un fisioterapista a Caserta, non esitare a contattare lo studio Fisioterapia Bruno. Situato nel cuore della città, lo studio è facilmente raggiungibile e pronto ad accoglierti con trattamenti fisioterapici personalizzati. Che tu abbia bisogno di riabilitazione sportiva, fisioterapia ortopedica o trattamenti osteopatici, il nostro team di esperti è a tua disposizione per aiutarti a recuperare il benessere fisico e migliorare la qualità della tua vita. Compila il modulo per richiedere un incontro con l'osteopata esperto e valutare i percorsi di riabilitazione sportiva. Prenota una visita oggi stesso e scopri come possiamo aiutarti a ritrovare la forma fisica ideale." 
     }
 ]
 
@@ -222,6 +227,16 @@ export const TerapieManuali: Terapie[] = [
 
     export const OurStaff: Staff[] = [
         {
+            id: "Beniamino",
+            nome: "Beniamino Bruno",
+            foto: "/Bruno.jpeg"
+        },        
+        {
+            id: "Tonia",
+            nome: "Tonia Piccolo",
+            foto: "/Piccolo.jpeg"
+        },
+        {
             id: "Giovanni",
             nome: "Giovanni Carandente",
             foto: "/Carandente.jpeg"
@@ -230,13 +245,68 @@ export const TerapieManuali: Terapie[] = [
             id: "Fabio",
             nome: "Fabio Viscardi",
             foto: "/Viscardi.jpeg"
-        },        {
-            id: "Beniamino",
-            nome: "Beniamino Bruno",
-            foto: "/Bruno.jpeg"
-        },        {
-            id: "Tonia",
-            nome: "Tonia Piccolo",
-            foto: "/Piccolo.jpeg"
-        },
+        }, 
+    ]
+
+    export const EspProf: ImgEspProf[] = [
+    {
+    id: 0,
+    image: '/slider/01.jpeg',
+    testo: 'Golden Tulip'
+    },
+    {
+        id: 1,
+        image: '/slider/02.jpeg',
+        testo: 'Riabilitazione'
+    },
+    {
+        id: 2,
+        image: '/slider/03.jpeg',
+        testo: 'Pallavolo'
+    },
+    {
+        id: 3,
+        image: '/slider/04.jpeg',
+        testo: 'Riabilitazione'
+    },
+    {
+        id: 4,
+        image: '/slider/05.jpeg',
+        testo: 'Studio'
+    },
+    {
+        id: 5,
+        image: '/slider/06.jpeg',
+        testo: 'Studio'
+    },
+    {
+        id: 6,
+        image: '/slider/07.jpeg',
+        testo: 'Casertana FC'
+    },
+    {
+        id: 7,
+        image: '/slider/08.jpeg',
+        testo: 'Basket'
+    },
+    {
+        id: 8,
+        image: '/slider/09.jpeg',
+        testo: 'Golden Tulip'
+    },
+    {
+        id: 9,
+        image: '/slider/10.jpeg',
+        testo: 'Pallavolo'
+    },
+    {
+        id: 10,
+        image: '/slider/12.jpeg',
+        testo: 'Volley Cup'
+    },
+    {
+        id: 11,
+        image: '/slider/16.jpeg',
+        testo: 'Volley Cup'
+    },
     ]
