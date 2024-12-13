@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { useState } from 'react'
+import BtnTel from '../Buttons/BtnTel'
 
 type MyProps = {
     id: string,
@@ -45,9 +46,11 @@ export default function CardServizi (dettagliServizi: MyProps) {
                   <div className='flex flex-col items-center justify-center py-5'> 
                     <h2 className='text-center underline py-3 font-bold'>{dettagliServizi.titolo}:</h2>                                                      
                     <p className=' text-center text-pretty px-5'>{dettagliServizi.descrizione}</p>
+                    
                   </div>
                 
             </div>
+            
         </div>
     </div>
   )

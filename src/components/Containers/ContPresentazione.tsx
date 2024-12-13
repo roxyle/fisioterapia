@@ -8,7 +8,11 @@ type Props = {
 
 export default function ContPresentazione(props: Props){
   return (
+    <div className='bg-gradient-to-t from-white to-90% rounded-xl p-5 w-full' >
     
+    <h1 className="title text-center text-4xl font-bold rounded-t-xl">
+            Farti tornare in forma è la nostra missione
+          </h1> 
     <div className='flex flex-row flex-wrap items-center justify-center'>
         {props.cardIntroTxt.map((txt)=>(
 
@@ -17,6 +21,7 @@ export default function ContPresentazione(props: Props){
             bottone={`${txt.bottone}`} goToPage={`${txt.goToPage}`} />
         )) 
         }
+    </div>
     </div>
   )
 }

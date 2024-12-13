@@ -28,6 +28,9 @@ body, html {
   position: relative;
 }
 
+.azzurro{
+  color: #0ea5e9;
+}
 
 .card{
   position: relative;
@@ -48,13 +51,19 @@ body, html {
 
 }
 
+.bordo-doppio-azzurro {
+  border: double 3px; 
+  border-radius: 6px; 
+  border-color: #0ea5e9;
+}
+
 .card-face{
   position: absolute;
   backface-visibility: hidden;
   height: 100%;
-  border: double 3px; 
+  border: solid 2px; 
   border-radius: 6px; 
-  border-color: rgb(56 189 248);
+  border-color: #0ea5e9;
 }
 
 .card-back{
@@ -68,13 +77,11 @@ body, html {
 }
 .title {
   width: 100%;
-  background-color: rgb(56 189 248);
+  background-color: #0ea5e9;
   padding: 10px;
   text-align: center;
   color: white;
-  border-style: solid;
-  border-width: medium;
-  border-color: white;
-  border-radius: 8px;
+
+  
 }
 
