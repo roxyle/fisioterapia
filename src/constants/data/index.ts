@@ -208,7 +208,7 @@ export const TerapieManuali: Terapie[] = [
         {
             id: "p4",
             titolo: "Sedute di terapia fisica e riabilitazione",
-            testo: "La presenza di tecnologie all’avanguardia e di personale qualificato rende l'ambulatorio di fisioterapia di Caserta una realtà innovativa, ma al contempo esperta, in grado di soddisfare ogni genere di esigenza nel campo della riabilitazione. In sede si eseguono infatti terapie sia manuali che strumentali, sedute di terapia fisica e riabilitazione per patologie ortopediche, reumatiche, neurologiche e post-traumatiche, ma anche trattamenti per la cura delle patologie acute e croniche di ossa, muscoli e articolazioni.",
+            testo: "La presenza di tecnologie all'avanguardia e di personale qualificato rende l'ambulatorio di fisioterapia di Caserta una realtà innovativa, ma al contempo esperta, in grado di soddisfare ogni genere di esigenza nel campo della riabilitazione. In sede si eseguono infatti terapie sia manuali che strumentali, sedute di terapia fisica e riabilitazione per patologie ortopediche, reumatiche, neurologiche e post-traumatiche, ma anche trattamenti per la cura delle patologie acute e croniche di ossa, muscoli e articolazioni.",
             immagine: "/Fisiok.jpg"
         },
         {
