@@ -12,10 +12,14 @@ const ContPlainTxt = (prop: Props) => {
 let location = usePathname()
 let simplePar = prop.txt.find((e) => e.id==location);
   return (
-    <div className='bg-gradient-to-t from-white to-90% rounded-xl pt-5'>
-        <div className='flex flex-col items-center justify-center rounded-t-xl bg-white bg-opacity-50'>
-            <h2 className='font-bold text-center text-pretty text-4xl title'>{simplePar?.titolo}</h2>
-            <p className='text-black flex flex-row flex-wrap items-center justify-center text-center text-pretty p-5'>
+    <div className='bg-gradient-to-t from-white to-90% rounded-xl'>
+        <div className='flex flex-col items-center justify-center '>
+            <h2 className='font-bold text-center text-pretty text-4xl title rounded-t-xl'>{simplePar?.titolo}</h2>
+            <p className='text-black 
+            flex flex-row flex-wrap items-center justify-center 
+            text-center text-pretty p-5
+            bg-white bg-opacity-50
+            rounded-b-xl'>
             {simplePar?.testo}
             </p>
         </div>
