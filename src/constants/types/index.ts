@@ -36,3 +36,16 @@ export type Servizi = {
     elenco: Terapie[],
 }
 
+export type DettaglioServizi = {
+    id: string,
+    titolo: string,
+    testo: string
+    immagine: string
+}
+
+export type Staff = {
+    id: string,
+    nome: string,
+    foto: string,
+    
+}

@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -28,7 +29,8 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  overflow-y: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 
@@ -57,6 +59,8 @@ body {
   position: relative;
   width: 420px;
   height: 550px;
+  width: 420px;
+  height: 550px;
   transition: transform 1s;
   transform-style: preserve-3d;
   
@@ -80,47 +84,23 @@ body {
 }
 .title {
   width: 100vw;
+  width: 100vw;
   background-color: rgb(56 189 248);
+  padding: 10px;
   padding: 10px;
   text-align: center;
   color: white;
   border-style: solid;
   border-width: medium;
+  border-color: white;  border-style: solid;
+  border-width: medium;
+  color: white;
+  border-style: solid;
+  border-width: medium;
   border-color: white;
   border-radius: 8px;
-  width: 100%;
+  border-radius: 8px;width: 100%;
 }
 
-/* 
-.swiper {
-  width: 420px;
-  height: fit-content;
-}
-
-.swiper-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 18px;
-  font-size: px;
-  /* font-weight: bold; */
-  /*color: #fff;
-}
-
-.swiper-slide:nth-child(1n) {
-  background-color: white;
-}
-
-.swiper-slide:nth-child(2n) {
-  background-color: white;
-}
-
-.swiper-slide:nth-child(3n) {
-  background-color: white;
-}
-
-.swiper-slide:nth-child(4n) {
-  background-color: white;
-} */
 
 
