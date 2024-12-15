@@ -7,20 +7,26 @@ type MyProps = {
     id: string,
     nome: string,
     immagine: string,
-    
+
 }
 
 const CardStaff = (dettaglioStaff: MyProps) => {
   return (
-    <div className='flex flex-col p-5 inset-0'>
-        
-        <Image className='object-cover h-96 w-80 ' key={dettaglioStaff.id} src={dettaglioStaff.immagine} alt={dettaglioStaff.nome} width={420} height={700}/>
-        
-      
-        <div className='flex flex-row flex-wrap bg-white text-black text-center justify-center font-bold'>
+    <div className='flex flex-col p-5 inset-0 rounded-xl '>
+
+        <Image className='rounded-t-xl object-cover
+        h-96 w-80
+        brightness-[.85] hover:filter-none
+        border-t-2 border-x-2 border-sky-500
+        ' key={dettaglioStaff.id} src={dettaglioStaff.immagine} alt={dettaglioStaff.nome} width={420} height={700}/>
+
+
+        <div className='p-5 flex flex-row flex-wrap text-black text-center
+        justify-center font-bold rounded-b-xl
+        border-b-2 border-x-2 border-sky-500 '>
             {dettaglioStaff.nome}
         </div>
-        
+
     </div>
   )
 }

@@ -8,18 +8,20 @@ type Props = {
 
 export default function ContPresentazione(props: Props){
   return (
-  <div className=''>  
-    <div className='grid grid-cols-1 md:grid-cols-2 gap-10 p-10'>
+    <div className='bg-gradient-to-t from-white to-90% rounded-xl p-5 w-full' >
 
+    <h1 className="title text-center text-4xl font-bold rounded-t-xl">
+            Farti tornare in forma è la nostra missione
+          </h1>
+    <div className='flex flex-row flex-wrap items-center justify-center'>
         {props.cardIntroTxt.map((txt)=>(
 
-            <CardIntro text={txt.text} key= {txt.id} id={txt.id} 
-            immagine={`${txt.immagine}`} alt={'txt.alt'} 
+            <CardIntro text={txt.text} key= {txt.id} id={txt.id}
+            immagine={`${txt.immagine}`} alt={'txt.alt'}
             bottone={`${txt.bottone}`} goToPage={`${txt.goToPage}`} />
-        )) 
+        ))
         }
     </div>
-  </div>
+    </div>
   )
 }
-

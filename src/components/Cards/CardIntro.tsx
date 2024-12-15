@@ -14,18 +14,18 @@ type MyProps = {
 
 export default function CardIntro(testo: MyProps){
   return (
-    <div className='flex items-center justify-center px-10 text-black '>
+    <div className='flex flex-col items-center justify-center p-5 text-black '>
 
-      <fieldset className='bg-gradient-to-t from-white to-90% rounded-lg' 
+      <fieldset className='max-w-12 bg-gradient-to-t from-white to-90% rounded-lg'
       style={{ borderWidth: 3, borderColor: '#04A4D4', borderRadius: 4 }} >
-        
-        <legend>    
+
+        <legend>
           <Image className='m-2' key={testo.id}
-          src={testo.immagine} alt={testo.alt} width={30} height={60}/>    
+          src={testo.immagine} alt={testo.alt} width={30} height={60}/>
         </legend>
 
-        <div className=' '>
-          <p className='text-black text-balance text-center '>
+        <div className='p-5'>
+          <p className='text-black text-balance text-center p-5'>
             {testo.text}
           </p>
         </div>
