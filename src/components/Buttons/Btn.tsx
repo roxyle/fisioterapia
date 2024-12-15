@@ -12,7 +12,7 @@ type MyProps = {
 }
 
 export default function Btn(testo: MyProps){
-    
+
 
 
   return (
@@ -25,4 +25,3 @@ export default function Btn(testo: MyProps){
     </div>
   )
 }
-
