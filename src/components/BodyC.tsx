@@ -1,20 +1,15 @@
 import React from 'react'
 import ContPlainTxt from './Containers/ContPlainTxt'
-import { OurStaff, Paragrafi } from '@/constants/data'
-import ContPicSlide from './Containers/ContPicSlide'
-import ContStaff from './Containers/ContStaff'
+import {Paragrafi } from '@/constants/data'
 
-const BodyA = () => {
+const BodyC = () => {
   return (
     <div className='bg-terapie-pattern bg-cover'>
       <div className="p-2 flex flex-col items-center justify-center flex-wrap gap-2">
-      <ContStaff staff={OurStaff}/>
       <ContPlainTxt txt={Paragrafi}/>
-      <ContPicSlide/>
 
       </div>
     </div>
   )
 }
-
-export default BodyA
+export default BodyC

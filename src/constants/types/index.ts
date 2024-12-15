@@ -25,10 +25,9 @@ export type Terapie = {
     id: string,
     tipologia: string,
     nomeTerapia: string,
-    descrizione: string
 }
 
-export type Servizi = {
+export type ElencoTerapie = {
     id: string,
     tipologia: string,
     immagine: string,
@@ -47,5 +46,11 @@ export type Staff = {
     id: string,
     nome: string,
     foto: string,
-    
+
+}
+
+export type ImgEspProf = {
+    id: number,
+    image: string,
+    testo: string
 }
