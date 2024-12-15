@@ -251,62 +251,53 @@ export const TerapieManuali: Terapie[] = [
     export const EspProf: ImgEspProf[] = [
     {
     id: 0,
-    image: '/slider/01.jpeg',
+    image: '/slider/goldenTulip.jpeg',
     testo: 'Golden Tulip'
     },
     {
         id: 1,
-        image: '/slider/02.jpeg',
-        testo: 'Riabilitazione'
+        image: '/slider/posturale.jpeg',
+        testo: 'Posturale'
     },
     {
         id: 2,
-        image: '/slider/03.jpeg',
-        testo: 'Pallavolo'
-    },
-    {
-        id: 3,
-        image: '/slider/04.jpeg',
+        image: '/slider/riabilitazione.jpeg',
         testo: 'Riabilitazione'
     },
     {
+        id: 3,
+        image: '/slider/bordoCampo.jpeg',
+        testo: 'A Bordo Campo'
+    },
+    {
         id: 4,
-        image: '/slider/05.jpeg',
-        testo: 'Studio'
+        image: '/slider/studio.jpeg',
+        testo: 'in Studio'
     },
     {
         id: 5,
-        image: '/slider/06.jpeg',
-        testo: 'Studio'
+        image: '/slider/studio2.jpeg',
+        testo: 'in Studio'
     },
     {
         id: 6,
-        image: '/slider/07.jpeg',
+        image: '/slider/casertanaFc.jpeg',
         testo: 'Casertana FC'
     },
     {
         id: 7,
-        image: '/slider/08.jpeg',
-        testo: 'Basket'
+        image: '/slider/volley.jpeg',
+        testo: 'Volley Tournament'
     },
     {
         id: 8,
-        image: '/slider/09.jpeg',
-        testo: 'Golden Tulip'
+        image: '/slider/pallavolo.jpeg',
+        testo: 'Volley Tournament'
     },
     {
         id: 9,
-        image: '/slider/10.jpeg',
+        image: '/slider/legaVolley.jpeg',
         testo: 'Pallavolo'
     },
-    {
-        id: 10,
-        image: '/slider/12.jpeg',
-        testo: 'Volley Cup'
-    },
-    {
-        id: 11,
-        image: '/slider/16.jpeg',
-        testo: 'Volley Cup'
-    },
+    
     ]
