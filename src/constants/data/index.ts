@@ -203,7 +203,7 @@ export const TerapieManuali: Terapie[] = [
             id: "p3",
             titolo: "Riabilitazione e gestione del dolore",
             testo: "I professionisti dell'ambulatorio di fisioterapia di Caserta pongono molta attenzione nell'ascolto del paziente, che sa di potersi affidare a un team multidisciplinare e di poter godere di un ambiente rilassato e professionale sin dal primo colloquio. In base alle sue esigenze, i fisioterapisti e osteopati della Fisioterapia Bruno saranno in grado di proporre terapie su misura, trattando con successo ogni tipo di condizione e lesione con interventi ad hoc di riabilitazione sportiva, rieducazione posturale e gestione del dolore.",
-            immagine: "/Fisiok4.jpg"
+            immagine: "/Fisiok4.png"
         },
         {
             id: "p4",
