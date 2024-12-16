@@ -197,7 +197,7 @@ export const TerapieManuali: Terapie[] = [
             id: "p2",
             titolo: "Terapie con tecnologie all'avanguardia",
             testo: "Il centro Fisioterapia Bruno a Caserta è attrezzato con le più innovative tecnologie e sempre aggiornato sulle novità tecniche, scientifiche e tecnologiche del settore, per seguire ogni paziente con trattamenti ortopedici e fisioterapici di ultima generazione. Grazie alla costante formazione e all'aggiornamento alle ultime novità del settore, lo staff dello studio è oggi specializzato in fisiokinesiterapia, fisioterapia, tecarterapia, laserterapia, osteopatia, massoterapia ed elettroterapia antalgica. Inoltre si effettuano sedute di riatletizzazione, terapia propriocettiva, ginnastica posturale, elettrostimolazione muscolare e tante, diverse tecniche di terapia strumentale.",
-            immagine: "/shockwave6.jpg"
+            immagine: "/shockwave6.png"
         },
         {
             id: "p3",
