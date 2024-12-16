@@ -16,7 +16,7 @@ const ContTxtImage = (dettagliTerapia: MyProps) => {
         <h2 className='rounded-t-xl font-bold text-4xl title'> Le terapie strumentali </h2>
 
         <div className='flex flex-col sm:flex-row items-center justify-center bg-white bg-opacity-50 rounded-b-xl'>
-          <Image src='/Fisiok4.jpg' alt={'terapie strumentali'}
+          <Image src='/Fisiok4.png' alt={'terapie strumentali'}
               width={700} height={600}
               className='p-5'/>
 
