@@ -14,6 +14,9 @@ const config: Config = {
         'terapie-strum-pattern':"url('/Fisiok6.jpg')",
 
       },
+      // backgroundPosition: {
+      //   'custom': '35% 50%', 
+      // },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
