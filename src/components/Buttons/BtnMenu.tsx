@@ -4,7 +4,7 @@ import React from 'react'
 
 const BtnMenu = () => {
   return (
-    <div className='py-5 flex flex-1 flex-row flex-wrap justify-evenly items-center text-white text-lg '>
+    <div className='md:py-5 flex flex-1 flex-row flex-wrap justify-evenly items-center text-white text-lg gap-3'>
         <Link href='/' id='Home' className='hover:[text-decoration:underline_overline] hover:font-bold hover:text-lg underline-offset-4'>Home</Link>
         <Link href='/Servizi' id='Servizi' className='hover:[text-decoration:underline_overline] hover:font-bold hover:text-lg underline-offset-4'>Servizi</Link>        
         <Link href='/About' id="About" className='hover:[text-decoration:underline_overline] hover:font-bold hover:text-lg underline-offset-4'>Chi Siamo</Link>
