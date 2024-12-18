@@ -30,7 +30,7 @@ const ContPicSlide = () => {
 
   return (
 
-    <div className='flex flex-col items-center bg-gradient-to-t from-white to-90% w-full rounded-b-xl pb-5'>
+    <div className='flex flex-col items-center bg-gradient-to-t from-white to-90% w-full rounded-b-xl py-5'>
 
       <h2 className='font-bold underline text-white text-4xl rounded-t-xl title'>Esperienze Professionali</h2>
 
