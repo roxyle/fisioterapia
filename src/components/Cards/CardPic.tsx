@@ -12,8 +12,8 @@ type MyProps = {
 const CardPic = (foto: MyProps) => {
 
   const [key, setKey] = useState(0)
-  const [src, setSrc] = useState('')
-  const [txt, setTxt] = useState('')
+  const [src, setSrc] = useState('/Bruno.jpeg')
+  const [txt, setTxt] = useState('not found')
 
 
   useEffect(() =>

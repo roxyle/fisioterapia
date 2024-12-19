@@ -40,7 +40,7 @@ const ContPicSlide = () => {
   }
 
   const handleTouchEnd = () => {
-    const swipeThreshold = 50; // Distanza minima per considerare uno swipe
+    const swipeThreshold = 100; // Distanza minima per considerare uno swipe
     const distance = touchStart - touchEnd;
     distance > swipeThreshold? handleClickR() : handleClickL();
     setTouchStart(0);
