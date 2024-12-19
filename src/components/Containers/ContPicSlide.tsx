@@ -64,7 +64,8 @@ const ContPicSlide = () => {
         </div>
 
         <div className='flex flex-row items-center justify-center'>
-          <div className='z-100 sm:outline sm:outline-2 sm:outline-white
+          <div className='z-100 animate-bounce
+          sm:outline sm:outline-2 sm:outline-white
           sm:rounded-sm
           sm:px-2 sm:py-2'
           onClick={handleClickL}>
@@ -78,7 +79,8 @@ const ContPicSlide = () => {
             <CardPic immagine={[EspProf[current]]} />
           </div>
 
-          <div className='z-100 sm:outline sm:outline-2 sm:outline-white
+          <div className='z-100 animate-bounce
+          sm:outline sm:outline-2 sm:outline-white
           sm:rounded-sm
           sm:px-2 sm:py-2'
           onClick={handleClickR}>
