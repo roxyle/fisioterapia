@@ -50,10 +50,7 @@ const ContPicSlide = () => {
 
   return (
 
-    <div className='flex flex-col items-center bg-gradient-to-t from-white to-90% w-full rounded-b-xl py-5'    
-          onTouchStart={handleTouchStart}
-          onTouchMove={handleTouchMove}
-          onTouchEnd={handleTouchEnd}>
+    <div className='flex flex-col items-center bg-gradient-to-t from-white to-90% w-full rounded-b-xl py-5'>
 
       <h2 className='font-bold underline text-white text-4xl rounded-t-xl title'>Esperienze Professionali</h2>
 
@@ -80,7 +77,11 @@ const ContPicSlide = () => {
           </div>
 
           <div className='z-20 scale-120 
-          transition-transform duration-300 ease-in-out'>
+          transition-transform duration-300 ease-in-out'
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
+          >
 
             <CardPic immagine={[EspProf[current]]} />
           </div>
