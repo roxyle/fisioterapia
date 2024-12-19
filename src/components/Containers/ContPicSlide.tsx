@@ -57,9 +57,9 @@ const ContPicSlide = () => {
 
       <h2 className='font-bold underline text-white text-4xl rounded-t-xl title'>Esperienze Professionali</h2>
 
-      <div className='flex flex-col lg:flex-row justify-center'>
+      <div className='flex flex-col lg:flex-row justify-center pt-2 sm:pb-12 sm:px-8'>
 
-        <div className='z-0 hidden lg:flex sm:grayscale-[70%] sm:blur-[1px] translate-y-5'>
+        <div className='z-0 hidden lg:flex sm:grayscale-[70%] sm:blur-[1px] translate-y-10'>
           <CardPic immagine={[EspProf[prev]]}/>
         </div>
 
@@ -67,9 +67,11 @@ const ContPicSlide = () => {
           <div className='z-50 animate-bounce
           sm:outline sm:outline-2 sm:outline-white
           sm:rounded-sm
-          sm:px-2 sm:py-2'
+          sm:px-2 sm:pt-2
+        sm:bg-white
+          sm:bg-opacity-50'
           onClick={handleClickL}>
-           <div className='before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-white relative inline-block z-50 before:translate-x-4 sm:transform-none'> 
+           <div className='sm:before:hidden before:block before:absolute before:-inset-1 before:bg-white relative inline-block z-50 before:translate-x-4 sm:transform-none'> 
 
               <Image src={'/left-arrow.svg'} alt='vai a immagine precedente'
               className='z-50 translate-x-4 sm:transform-none'
@@ -77,7 +79,8 @@ const ContPicSlide = () => {
             </div>
           </div>
 
-          <div className='z-20 scale-120 transition-transform duration-300 ease-in-out'>
+          <div className='z-20 scale-120 
+          transition-transform duration-300 ease-in-out'>
 
             <CardPic immagine={[EspProf[current]]} />
           </div>
@@ -85,10 +88,12 @@ const ContPicSlide = () => {
           <div className='z-50 animate-bounce
           sm:outline sm:outline-2 sm:outline-white
           sm:rounded-sm
-          sm:px-2 sm:py-2
+          sm:px-2 sm:pt-2
+        sm:bg-white
+          sm:bg-opacity-50
           '
           onClick={handleClickR}>
-           <div className='before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-white relative inline-block z-50 before:-translate-x-4 sm:transform-none'> 
+           <div className='sm:before:hidden before:block before:absolute before:-inset-1 before:bg-white relative inline-block z-50 before:-translate-x-4 sm:transform-none'> 
             <Image src={'/right-arrow.svg'} alt='vai a immagine successiva' 
             className='z-50 -translate-x-4 sm:transform-none'
             width={40} height={40}
@@ -98,7 +103,7 @@ const ContPicSlide = () => {
 
         </div>
 
-        <div className='z-0 hidden lg:flex sm:grayscale sm:blur-[1px] translate-y-5'>
+        <div className='z-0 hidden lg:flex sm:grayscale sm:blur-[1px] translate-y-10'>
         <CardPic immagine={[EspProf[next]]}/>
         </div>
 
