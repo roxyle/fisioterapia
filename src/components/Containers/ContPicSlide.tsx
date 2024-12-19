@@ -64,14 +64,17 @@ const ContPicSlide = () => {
         </div>
 
         <div className='flex flex-row items-center justify-center'>
-          <div className='z-100 animate-bounce
+          <div className='z-50 animate-bounce
           sm:outline sm:outline-2 sm:outline-white
           sm:rounded-sm
           sm:px-2 sm:py-2'
           onClick={handleClickL}>
-            <Image src={'/left-arrow.svg'} alt='home'
-            className=''
-            width={30} height={30}/>
+           <div className='before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-white relative inline-block z-50 before:translate-x-4 sm:transform-none'> 
+
+              <Image src={'/left-arrow.svg'} alt='vai a immagine precedente'
+              className='z-50 translate-x-4 sm:transform-none'
+              width={40} height={40}/>
+            </div>
           </div>
 
           <div className='z-20 scale-120 transition-transform duration-300 ease-in-out'>
@@ -79,14 +82,18 @@ const ContPicSlide = () => {
             <CardPic immagine={[EspProf[current]]} />
           </div>
 
-          <div className='z-100 animate-bounce
+          <div className='z-50 animate-bounce
           sm:outline sm:outline-2 sm:outline-white
           sm:rounded-sm
-          sm:px-2 sm:py-2'
+          sm:px-2 sm:py-2
+          '
           onClick={handleClickR}>
-          <Image src={'/right-arrow.svg'} alt='home' className=''
-                width={30} height={30}
-                />
+           <div className='before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-white relative inline-block z-50 before:-translate-x-4 sm:transform-none'> 
+            <Image src={'/right-arrow.svg'} alt='vai a immagine successiva' 
+            className='z-50 -translate-x-4 sm:transform-none'
+            width={40} height={40}
+              />
+            </div>
           </div>
 
         </div>
