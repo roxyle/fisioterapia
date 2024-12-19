@@ -48,6 +48,43 @@ export const cardIntroTxt: TextContent[] = [
     },
 ]
 
+export const cardCTATxt: TextContent[] = [
+    {
+        id: 'testo1',
+        alt: "chiamaci",
+        immagine: '/servizi.svg',
+        text: "Il tuo medico ti ha prescritto un piano terapia? Contattaci subito per fissare un consulto e scoprire i trattamenti più adatti a te!",
+        bottone: 'Chiama subito! ►',
+        goToPage: '/',
+    },
+    {
+        id: 'testo2',
+        alt: 'vai al form di contatto',
+        immagine: '/servizi.svg',
+        text: "Non puoi chiamarci in questo momento? Nessun problema, compila il modulo di contatto e ci penseremo noi a ricontattarti appena possibile!",
+        bottone: 'Scrivici! ►',
+        goToPage: '/'
+
+    },
+    {
+        id: 'testo3',
+        alt: 'vai alla mappa',
+        immagine: '/equipe.svg',
+        text: 'Vuoi sapere dove siamo? Consulta la mappa per scoprire dove siamo e vieni a trovarci nel nostro Studio, saremo lieti di accoglierti!',
+        bottone: 'Vieni a trovarci! ►',
+        goToPage: '/'
+
+    },
+    {
+        id: 'testo4',
+        alt: "vai alle faq",
+        immagine: '/equipe.svg',
+        text: "Hai ancora dubbi? Consulta la nostra sezione F.A.Q per trovare risposte alle domande più frequenti sui nostri servizi e trattamenti!",
+        bottone: 'Leggi le F.A.Q ►',
+        goToPage: '/'
+    },
+]
+
 export const Paragrafi: ParagrContent[] = [
     {
         id: "/",

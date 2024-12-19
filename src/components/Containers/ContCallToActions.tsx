@@ -1,10 +1,10 @@
 import { TextContent } from '@/constants/types'
 import React from 'react'
 import CardIntro from '../Cards/CardIntro'
-import { cardIntroTxt } from '@/constants/data'
+import { cardCTATxt } from '@/constants/data'
 
 
-export default function ContPresentazione(){
+export default function ContCallToActions(){
   return (
     <div className='bg-gradient-to-t from-white to-90% rounded-xl p-5 w-full' >
 
@@ -12,7 +12,7 @@ export default function ContPresentazione(){
             Farti tornare in forma è la nostra missione
           </h1>
     <div className='flex flex-row flex-wrap items-center justify-center'>
-        {cardIntroTxt.map((txt)=>(
+        {cardCTATxt.map((txt)=>(
 
             <CardIntro text={txt.text} key= {txt.id} id={txt.id}
             immagine={`${txt.immagine}`} alt={'txt.alt'}
