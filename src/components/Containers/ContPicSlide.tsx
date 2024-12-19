@@ -12,6 +12,17 @@ const ContPicSlide = () => {
   const [prev, setPrev] = useState(0)
   const [next, setNext] = useState(2)
 
+  const [touchStart, setTouchStart] = useState(0);
+  const [touchEnd, setTouchEnd] = useState(0);
+  const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
+    setTouchStart(e.touches[0].clientX); // Memorizza il punto iniziale del tocco
+  };
+
+  // Gestione touch move
+  const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
+    setTouchEnd(e.touches[0].clientX); // Aggiorna la posizione corrente del tocco
+  };
+
   useEffect(() => {
     setNext((current + 1) % EspProf.length);
     setPrev((current - 1 + EspProf.length) % EspProf.length);
@@ -25,12 +36,24 @@ const ContPicSlide = () => {
   const handleClickL = () => {
     setPrev((current - 1 + EspProf.length) % EspProf.length);
     setNext(current);
-    setCurrent(prev); };
+    setCurrent(prev); 
+  }
+
+  const handleTouchEnd = () => {
+    const swipeThreshold = 50; // Distanza minima per considerare uno swipe
+    const distance = touchStart - touchEnd;
+    distance > swipeThreshold? handleClickR() : handleClickL();
+    setTouchStart(0);
+    setTouchEnd(0);
+  };
 
 
   return (
 
-    <div className='flex flex-col items-center bg-gradient-to-t from-white to-90% w-full rounded-b-xl py-5'>
+    <div className='flex flex-col items-center bg-gradient-to-t from-white to-90% w-full rounded-b-xl py-5'    
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}>
 
       <h2 className='font-bold underline text-white text-4xl rounded-t-xl title'>Esperienze Professionali</h2>
 
@@ -50,7 +73,7 @@ const ContPicSlide = () => {
             width={30} height={30}/>
           </div>
 
-          <div className='z-20 scale-120 '>
+          <div className='z-20 scale-120 transition-transform duration-300 ease-in-out'>
 
             <CardPic immagine={[EspProf[current]]} />
           </div>
