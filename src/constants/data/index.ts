@@ -55,7 +55,7 @@ export const cardCTATxt: TextContent[] = [
         immagine: '/chiamaci.svg',
         text: "Il tuo medico ti ha prescritto un piano terapia? Contattaci per fissare un consulto e scoprire i trattamenti più adatti a te!",
         bottone: 'Chiama subito! ►',
-        goToPage: '/Contatti',
+        goToPage: 'tel:3491857731',
     },
     {
         id: 'testo2',
