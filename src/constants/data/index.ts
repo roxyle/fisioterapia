@@ -72,7 +72,7 @@ export const cardCTATxt: TextContent[] = [
         immagine: '/trovaci.svg',
         text: 'Vuoi sapere dove si trova il nostro Studio e come arrivarci? Consulta la mappa e vieni a trovarci, saremo lieti di accoglierti!',
         bottone: 'Vieni a trovarci! ►',
-        goToPage: '/Contatti'
+        goToPage: '/Contatti#mappa'
 
     },
     {
