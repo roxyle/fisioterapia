@@ -21,7 +21,7 @@ const BtnTel = () => {
     const handlePressStart = () => {
         const timer = setTimeout(() => {
             // Avvia la telefonata dopo 2 secondi di pressione
-            window.location.href = `tel:${ourContact.telephone}`;
+            // window.location.href = `tel:${ourContact.telephone}`;
         }, 2000); // 2 secondi di pressione prolungata
         setPressTimer(timer);
     };
@@ -36,7 +36,7 @@ const BtnTel = () => {
     // Gestisce le pressioni consecutive
     const handleClick = () => {
         const now = Date.now();
-        if (lastClickTime && now - lastClickTime < 1000) {
+        if (lastClickTime && now - lastClickTime < 2000) {
             // Seconda pressione entro 1 secondo
             if (clickCount + 1 >= 2) {
                 window.location.href = `tel:${ourContact.telephone}`; // Avvia la telefonata
