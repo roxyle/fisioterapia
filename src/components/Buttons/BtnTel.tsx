@@ -42,9 +42,13 @@ const BtnTel = () => {
                 window.location.href = `tel:${ourContact.telephone}`; // Avvia la telefonata
                 setClickCount(0);
                 setLastClickTime(null);
+            setIsClicked(!isClicked)
+
             } else {
                 setClickCount(clickCount + 1);
                 setLastClickTime(now);
+            setIsClicked(!isClicked)
+
             }
         } else {
             // Primo click o click troppo distanti
