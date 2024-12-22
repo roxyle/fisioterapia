@@ -36,7 +36,7 @@ const BtnTel = () => {
     // Gestisce le pressioni consecutive
     const handleClick = () => {
         var now = Date.now();
-        if (lastClickTime && now - lastClickTime < 1200) {
+        if (lastClickTime && now - lastClickTime < 500) {
             // Seconda pressione entro 1 secondo
             if (clickCount + 1 >= 4) {
                 window.location.href = `tel:${ourContact.telephone}`; // Avvia la telefonata
