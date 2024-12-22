@@ -11,7 +11,7 @@ export default function ContCallToActions(){
     <h1 className="title text-center text-4xl font-bold rounded-t-xl">
             Farti tornare in forma è la nostra missione
           </h1>
-    <div className='flex flex-col md:flex-row flex-wrap items-center justify-center'>
+    <div className='flex flex-col lg:flex-row flex-wrap items-center justify-center'>
         {cardCTATxt.map((txt)=>(
 
             <CardIntro text={txt.text} key= {txt.id} id={txt.id}
