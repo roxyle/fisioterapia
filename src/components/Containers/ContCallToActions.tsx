@@ -13,7 +13,7 @@ export default function ContCallToActions(){
           </h1>
     <div className='flex flex-col sm:flex-row sm:flex-wrap justify-center gap-4'>
         {cardCTATxt.map((txt)=>(
-          <div>
+          <div className='px-5 py-5'>
             <CardIntro text={txt.text} key= {txt.id} id={txt.id}
             immagine={`${txt.immagine}`} alt={'txt.alt'}
             bottone={`${txt.bottone}`} goToPage={`${txt.goToPage}`} />

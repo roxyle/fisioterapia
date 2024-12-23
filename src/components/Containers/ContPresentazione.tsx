@@ -11,9 +11,9 @@ export default function ContPresentazione(){
     <h1 className="title text-center text-4xl font-bold rounded-t-xl">
             Farti tornare in forma è la nostra missione
           </h1>
-    <div className='flex flex-col sm:flex-row sm:flex-wrap justify-center gap-4'>
+    <div className='flex flex-col sm:flex-row sm:flex-wrap justify-center'>
         {cardIntroTxt.map((txt)=>(
-          <div>
+          <div className='px-5 py-5'>
             <CardIntro text={txt.text} key= {txt.id} id={txt.id}
             immagine={`${txt.immagine}`} alt={'txt.alt'}
             bottone={`${txt.bottone}`} goToPage={`${txt.goToPage}`} />
