@@ -14,7 +14,7 @@ export default function ContCallToActions(){
     <div className='flex flex-col sm:grid sm:grid-cols-2 xl:flex xl:flex-row xl:flex-wrap items-center justify-center gap-3'>
         {cardCTATxt.map((txt)=>(
           <div className=''>
-            <CardIntro text={txt.text} key= {txt.id} id={txt.id}
+            <CardIntro text={txt.text} key={txt.id} id={txt.id}
             immagine={`${txt.immagine}`} alt={'txt.alt'}
             bottone={`${txt.bottone}`} goToPage={`${txt.goToPage}`} />
           </div>
