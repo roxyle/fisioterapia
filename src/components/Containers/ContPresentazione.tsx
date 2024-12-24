@@ -8,7 +8,7 @@ export default function ContPresentazione(){
   return (
     <div className='bg-gradient-to-t from-white to-90% rounded-xl p-5 w-full' >
 
-    <h1 className="title text-center text-4xl font-bold rounded-t-xl">
+    <h1 className="title text-center text-4xl font-bold rounded-t-xl text-red-600">
             Farti tornare in forma è la nostra missione
           </h1>
     <div className='flex flex-col sm:grid sm:grid-cols-2 xl:flex xl:flex-row xl:flex-wrap items-center justify-center gap-3'>
