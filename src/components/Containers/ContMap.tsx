@@ -9,8 +9,8 @@ const ContMap = () => {
 
 
   return (
-    <div className='bg-terapie-strum-pattern bg-cover rounded-xl w-full' id='mappa'>
-        <h2 className='rounded-t-xl font-bold text-4xl title'> Vieni a Trovarci </h2>
+    <div className='bg-terapie-strum-pattern bg-cover rounded-xl w-full py-3'>
+        <h2 id='mappa' className='rounded-t-xl font-bold text-4xl title'> Vieni a Trovarci </h2>
 
         <div className='flex flex-col items-center justify-center
           bg-white bg-opacity-70 rounded-b-xl'>

@@ -63,7 +63,7 @@ export const cardCTATxt: TextContent[] = [
         immagine: '/scrivici.svg',
         text: "Non puoi chiamarci in questo momento? Nessun problema, compila il modulo di contatto e ti ricontattiamo noi appena possibile!",
         bottone: 'Scrivici! ►',
-        goToPage: '/Contatti'
+        goToPage: '/Contatti#form'
 
     },
     {
