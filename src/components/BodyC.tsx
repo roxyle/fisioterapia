@@ -4,6 +4,7 @@ import {Paragrafi } from '@/constants/data'
 import HeroContatti from './HeroContatti'
 import ContMap from './Containers/ContMap'
 import ContForm from './Containers/ContForm'
+import ContFaq from './Containers/ContFaq'
 
 const BodyC = () => {
   return (
@@ -12,6 +13,7 @@ const BodyC = () => {
         <ContPlainTxt txt={Paragrafi}/>
         <ContForm/>
         <ContMap/>
+        <ContFaq/>
 
 
       </div>
