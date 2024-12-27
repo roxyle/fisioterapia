@@ -81,8 +81,94 @@ export const cardCTATxt: TextContent[] = [
         immagine: '/domande.svg',
         text: "Se hai ancora qualche dubbio consulta la nostra sezione F.A.Q per trovare risposte alle domande più frequenti sui nostri servizi e trattamenti!",
         bottone: 'Leggi le F.A.Q ►',
-        goToPage: '/Contatti'
+        goToPage: '/Contatti#faq'
     },
+]
+
+export const Faq: ParagrContent[]= [
+    {
+        id: 'q1',
+        titolo: "Cos'è la fisioterapia e a cosa serve?",
+        testo: 'La fisioterapia è una disciplina medica che utilizza trattamenti manuali, strumentali e fisici per prevenire, curare e riabilitare patologie che colpiscono muscoli, ossa, articolazioni e il sistema nervoso. Serve a migliorare la mobilità, alleviare il dolore e recuperare la funzionalità del corpo.'
+    },
+    {
+        id: 'q2',
+        titolo: 'Quali sono i principali benefici della fisioterapia?',
+        testo: 'La fisioterapia aiuta a ridurre il dolore, migliorare la mobilità, prevenire infortuni, accelerare il recupero post-operatorio e migliorare la qualità della vita.'
+    },    {
+        id: 'q3',
+        titolo: "Cosa sono le onde d'urto e come funzionano?",
+        testo: "Le onde d'urto sono impulsi meccanici utilizzati per stimolare la rigenerazione dei tessuti, ridurre il dolore e trattare patologie muscolo-scheletriche come tendiniti o calcificazioni."
+    },    {
+        id: 'q4',
+        titolo: 'A cosa serve la tecarterapia?',
+        testo: 'La tecarterapia è una tecnica che utilizza correnti ad alta frequenza per stimolare i processi di guarigione dei tessuti e ridurre infiammazioni e dolori muscolari.'
+    },    {
+        id: 'q5',
+        titolo: 'Quando è indicata la magnetoterapia?',
+        testo: "La magnetoterapia è indicata per trattare fratture, osteoporosi, lesioni articolari e infiammazioni croniche, grazie all'effetto rigenerativo dei campi magnetici."
+    },    {
+        id: 'q6',
+        titolo: 'Cosa si intende per elettroterapia e a chi è rivolta?',
+        testo: "L'elettroterapia utilizza correnti elettriche a bassa intensità per alleviare il dolore, stimolare i muscoli e favorire la circolazione. È adatta a chi soffre di dolori muscolari o lesioni."
+    },    {
+        id: 'q7',
+        titolo: 'Quali sono i benefici del massaggio decontratturante?',
+        testo: 'Il massaggio decontratturante aiuta a sciogliere le tensioni muscolari, migliorare la circolazione e alleviare dolori dovuti a contratture o posture scorrette.'
+    },    {
+        id: 'q8',
+        titolo: 'In cosa consiste la rieducazione posturale globale?',
+        testo: "La rieducazione posturale globale è una terapia che lavora sulla postura e sull'equilibrio muscolare per eliminare disfunzioni alla base di dolori cronici e patologie articolari."
+    },    {
+        id: 'q9',
+        titolo: "Che differenza c'è tra massaggio linfodrenante e rilassante?",
+        testo: 'Il massaggio linfodrenante favorisce il drenaggio dei liquidi linfatici, utile in caso di gonfiori o ritenzione idrica, mentre il massaggio rilassante aiuta a ridurre lo stress e migliorare il benessere generale.'
+    },    {
+        id: 'q10',
+        titolo: 'Quali patologie possono essere trattate con la fisioterapia?',
+        testo: 'La fisioterapia tratta patologie ortopediche (fratture, distorsioni), neurologiche (paralisi, ictus), reumatiche (artrite, artrosi) e post-traumatiche (lesioni muscolari).'
+    },    {
+        id: 'q11',
+        titolo: 'Come si cura il dolore cervicale?',
+        testo: 'Il dolore cervicale può essere alleviato con terapie manuali, esercizi di stretching, massaggi decontratturanti e trattamenti strumentali come tecarterapia o laserterapia.'
+    },    {
+        id: 'q12',
+        titolo: 'La fisioterapia è utile per chi soffre di scoliosi?',
+        testo: 'Sì, la fisioterapia è fondamentale per migliorare la postura, ridurre i sintomi della scoliosi e prevenire peggioramenti, utilizzando tecniche come la Rieducazione Posturale Globale o il metodo Mézières.'
+    },    {
+        id: 'q13',
+        titolo: 'Offrite sedute di fisioterapia a domicilio?',
+        testo: 'Sì, lo studio Fisioterapia Bruno offre terapie a domicilio, ideali per chi non può spostarsi o ha difficoltà motorie.'
+    },    {
+        id: 'q14',
+        titolo: 'Cosa prevede un piano di riabilitazione post-operatoria?',
+        testo: 'Un piano di riabilitazione post-operatoria include esercizi personalizzati, terapie strumentali e tecniche manuali per favorire il recupero della funzionalità e ridurre il rischio di complicazioni.'
+    },    {
+        id: 'q15',
+        titolo: 'Quanto dura una seduta di fisioterapia?',
+        testo: 'La durata di una seduta varia dai 30 ai 60 minuti, a seconda del trattamento e delle esigenze del paziente.'
+    },    {
+        id: 'q16',
+        titolo: 'Come si prenota una visita presso lo studio?',
+        testo: 'Puoi prenotare una visita chiamando al numero +39 347 3288921, compilando il modulo di contatto sul nostro sito o visitandoci presso lo studio a Caserta.'
+    },    {
+        id: 'q17',
+        titolo: 'È necessario presentare una prescrizione medica?',
+        testo: 'Non sempre, ma in caso di trattamenti specifici o patologie complesse è consigliabile avere una prescrizione per individuare il percorso terapeutico più adeguato.'
+    },    {
+        id: 'q18',
+        titolo: 'I trattamenti sono coperti da assicurazione sanitaria?',
+        testo: 'Molte assicurazioni sanitarie coprono i trattamenti fisioterapici, ma è consigliabile verificare con il proprio ente assicurativo.'
+    },    {
+        id: 'q19',
+        titolo: 'In cosa consiste la riabilitazione sportiva?',
+        testo: 'La riabilitazione sportiva prevede esercizi e terapie specifiche per recuperare rapidamente da infortuni e migliorare le performance sportive.'
+    },    {
+        id: 'q20',
+        titolo: 'Quali sono i tempi di recupero medi dopo un trattamento fisioterapico?',
+        testo: 'I tempi di recupero dipendono dalla natura del problema trattato, dalla gravità della condizione e dalla risposta del paziente alla terapia. Per patologie muscolari leggere, il recupero può avvenire in poche settimane, mentre per problemi più complessi, come una riabilitazione post-chirurgica, potrebbero essere necessari diversi mesi. Una valutazione personalizzata consente di fornire una stima più precisa.'
+    },
+
 ]
 
 export const Paragrafi: ParagrContent[] = [
