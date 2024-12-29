@@ -34,7 +34,7 @@ export default function CardServizi (dettagliServizi: MyProps) {
 
                   <div className='text-black flex flex-col items-center py-5 flex-wrap'>
                     <h2 className='text-center font-bold underline'>{dettagliServizi.titolo}</h2>
-                    <p className={`${isFlipped? "hidden" : "animate-pulse p-5"}`}>
+                    <p className={`${isFlipped? "hidden" : "animate-pulse"}`}>
                       Clicca per approfondire!
                     </p>
                   </div>
