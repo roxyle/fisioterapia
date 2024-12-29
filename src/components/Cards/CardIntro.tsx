@@ -14,9 +14,9 @@ type MyProps = {
 
 export default function CardIntro(testo: MyProps){
   return (
-    <div className='flex flex-col items-center justify-center p-5 text-black '>
+    <div className='bg-gradient-to-t from-white to-90% rounded-lg flex flex-col items-center justify-center p-5 text-black '>
 
-      <fieldset className='max-w-12 bg-gradient-to-t from-white to-90% rounded-lg'
+      <fieldset className='max-w-12 '
       style={{ borderWidth: 3, borderColor: '#04A4D4', borderRadius: 4 }} >
 
         <legend>
@@ -31,7 +31,7 @@ export default function CardIntro(testo: MyProps){
         </div>
 
         <div className='flex flex-row justify-end p-5'>
-          <Btn bottone={testo.bottone} goToPage={`${testo.goToPage}`} id={testo.id}/>
+          <Btn key={testo.id} bottone={testo.bottone} goToPage={`${testo.goToPage}`} id={testo.id}/>
         </div>
 
       </fieldset>
