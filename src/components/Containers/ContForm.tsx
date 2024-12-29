@@ -23,7 +23,7 @@ const ContForm = () => {
                 <label>
                     <span>* Messaggio:</span>
                     <textarea 
-                    className='min-h-48 max-h-48'
+                    className='min-h-48 max-h-48 p-3'
                     cols={60} rows={10} 
                     placeholder='Scrivi qui il tuo messaggio'></textarea>
                 </label>
