@@ -4,7 +4,8 @@ const ContForm = () => {
   return (
 <div className='bg-gradient-to-t from-white to-90% rounded-xl w-full py-3'>
     <h2 id='form' className='rounded-t-xl font-bold text-4xl title'> Compila il Form per essere ricontattato: </h2>    
-    <div className='flex flex-col items-center justify-center rounded-b-xl py-5'>
+    <div className='flex flex-col items-center justify-center
+        bg-black bg-opacity-10 rounded-b-xl py-5'>
         <div className=' text-black form-wrapper flex flex-col justify-center items-center'>
             <form>
                 <label>
