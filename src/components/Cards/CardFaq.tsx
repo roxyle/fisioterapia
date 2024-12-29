@@ -31,7 +31,7 @@ const CardFaq = (faq:MyProps) => {
         </button>
         <div className={`overflow-hidden cursor-pointer text-black ${isOpen? 'flex': 'hidden'} pt-2 
         transition-all duration-300 ease-in-out`}>
-            <div className='overflow-hidden'>
+            <div className='overflow-hidden' onClick={handleClick}>
                 {faq.testo}
             </div>
         </div>
