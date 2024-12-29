@@ -131,9 +131,11 @@ const ContForm: React.FC = () => {
               Invia
             </button>
           </form>
-        </div>
-        <div className='flex justify-center'>
-        <p> Se vuoi inviarci una mail, puoi scriverci a: brunonero74@gmail.com </p>
+
+          <div className='flex justify-center'>
+            <p> Se vuoi inviarci una mail, puoi scriverci a: brunonero74@gmail.com </p>
+          </div>
+          
         </div>
       </div>
     </div>
