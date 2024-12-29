@@ -14,7 +14,7 @@ const ContFaq = () => {
         bg-white bg-opacity-10 rounded-b-xl p-4 gap-2">
             
             {Faq.map((e)=>(
-            <CardFaq id={e.id} titolo={e.titolo} testo={e.testo}/>
+            <CardFaq key={e.id} id={e.id} titolo={e.titolo} testo={e.testo}/>
             ))
             }
         </div>

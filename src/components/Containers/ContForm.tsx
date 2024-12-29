@@ -65,16 +65,15 @@ const ContForm: React.FC = () => {
   };
 
   return (
-    <div className="rounded-xl w-full py-3">
+    <div className="flex flex-col rounded-xl w-full py-3">
       <h2 id="form" className="rounded-t-xl font-bold text-4xl title">
         Compila il Form per essere ricontattato:
       </h2>
       <div
         className="flex flex-col items-center justify-center
-        bg-black bg-opacity-10 rounded-b-xl py-5"
-      >
-        <div className="text-black form-wrapper flex flex-col justify-center items-center">
-          <form onSubmit={handleSubmit} className="space-y-4">
+        bg-black bg-opacity-10 rounded-b-xl py-5">
+        <div className="text-black form-wrapper flex flex-col justify-center items-center p-3">
+          <form onSubmit={handleSubmit} className="py-4">
             <label>
               <span>* Nome e Cognome:</span>
               <input
@@ -132,10 +131,10 @@ const ContForm: React.FC = () => {
             </button>
           </form>
 
-          <div className='flex justify-center'>
+          <div className='flex flex-col items-center justify-center p-3'>
             <p> Se vuoi inviarci una mail, puoi scriverci a: brunonero74@gmail.com </p>
           </div>
-          
+
         </div>
       </div>
     </div>

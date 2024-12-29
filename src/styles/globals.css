@@ -83,12 +83,7 @@ body, html {
   color: white;
 }
 
-.form-wrapper {
-	width: fit-content;
-	height: 500px;
-	gap: 10px;
 
-}
 
 form {
 	width: 300px;
