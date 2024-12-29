@@ -71,9 +71,9 @@ const ContForm: React.FC = () => {
       </h2>
       <div
         className="flex flex-col items-center justify-center
-        bg-black bg-opacity-10 rounded-b-xl py-5">
+        bg-black bg-opacity-10 rounded-b-xl py-3">
         <div className="text-black form-wrapper flex flex-col justify-center items-center p-3">
-          <form onSubmit={handleSubmit} className="py-4">
+          <form onSubmit={handleSubmit} className="py-2">
             <label>
               <span>* Nome e Cognome:</span>
               <input
@@ -131,7 +131,7 @@ const ContForm: React.FC = () => {
             </button>
           </form>
 
-          <div className='flex flex-col items-center justify-center p-3'>
+          <div className='flex flex-col items-center justify-center p-2'>
             <p> Se vuoi inviarci una mail, puoi scriverci a: brunonero74@gmail.com </p>
           </div>
 
