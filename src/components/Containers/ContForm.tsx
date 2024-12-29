@@ -30,6 +30,7 @@ const ContForm = () => {
                 
             </form>
         </div>
+        <p> Se vuoi inviarci una mail puoi scriverci a: brunonero74@gmail.com </p>
     </div>
 </div>
   )
