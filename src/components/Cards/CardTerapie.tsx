@@ -33,7 +33,7 @@ export default function CardTerapie (dettagliTerapia: MyProps) {
                   <div className='text-black flex flex-col items-center py-5 flex-wrap'>
                     <h2 className=' font-bold underline'>{dettagliTerapia.text}</h2>
                     <p className='text-center p-5'>{dettagliTerapia.descrizione}</p>
-                    <p className={`${isFlipped? "hidden" : "animate-pulse"}`}>
+                    <p className={`${isFlipped? "hidden" : "flex"}`}>
                       Clicca per approfondire!
                     </p>
                   </div>
