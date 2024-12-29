@@ -132,7 +132,9 @@ const ContForm: React.FC = () => {
             </button>
           </form>
         </div>
+        <div className='flex justify-center'>
         <p> Se vuoi inviarci una mail, puoi scriverci a: brunonero74@gmail.com </p>
+        </div>
       </div>
     </div>
   );
