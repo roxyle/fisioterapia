@@ -180,7 +180,7 @@ const ContForm: React.FC = () => {
           {submissionStatus && (
             <p
               className={`mt-4 text-sm ${
-                submissionStatus.includes('successo') ? 'text-green-500' : 'text-red-500'
+                submissionStatus.includes('successo') ? 'text-green-500 bg-black' : 'text-red-500 bg-black'
               }`}
             >
               {submissionStatus}
