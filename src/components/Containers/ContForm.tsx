@@ -1,4 +1,4 @@
-import React, { useState, ChangeEvent, FormEvent } from 'react';
+import React, { useState, ChangeEvent, FormEvent, FocusEvent } from 'react';
 
 type FormData = {
   name: string;
@@ -29,27 +29,41 @@ const ContForm: React.FC = () => {
     message: '',
   });
 
+  const [submissionStatus, setSubmissionStatus] = useState<string | null>(null);
+
   const validateEmail = (email: string): boolean =>
     /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
+  const validateField = (name: string, value: string): string =>
+    name === 'name'
+      ? value.trim()
+        ? ''
+        : 'Il nome è obbligatorio.'
+      : name === 'email'
+      ? !value.trim()
+        ? 'L’email è obbligatoria.'
+        : !validateEmail(value)
+        ? 'Inserisci un indirizzo email valido.'
+        : ''
+      : name === 'phone'
+      ? !value.trim()
+        ? 'Il numero di telefono è obbligatorio.'
+        : !/^\d{10}$/.test(value)
+        ? 'Inserisci un numero di telefono valido (10 cifre).'
+        : ''
+      : name === 'message'
+      ? value.trim()
+        ? ''
+        : 'Il messaggio è obbligatorio.'
+      : '';
+  
+
   const validateForm = (): boolean => {
     const newErrors: FormErrors = {
-      name: formData.name.trim()
-        ? ''
-        : 'Il nome è obbligatorio.',
-      email: !formData.email.trim()
-        ? 'L’email è obbligatoria.'
-        : !validateEmail(formData.email)
-        ? 'Inserisci un indirizzo email valido.'
-        : '',
-      phone: !formData.phone.trim()
-        ? 'Il numero di telefono è obbligatorio.'
-        : !/^\d{10}$/.test(formData.phone)
-        ? 'Inserisci un numero di telefono valido (10 cifre).'
-        : '',
-      message: formData.message.trim()
-        ? ''
-        : 'Il messaggio è obbligatorio.',
+      name: validateField('name', formData.name),
+      email: validateField('email', formData.email),
+      phone: validateField('phone', formData.phone),
+      message: validateField('message', formData.message),
     };
 
     setErrors(newErrors);
@@ -59,9 +73,37 @@ const ContForm: React.FC = () => {
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>): void =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>): void => {
+  const handleBlur = (e: FocusEvent<HTMLInputElement | HTMLTextAreaElement>): void => {
+    const { name, value } = e.target;
+    const error = validateField(name, value);
+    setErrors((prevErrors) => ({ ...prevErrors, [name]: error }));
+  };
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>): Promise<void> => {
     e.preventDefault();
-    validateForm() && alert('Form inviato con successo!');
+
+    if (validateForm()) {
+      try {
+        const response = await fetch('/api/sendEmail', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        });
+
+        if (response.ok) {
+          setSubmissionStatus('Form inviato con successo!');
+          setFormData({ name: '', email: '', phone: '', message: '' }); // Reset del form
+          setErrors({ name: '', email: '', phone: '', message: '' }); // Reset degli errori
+        } else {
+          setSubmissionStatus('Si è verificato un errore durante l’invio del form.');
+        }
+      } catch (error) {
+        console.error('Errore durante l’invio del form:', error);
+        setSubmissionStatus('Errore di connessione. Riprova più tardi.');
+      }
+    }
   };
 
   return (
@@ -81,6 +123,7 @@ const ContForm: React.FC = () => {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
+                onBlur={handleBlur}
                 placeholder="es. Mario Rossi"
                 className="border border-gray-300 p-2 rounded"
               />
@@ -93,6 +136,7 @@ const ContForm: React.FC = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
+                onBlur={handleBlur}
                 placeholder="es. mario.rossi@dominio.com"
                 className="border border-gray-300 p-2 rounded"
               />
@@ -105,6 +149,7 @@ const ContForm: React.FC = () => {
                 name="phone"
                 value={formData.phone}
                 onChange={handleChange}
+                onBlur={handleBlur}
                 placeholder="es. 3473288921"
                 className="border border-gray-300 p-2 rounded"
               />
@@ -116,6 +161,7 @@ const ContForm: React.FC = () => {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
+                onBlur={handleBlur}
                 className="min-h-48 max-h-48 p-3 border border-gray-300 rounded"
                 cols={60}
                 rows={10}
@@ -131,10 +177,19 @@ const ContForm: React.FC = () => {
             </button>
           </form>
 
-          <div className='flex flex-col items-center justify-center p-2'>
+          {submissionStatus && (
+            <p
+              className={`mt-4 text-sm ${
+                submissionStatus.includes('successo') ? 'text-green-500' : 'text-red-500'
+              }`}
+            >
+              {submissionStatus}
+            </p>
+          )}
+
+          <div className="flex flex-col items-center justify-center p-2">
             <p> Se vuoi inviarci una mail, puoi scriverci a: brunonero74@gmail.com </p>
           </div>
-
         </div>
       </div>
     </div>
