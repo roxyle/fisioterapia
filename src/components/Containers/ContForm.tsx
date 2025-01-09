@@ -117,10 +117,10 @@ const ContForm: React.FC = () => {
 
             {/* Popup Informativa Privacy */}
             {isPrivacyPopupOpen && (
-        <div className="inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 h-[200px]">
-          <div className="bg-white p-6 rounded-lg max-w-lg">
+        <div className="inset-0 flex items-center justify-center z-50 h-[200px] m-10 p-5">
+          <div className="bg-white p-6 rounded-lg text-black text-pretty shadow-md shadow-black">
             <h2 className="text-xl font-bold mb-4">Informativa Privacy</h2>
-            <p className="text-sm text-black overflow-y-scroll">
+            <p className="text-sm">
             Informativa privacy ai sensi degli artt. 13-14 del Regolamento Europeo “Privacy” (GDPR)
 I dati personali da Lei inseriti, sono trattati da Studio di fisioterapia - Via Caduti sul Lavoro 38 - 81100 Caserta (CE) - +393392476524 in qualità di Titolare, per finalità connesse alla fornitura dei servizi da Lei richiesti (a titolo esemplificativo: richiedere informazioni, registrarsi al sito per ricevere vantaggi e offerte, ottenere preventivi, effettuare pagamenti, acquistare beni e riceverli presso un domicilio da Lei indicato, effettuare una prenotazione, scambiare documenti).
 
@@ -203,21 +203,26 @@ La informiamo, infine, che potrà proporre reclamo all’Autorità Garante per l
               ></textarea>
               {errors.message && <p className="text-red-500 text-sm">{errors.message}</p>}
             </label>
-            <label className="flex items-center mt-4">
+            
+            <label className="py-3 flex flex-row items-baseline justify-center gap-2">
               <input
                 type="checkbox"
                 checked={isPrivacyChecked}
                 onChange={() => setIsPrivacyChecked(!isPrivacyChecked)}
-                className=""
+                className="w-4 h-4"
               />
-              Accetto l'
-              <button
-                type="button"
-                onClick={() => setIsPrivacyPopupOpen(true)}
-                className="text-blue-500 underline">
-                informativa sulla privacy
-              </button>
+              <span className="text-sm">
+              Accetta l'
+                <button
+                  type="button"
+                  onClick={() => setIsPrivacyPopupOpen(true)}
+                  className="text-blue-500 underline">
+                  informativa sulla privacy
+                </button> per poterci inviare il tuo messaggio
+              </span>
             </label>
+
+
             <button
               type="submit"
               disabled={!isPrivacyChecked}
