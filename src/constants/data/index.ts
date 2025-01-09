@@ -422,5 +422,15 @@ export const TerapieManuali: Terapie[] = [
         image: '/slider/legaVolley.jpeg',
         testo: 'Pallavolo'
     },
+    {
+        id:10,
+        image: '/slider/juvecaserta2.jpg',
+        testo: 'Juve Caserta'
+    },
+    {
+        id:11,
+        image: '/slider/juvecaserta3.jpg',
+        testo: 'Juve Caserta'
+    },
     
     ]
