@@ -211,14 +211,14 @@ La informiamo, infine, che potrà proporre reclamo all’Autorità Garante per l
                 onChange={() => setIsPrivacyChecked(!isPrivacyChecked)}
                 className="w-4 h-4"
               />
-              <span className="text-sm">
-              Accetta l'
+              <span className="text-sm text-pretty">
+              Spunta questa casella per dichiarare di aver letto l'
                 <button
                   type="button"
                   onClick={() => setIsPrivacyPopupOpen(true)}
                   className="text-blue-500 underline">
                   informativa sulla privacy
-                </button> per poterci inviare il tuo messaggio
+                </button> ed autorizzare lo Studio al trattamento dei tuoi dati per le finalità indicate
               </span>
             </label>
 
