@@ -13,8 +13,8 @@ const BtnMenu = () => {
         href="/"
         id="Home"
         className={`${
-          pathname === "/" ? "underline font-bold" : ""
-        } hover:underline hover:font-bold underline-offset-4`}
+          pathname === "/" ? "[text-decoration:underline_overline] underline-offset-4 font-bold" : ""
+        } hover:underline-offset-4 hover:[text-decoration:underline_overline]`}
       >
         Home
       </Link>
@@ -22,8 +22,8 @@ const BtnMenu = () => {
         href="/Servizi"
         id="Servizi"
         className={`${
-          pathname === "/Servizi" ? "underline font-bold" : ""
-        } hover:underline hover:font-bold underline-offset-4`}
+          pathname === "/Servizi" ? "[text-decoration:underline_overline] underline-offset-4 font-bold" : ""
+        } hover:underline-offset-4 hover:[text-decoration:underline_overline]`}
       >
         Servizi
       </Link>
@@ -31,8 +31,8 @@ const BtnMenu = () => {
         href="/About"
         id="About"
         className={`${
-          pathname === "/About" ? "underline font-bold" : ""
-        } hover:underline hover:font-bold underline-offset-4`}
+          pathname === "/About" ? "[text-decoration:underline_overline] underline-offset-4 font-bold" : ""
+        } hover:underline-offset-4 hover:[text-decoration:underline_overline]`}
       >
         Chi Siamo
       </Link>
@@ -40,8 +40,8 @@ const BtnMenu = () => {
         href="/Contatti"
         id="Contatti"
         className={`${
-          pathname === "/Contatti" ? "underline font-bold" : ""
-        } hover:underline hover:font-bold underline-offset-4`}
+          pathname === "/Contatti" ? "[text-decoration:underline_overline] underline-offset-4 font-bold" : ""
+        } hover:underline-offset-4 hover:[text-decoration:underline_overline]`}
       >
         Contatti
       </Link>
