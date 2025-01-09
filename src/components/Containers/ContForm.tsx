@@ -109,10 +109,42 @@ const ContForm: React.FC = () => {
   };
 
   return (
+    
     <div className="flex flex-col rounded-xl w-full py-3">
       <h2 id="form" className="rounded-t-xl font-bold text-4xl title">
         Compila il Form per essere ricontattato:
       </h2>
+
+            {/* Popup Informativa Privacy */}
+            {isPrivacyPopupOpen && (
+        <div className="inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 h-[200px]">
+          <div className="bg-white p-6 rounded-lg max-w-lg">
+            <h2 className="text-xl font-bold mb-4">Informativa Privacy</h2>
+            <p className="text-sm text-black overflow-y-scroll">
+            Informativa privacy ai sensi degli artt. 13-14 del Regolamento Europeo “Privacy” (GDPR)
+I dati personali da Lei inseriti, sono trattati da Studio di fisioterapia - Via Caduti sul Lavoro 38 - 81100 Caserta (CE) - +393392476524 in qualità di Titolare, per finalità connesse alla fornitura dei servizi da Lei richiesti (a titolo esemplificativo: richiedere informazioni, registrarsi al sito per ricevere vantaggi e offerte, ottenere preventivi, effettuare pagamenti, acquistare beni e riceverli presso un domicilio da Lei indicato, effettuare una prenotazione, scambiare documenti).
+
+Inoltre, i dati da Lei forniti, potrebbero essere trattati, solo su Suo esplicito consenso, al fine di inviarLe comunicazioni di natura commerciale via email o sms relativamente ai servizi offerti dal Titolare.
+
+Nel primo caso, la base giuridica del trattamento è l’esecuzione di un accordo; nel secondo caso è il consenso. I trattamenti avverranno con modalità elettroniche e verranno messi a disposizione delle terze parti (Responsabili Esterni del trattamento) nell’ambito dell’Unione Europea o in Paesi extra UE, regolarmente contrattualizzate e che offrono adeguate garanzie di sicurezza, necessarie per la fornitura di servizi essenziali al soddisfacimento delle Sue esigenze. Tali Responsabili Esterni, il cui elenco è disponibile dietro richiesta, possono appartenere a categorie di soggetti che supportano il Titolare nell’erogazione dei servizi offerti tramite il presente sito (quali, a titolo esemplificativo: sviluppatori software e gestori di siti web, spedizionieri).
+
+Inoltre saranno trattati per finalità di analisi statistiche e di marketing diretto, in maniera anonima, come meglio specificato dalla cookie policy. Trattasi pertanto di trattamenti legittimi e necessari ad assicurarLe un servizio che risponda alle Sue aspettative. I dati saranno conservati per tutta la durata dei servizi da Lei richiesti o per periodi superiori solo se previsti dalle norme. In ogni momento Lei potrà esercitare i diritti previsti agli articoli 15-22 del GDPR contattando il titolare del presente sito.
+
+Per modificare o cancellare i soli dati che sono archiviati sui sistemi che erogano il presente sito, cliccare qui. Le informazioni da lei inserite nel form (compreso il suo indirizzo email) potranno essere comunicate a una società terza che agirà in qualità di Responsabile esterno e che supporta il Titolare nella gestione del sito e nell’evasione della sua richiesta.
+
+Nel caso di richiesta di cancellazione dei suoi dati, La informiamo che potrebbe non essere più possibile continuare a fornirLe il servizio richiestoci.
+
+La informiamo, infine, che potrà proporre reclamo all’Autorità Garante per la Protezione dei Dati, qualora ritenesse siano stati violati i suoi diritti.
+            </p>
+            <button
+              onClick={() => setIsPrivacyPopupOpen(false)}
+              className="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+              Chiudi
+            </button>
+          </div>
+        </div>
+      )}
+
       <div
         className="flex flex-col items-center justify-center
         bg-black bg-opacity-10 rounded-b-xl py-3">
@@ -176,7 +208,7 @@ const ContForm: React.FC = () => {
                 type="checkbox"
                 checked={isPrivacyChecked}
                 onChange={() => setIsPrivacyChecked(!isPrivacyChecked)}
-                className="mr-2"
+                className=""
               />
               Accetto l'
               <button
@@ -212,23 +244,6 @@ const ContForm: React.FC = () => {
           </div>
         </div>
       </div>
-      {/* Popup Informativa Privacy */}
-      {isPrivacyPopupOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white p-6 rounded-lg max-w-lg">
-            <h2 className="text-xl font-bold mb-4">Informativa Privacy</h2>
-            <p className="text-sm">
-              {/* Inserisci qui il testo della privacy */}
-              Informativa privacy ai sensi degli artt. 13-14 del Regolamento Europeo “Privacy” (GDPR)...
-            </p>
-            <button
-              onClick={() => setIsPrivacyPopupOpen(false)}
-              className="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
-              Chiudi
-            </button>
-          </div>
-        </div>
-      )}
     </div>
   );
 };
