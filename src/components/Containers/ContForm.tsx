@@ -30,6 +30,8 @@ const ContForm: React.FC = () => {
   });
 
   const [submissionStatus, setSubmissionStatus] = useState<string | null>(null);
+  const [isPrivacyChecked, setIsPrivacyChecked] = useState(false); // Stato per la checkbox
+  const [isPrivacyPopupOpen, setIsPrivacyPopupOpen] = useState(false); // Stato per il popup
 
   const validateEmail = (email: string): boolean =>
     /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
@@ -56,7 +58,6 @@ const ContForm: React.FC = () => {
         ? ''
         : 'Il messaggio è obbligatorio.'
       : '';
-  
 
   const validateForm = (): boolean => {
     const newErrors: FormErrors = {
@@ -82,7 +83,7 @@ const ContForm: React.FC = () => {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>): Promise<void> => {
     e.preventDefault();
 
-    if (validateForm()) {
+    if (validateForm() && isPrivacyChecked) {
       try {
         const response = await fetch('/api/sendEmail', {
           method: 'POST',
@@ -96,6 +97,7 @@ const ContForm: React.FC = () => {
           setSubmissionStatus('Form inviato con successo!');
           setFormData({ name: '', email: '', phone: '', message: '' }); // Reset del form
           setErrors({ name: '', email: '', phone: '', message: '' }); // Reset degli errori
+          setIsPrivacyChecked(false); // Reset checkbox
         } else {
           setSubmissionStatus('Si è verificato un errore durante l’invio del form.');
         }
@@ -169,9 +171,27 @@ const ContForm: React.FC = () => {
               ></textarea>
               {errors.message && <p className="text-red-500 text-sm">{errors.message}</p>}
             </label>
+            <label className="flex items-center mt-4">
+              <input
+                type="checkbox"
+                checked={isPrivacyChecked}
+                onChange={() => setIsPrivacyChecked(!isPrivacyChecked)}
+                className="mr-2"
+              />
+              Accetto l'
+              <button
+                type="button"
+                onClick={() => setIsPrivacyPopupOpen(true)}
+                className="text-blue-500 underline">
+                informativa sulla privacy
+              </button>
+            </label>
             <button
               type="submit"
-              className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+              disabled={!isPrivacyChecked}
+              className={`bg-blue-500 text-white py-2 px-4 rounded ${
+                !isPrivacyChecked && 'opacity-50 cursor-not-allowed'
+              } hover:bg-blue-600`}
             >
               Invia
             </button>
@@ -192,6 +212,23 @@ const ContForm: React.FC = () => {
           </div>
         </div>
       </div>
+      {/* Popup Informativa Privacy */}
+      {isPrivacyPopupOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white p-6 rounded-lg max-w-lg">
+            <h2 className="text-xl font-bold mb-4">Informativa Privacy</h2>
+            <p className="text-sm">
+              {/* Inserisci qui il testo della privacy */}
+              Informativa privacy ai sensi degli artt. 13-14 del Regolamento Europeo “Privacy” (GDPR)...
+            </p>
+            <button
+              onClick={() => setIsPrivacyPopupOpen(false)}
+              className="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+              Chiudi
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
