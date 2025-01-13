@@ -369,6 +369,11 @@ export const TerapieManuali: Terapie[] = [
             nome: "Fabio Viscardi",
             foto: "/Viscardi.jpeg"
         },
+        {
+            id: "Luigi",
+            nome: "Luigi Carandente",
+            foto: "/CarandenteL.jpg"
+        },
     ]
 
     export const EspProf: ImgEspProf[] = [
