@@ -33,7 +33,7 @@ export const cardIntroTxt: TextContent[] = [
         id: 'testo3',
         alt: 'icona team',
         immagine: '/equipe.svg',
-        text: 'Guidato da Beniamino Bruno, lo studio comprende anche i veterani della fisioterapia Carandente Giovanni e Fabio Viscardi, oltre alla preparatissima fisioterapista Tonia Piccolo. ',
+        text: 'Guidato da Beniamino Bruno, lo studio comprende anche i veterani della fisioterapia Carandente Giovanni e Fabio Viscardi, oltre alla preparatissima fisioterapista Antonia Piccolo. ',
         bottone: 'Scopri il Team ►',
         goToPage: '/About'
 
@@ -355,9 +355,9 @@ export const TerapieManuali: Terapie[] = [
             foto: "/Bruno.jpeg"
         },
         {
-            id: "Tonia",
-            nome: "Tonia Piccolo",
-            foto: "/Piccolo.jpeg"
+            id: "Antonia",
+            nome: "Antonia Piccolo",
+            foto: "/Antonia.jpg"
         },
         {
             id: "Giovanni",
@@ -373,6 +373,21 @@ export const TerapieManuali: Terapie[] = [
             id: "Luigi",
             nome: "Luigi Carandente",
             foto: "/CarandenteL.jpg"
+        },
+        {
+            id: "Alfredo",
+            nome: "Alfredo Bruno",
+            foto: "/Alfredo.jpg"
+        },
+        {
+            id: "Francesca",
+            nome: "Francesca D'Agostino",
+            foto: "/Francesca.jpg"
+        },
+        {
+            id: "Federica",
+            nome: "Federica Tambelli",
+            foto: "/Federica.jpg"
         },
     ]
 
