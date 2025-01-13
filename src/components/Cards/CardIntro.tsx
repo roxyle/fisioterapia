@@ -24,7 +24,7 @@ export default function CardIntro(testo: MyProps){
           src={testo.immagine} alt={testo.alt} width={30} height={60}/>
         </legend>
 
-        <div className='p-5'>
+        <div className='p-5 min-h-72'>
           <p className='text-black text-balance text-center p-5'>
             {testo.text}
           </p>
