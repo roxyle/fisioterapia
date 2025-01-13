@@ -33,7 +33,7 @@ export const cardIntroTxt: TextContent[] = [
         id: 'testo3',
         alt: 'icona team',
         immagine: '/equipe.svg',
-        text: 'Guidato da Beniamino Bruno, lo studio comprende anche i veterani della fisioterapia Carandente Giovanni e Fabio Viscardi, oltre alla preparatissima fisioterapista Antonia Piccolo. ',
+        text: "Guidato da Beniamino Bruno, lo studio vanta anche i veterani della fisioterapia Giovanni Carandente, Fabio Viscardi e Antonia Piccolo, oltre ai preparatissimi fisioterapisti Francesca D'Agostino, Federica Tambelli e Alfredo Bruno.",
         bottone: 'Scopri il Team ►',
         goToPage: '/About'
 
@@ -42,7 +42,7 @@ export const cardIntroTxt: TextContent[] = [
         id: 'testo4',
         alt: "icona equip",
         immagine: '/equipe.svg',
-        text: "Con quattro fisioterapisti altamente qualificati ed esperti, lo Studio di Fisioterapia Caserta (CE) Bruno è una destinazione imbattibile per chi ha bisogno di cure terapeutiche.",
+        text: "Con sette fisioterapisti altamente qualificati ed esperti, lo Studio di Fisioterapia Caserta (CE) Bruno è una destinazione imbattibile per chi ha bisogno di cure terapeutiche.",
         bottone: 'Contattaci ►',
         goToPage: '/Contatti'
     },
@@ -53,7 +53,7 @@ export const cardCTATxt: TextContent[] = [
         id: 'testo1',
         alt: "chiamaci",
         immagine: '/chiamaci.svg',
-        text: "Il tuo medico ti ha prescritto un piano terapia? Contattaci per fissare un consulto e scoprire i trattamenti più adatti a te!",
+        text: "Il tuo medico ti ha prescritto un piano terapia? Oppure desideri fare dei massaggi? Qualunque sia la tua necessità, Contattaci per fissare un consulto e scoprire i trattamenti più adatti a te!",
         bottone: 'Chiama subito! ►',
         goToPage: 'tel:3473288921',
     },
@@ -61,7 +61,7 @@ export const cardCTATxt: TextContent[] = [
         id: 'testo2',
         alt: 'vai al form di contatto',
         immagine: '/scrivici.svg',
-        text: "Non puoi chiamarci in questo momento? Nessun problema, compila il modulo di contatto e ti ricontattiamo noi appena possibile!",
+        text: "Non puoi chiamarci in questo momento? Nessun problema, compila il modulo di contatto specificando telefono e mail e ti ricontattiamo noi appena possibile!",
         bottone: 'Scrivici! ►',
         goToPage: '/Contatti#form'
 
@@ -70,7 +70,7 @@ export const cardCTATxt: TextContent[] = [
         id: 'testo3',
         alt: 'vai alla mappa',
         immagine: '/trovaci.svg',
-        text: 'Vuoi sapere dove si trova il nostro Studio e come arrivarci? Consulta la mappa e vieni a trovarci, saremo lieti di accoglierti!',
+        text: 'Vuoi sapere dove ci troviamo per vedere di persona il nostro Studio? Clicca qui sotto per scoprire la mappa, e vieni a trovarci in orario di apertura, saremo lieti di accoglierti!',
         bottone: 'Vieni a trovarci! ►',
         goToPage: '/Contatti#mappa'
 
@@ -79,7 +79,7 @@ export const cardCTATxt: TextContent[] = [
         id: 'testo4',
         alt: "vai alle faq",
         immagine: '/domande.svg',
-        text: "Se hai ancora qualche dubbio consulta la nostra sezione F.A.Q per trovare risposte alle domande più frequenti sui nostri servizi e trattamenti!",
+        text: "Se hai ancora qualche dubbio consulta la nostra sezione F.A.Q per trovare risposte alle domande che ci vengono poste più di frequente riguardo i nostri servizi e trattamenti!",
         bottone: 'Leggi le F.A.Q ►',
         goToPage: '/Contatti#faq'
     },
