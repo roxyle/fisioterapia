@@ -1,5 +1,6 @@
 'use client'
 import { ParagrContent } from '@/constants/types'
+import { Paragrafi } from '@/constants/data'
 import React from 'react'
 import { usePathname } from 'next/navigation'
 
