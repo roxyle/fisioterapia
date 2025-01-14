@@ -352,42 +352,42 @@ export const TerapieManuali: Terapie[] = [
         {
             id: "Beniamino",
             nome: "Beniamino Bruno",
-            foto: "/Bruno.jpeg"
+            foto: "/staff/Bruno.jpeg"
         },
         {
             id: "Antonia",
             nome: "Antonia Piccolo",
-            foto: "/Antonia.jpg"
+            foto: "/staff/Antonia.jpeg"
         },
         {
             id: "Giovanni",
             nome: "Giovanni Carandente",
-            foto: "/Carandente.jpeg"
+            foto: "/staff/Carandente.jpeg"
         },
         {
             id: "Fabio",
             nome: "Fabio Viscardi",
-            foto: "/Viscardi.jpeg"
+            foto: "/staff/Viscardi.jpeg"
         },
         {
             id: "Luigi",
             nome: "Luigi Carandente",
-            foto: "/CarandenteL.jpg"
+            foto: "/staff/CarandenteL.jpg"
         },
         {
             id: "Alfredo",
             nome: "Alfredo Bruno",
-            foto: "/Alfredo.jpg"
+            foto: "/staff/Alfredo.jpeg"
         },
         {
             id: "Francesca",
             nome: "Francesca D'Agostino",
-            foto: "/Francesca.jpg"
+            foto: "/staff/Francesca.jpeg"
         },
         {
             id: "Federica",
             nome: "Federica Tambelli",
-            foto: "/Federica.jpg"
+            foto: "/staff/Federica.jpeg"
         },
     ]
 
