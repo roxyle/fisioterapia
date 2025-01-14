@@ -6,7 +6,7 @@ import { cardIntroTxt } from '@/constants/data'
 
 export default function ContPresentazione(){
   return (
-    <div className='bg-gradient-to-t from-white to-90% rounded-xl p-5 w-full' >
+    <div className='bg-gradient-to-t from-white to-90% rounded-xl w-full' >
 
     <h1 className="title text-center text-4xl font-bold rounded-t-xl">
             Farti tornare in forma è la nostra missione
