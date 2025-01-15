@@ -14,7 +14,7 @@ const CardStaff = (dettaglioStaff: MyProps) => {
   return (
     <div className='flex flex-col p-5 inset-0 rounded-xl '>
 
-        <Image className='rounded-t-xl object-cover
+        <Image className='rounded-t-xl object-cover object-top
         h-96 lg:h-[500px] w-80 lg:w-[350px]
         brightness-[.85] hover:filter-none
         border-t-2 border-x-2 border-sky-500
