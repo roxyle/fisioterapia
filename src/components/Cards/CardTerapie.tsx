@@ -25,12 +25,12 @@ export default function CardTerapie (dettagliTerapia: MyProps) {
           <div className={`cursor-pointer card ${isFlipped? "flipped" : ""}`}>
             <div className='bg-white card-face card-front' onClick={handleImageChange} >
 
-                <Image className=''
+                <Image className='object-cover w-[500px] h-[250px]'
                   key={dettagliTerapia.id}
                   src={dettagliTerapia.immagine} alt={dettagliTerapia.alt} width={500} height={500}
                   />
 
-                  <div className='text-black flex flex-col items-center py-5 flex-wrap'>
+                  <div className='text-black flex flex-col justify-between items-center py-5 flex-wrap'>
                     <h2 className=' font-bold underline'>{dettagliTerapia.text}</h2>
                     <p className='text-center p-5'>{dettagliTerapia.descrizione}</p>
                     <p className={`${isFlipped? "hidden" : "flex"}`}>

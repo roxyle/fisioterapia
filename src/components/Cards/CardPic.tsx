@@ -12,7 +12,7 @@ type MyProps = {
 const CardPic = (foto: MyProps) => {
 
   const [key, setKey] = useState(0)
-  const [src, setSrc] = useState('/Bruno.jpeg')
+  const [src, setSrc] = useState('/staff/Beniamino.jpg')
   const [txt, setTxt] = useState('not found')
 
 
