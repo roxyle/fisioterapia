@@ -42,7 +42,7 @@ export const cardIntroTxt: TextContent[] = [
         id: 'testo4',
         alt: "icona equip",
         immagine: '/equipe.svg',
-        text: "Con sette fisioterapisti altamente qualificati ed esperti, lo Studio di Fisioterapia Caserta (CE) Bruno è una destinazione imbattibile per chi ha bisogno di cure terapeutiche.",
+        text: "Con sette fisioterapisti ed un chirurgo ortopedico altamente qualificati ed esperti, lo Studio di Fisioterapia Caserta (CE) Bruno è una destinazione imbattibile per chi ha bisogno di cure terapeutiche.",
         bottone: 'Contattaci ►',
         goToPage: '/Contatti'
     },
@@ -252,7 +252,22 @@ export const TerapieStrumentali: Terapie[] = [
         nomeTerapia: "Ultrasuoni",
         },
 ]
-
+export const TerapieOrtopediche: Terapie[] = [
+    {
+        id: "to1",
+        tipologia: "Terapia Ortopedica",
+        nomeTerapia: "Visite Ortopediche",
+    },
+    {
+        id: "to2",
+        tipologia: "Terapia Ortopedica",
+        nomeTerapia: "Infiltrazione acido ialuronico",
+    },    {
+        id: "to3",
+        tipologia: "Terapia Ortopedica",
+        nomeTerapia: "Infiltrazione articolare",
+    },
+]
 export const TerapieManuali: Terapie[] = [
     {
         id: "tm1",
@@ -306,6 +321,13 @@ export const TerapieManuali: Terapie[] = [
             immagine: "/Fisio1921.jpg",
             elenco: TerapieManuali,
             descrizione: "L'esperto staff dello studio Fisioterapia Bruno a Caserta esegue terapie manuali per la rieducazione posturale sia nei bambini che negli adulti. Inoltre si eseguono massaggi linfodrenanti, rilassanti e decontratturanti."
+        },
+        {
+            id: "tmo",
+            tipologia: "Terapie Ortopediche",
+            immagine: "/chirurgia/3.jpg",
+            elenco: TerapieOrtopediche,
+            descrizione: "Lo studio Fisioterapia Bruno a Caserta offre terapie ortopediche avanzate per la riabilitazione post-operatoria e il trattamento di patologie muscolo-scheletriche. Prenota una visita col nostro Medico Chirurgo Ortopedico!"
         }
     ]
 
@@ -346,13 +368,31 @@ export const TerapieManuali: Terapie[] = [
             testo: "Tra le terapie proposte presso il centro Fisioterapia Bruno a Caserta, è possibile richiedere il metodo Mézières, chiamato anche Rieducazione Posturale: tramite l'accorciamento e la retrazione delle catene muscolari, con il metodo Mézières è possibile risolvere disfmorfismi come la scoliosi, l'iperlordosi e la cifosi agendo tramite l'allentamento delle tensioni muscolari. Altre terapie manuali eseguite presso lo studio sono la Rieducazione Posturale Globale, volta all'eliminazione delle disfunzioni che sono alla base della patologia, il metodo Kabata, la massoterapia e i massaggi, come quello linfodrenante, quello decontratturante e quello rilassante.",
             immagine: "/Fisiok5.png"
         },
+        {
+            id: "p7",
+            titolo: "Visite Ortopediche Specialistiche",
+            testo: "Presso lo studio Fisioterapia Bruno a Caserta, offriamo visite ortopediche specialistiche per diagnosticare e trattare patologie dell'apparato muscolo-scheletrico. Il nostro esperto Medico Chirurgo Ortopedico valuterà con precisione condizioni come artrosi, lesioni sportive e disturbi posturali, proponendo percorsi terapeutici personalizzati per il recupero ottimale della funzionalità.",
+            immagine: "/chirurgia/visitaorto.jpg"
+        },
+        {
+            id: "p8",
+            titolo: "Infiltrazioni di Acido Ialuronico",
+            testo: "Lo studio Fisioterapia Bruno a Caserta esegue infiltrazioni di acido ialuronico per il trattamento di articolazioni affette da artrosi o infiammazioni. Questa terapia mira a ripristinare la lubrificazione naturale dell'articolazione, riducendo il dolore e migliorando la mobilità. Le infiltrazioni sono effettuate da personale medico qualificato, garantendo sicurezza ed efficacia nel trattamento.",
+            immagine: "/chirurgia/acidoialuronico.jpg"
+        },
+        {
+            id: "p9",
+            titolo: "Infiltrazioni Articolari",
+            testo: "Presso Fisioterapia Bruno a Caserta, offriamo infiltrazioni articolari per alleviare il dolore e l'infiammazione causati da diverse patologie articolari. Utilizziamo tecniche avanzate per somministrare farmaci direttamente nell'articolazione interessata, assicurando un trattamento mirato ed efficace. Le sedute sono condotte da specialisti in un ambiente sicuro e professionale.",
+            immagine: "/chirurgia/infiltrazioni.jpg"
+        }
     ]
 
     export const OurStaff: Staff[] = [
         {
             id: "Beniamino",
             nome: "Beniamino Bruno",
-            foto: "/staff/Bruno.jpeg"
+            foto: "/staff/Beniamino.jpg"
         },
         {
             id: "Antonia",
@@ -393,9 +433,9 @@ export const TerapieManuali: Terapie[] = [
 
     export const EspProf: ImgEspProf[] = [
     {
-    id: 0,
-    image: '/slider/goldenTulip.jpeg',
-    testo: 'Golden Tulip'
+        id: 0,
+        image: '/slider/goldenTulip.jpeg',
+        testo: 'Golden Tulip'
     },
     {
         id: 1,
@@ -451,6 +491,31 @@ export const TerapieManuali: Terapie[] = [
         id:11,
         image: '/slider/juvecaserta3.jpg',
         testo: 'Juve Caserta'
+    },
+    {
+        id:12,
+        image: '/slider/Carandente.jpeg',
+        testo: 'Fisioterapista Sportivo'
+    },
+    {
+        id:13,
+        image: '/slider/sponsors.JPG',
+        testo: 'Fisioterapia Sport'
+    },
+    {
+        id:14,
+        image: '/slider/trofeo.JPG',
+        testo: 'festeggiamenti sportivi'
+    },
+    {
+        id:15,
+        image: '/slider/juvecaserta1.jpg',
+        testo: 'juve caserta'
+    },
+    {
+        id:16,
+        image: '/slider/terapiamanuale.JPG',
+        testo: 'terapie manuali e strumentali'
     },
     
     ]

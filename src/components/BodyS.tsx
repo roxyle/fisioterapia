@@ -1,7 +1,8 @@
 import ContCardServizi from './Containers/ContCardServizi'
-import { DescServizi, Paragrafi, ServiziOfferti, TerapieStrumentali } from "@/constants/data";
+import { DescServizi, Paragrafi, TerapieOrtopediche, TerapieStrumentali } from "@/constants/data";
 import ContPlainTxt from './Containers/ContPlainTxt';
 import ContTxtImage from './Containers/ContTxtImage';
+import ContTxtImage2 from './Containers/ContTxtImage2';
 
 
 const BodyS = () => {
