@@ -43,7 +43,7 @@ const ContForm: React.FC = () => {
         : 'Il nome è obbligatorio.'
       : name === 'email'
       ? !value.trim()
-        ? 'L’email è obbligatoria.'
+        ? "L'email è obbligatoria."
         : !validateEmail(value)
         ? 'Inserisci un indirizzo email valido.'
         : ''
@@ -99,10 +99,10 @@ const ContForm: React.FC = () => {
           setErrors({ name: '', email: '', phone: '', message: '' }); // Reset degli errori
           setIsPrivacyChecked(false); // Reset checkbox
         } else {
-          setSubmissionStatus('Si è verificato un errore durante l’invio del form.');
+          setSubmissionStatus("Si è verificato un errore durante l'invio del form.");
         }
       } catch (error) {
-        console.error('Errore durante l’invio del form:', error);
+        console.error("Errore durante l'invio del form:", error);
         setSubmissionStatus('Errore di connessione. Riprova più tardi.');
       }
     }
@@ -126,7 +126,7 @@ I dati personali da Lei inseriti, sono trattati da Studio di fisioterapia - Via 
 
 Inoltre, i dati da Lei forniti, potrebbero essere trattati, solo su Suo esplicito consenso, al fine di inviarLe comunicazioni di natura commerciale via email o sms relativamente ai servizi offerti dal Titolare.
 
-Nel primo caso, la base giuridica del trattamento è l’esecuzione di un accordo; nel secondo caso è il consenso. I trattamenti avverranno con modalità elettroniche e verranno messi a disposizione delle terze parti (Responsabili Esterni del trattamento) nell’ambito dell’Unione Europea o in Paesi extra UE, regolarmente contrattualizzate e che offrono adeguate garanzie di sicurezza, necessarie per la fornitura di servizi essenziali al soddisfacimento delle Sue esigenze. Tali Responsabili Esterni, il cui elenco è disponibile dietro richiesta, possono appartenere a categorie di soggetti che supportano il Titolare nell’erogazione dei servizi offerti tramite il presente sito (quali, a titolo esemplificativo: sviluppatori software e gestori di siti web, spedizionieri).
+Nel primo caso, la base giuridica del trattamento è l'esecuzione di un accordo; nel secondo caso è il consenso. I trattamenti avverranno con modalità elettroniche e verranno messi a disposizione delle terze parti (Responsabili Esterni del trattamento) nell’ambito dell’Unione Europea o in Paesi extra UE, regolarmente contrattualizzate e che offrono adeguate garanzie di sicurezza, necessarie per la fornitura di servizi essenziali al soddisfacimento delle Sue esigenze. Tali Responsabili Esterni, il cui elenco è disponibile dietro richiesta, possono appartenere a categorie di soggetti che supportano il Titolare nell’erogazione dei servizi offerti tramite il presente sito (quali, a titolo esemplificativo: sviluppatori software e gestori di siti web, spedizionieri).
 
 Inoltre saranno trattati per finalità di analisi statistiche e di marketing diretto, in maniera anonima, come meglio specificato dalla cookie policy. Trattasi pertanto di trattamenti legittimi e necessari ad assicurarLe un servizio che risponda alle Sue aspettative. I dati saranno conservati per tutta la durata dei servizi da Lei richiesti o per periodi superiori solo se previsti dalle norme. In ogni momento Lei potrà esercitare i diritti previsti agli articoli 15-22 del GDPR contattando il titolare del presente sito.
 
@@ -134,10 +134,9 @@ Per modificare o cancellare i soli dati che sono archiviati sui sistemi che erog
 
 Nel caso di richiesta di cancellazione dei suoi dati, La informiamo che potrebbe non essere più possibile continuare a fornirLe il servizio richiestoci.
 
-La informiamo, infine, che potrà proporre reclamo all’Autorità Garante per la Protezione dei Dati, qualora ritenesse siano stati violati i suoi diritti.
+La informiamo, infine, che potrà proporre reclamo all'Autorità Garante per la Protezione dei Dati, qualora ritenesse siano stati violati i suoi diritti.
             </p>
-            <button
-              onClick={() => setIsPrivacyPopupOpen(false)}
+            <button onClick={() => setIsPrivacyPopupOpen(false)}
               className="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
               Chiudi
             </button>
@@ -161,7 +160,12 @@ La informiamo, infine, che potrà proporre reclamo all’Autorità Garante per l
                 placeholder="es. Mario Rossi"
                 className="border border-gray-300 p-2 rounded"
               />
-              {errors.name && <p className="text-red-500 text-sm">{errors.name}</p>}
+
+              {errors.name && <p className="text-red-500 text-sm">
+                                {errors.name}
+                              </p>
+              }
+
             </label>
             <label>
               <span>* E-mail:</span>
@@ -174,7 +178,12 @@ La informiamo, infine, che potrà proporre reclamo all’Autorità Garante per l
                 placeholder="es. mario.rossi@dominio.com"
                 className="border border-gray-300 p-2 rounded"
               />
-              {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
+
+              {errors.email && <p className="text-red-500 text-sm">
+                                  {errors.email}
+                                </p>
+              }
+
             </label>
             <label>
               <span>* Telefono:</span>
@@ -191,8 +200,7 @@ La informiamo, infine, che potrà proporre reclamo all’Autorità Garante per l
             </label>
             <label>
               <span>* Messaggio:</span>
-              <textarea
-                name="message"
+              <textarea name="message"
                 value={formData.message}
                 onChange={handleChange}
                 onBlur={handleBlur}
@@ -201,24 +209,30 @@ La informiamo, infine, che potrà proporre reclamo all’Autorità Garante per l
                 rows={10}
                 placeholder="Scrivi qui il tuo messaggio"
               ></textarea>
-              {errors.message && <p className="text-red-500 text-sm">{errors.message}</p>}
+
+              {errors.message && <p className="text-red-500 text-sm">
+                                    {errors.message}
+                                  </p>
+              }
+
             </label>
             
             <label className="py-3 flex flex-row items-baseline justify-center gap-2">
-              <input
-                type="checkbox"
+              <input type="checkbox"
                 checked={isPrivacyChecked}
                 onChange={() => setIsPrivacyChecked(!isPrivacyChecked)}
                 className="w-4 h-4"
               />
               <span className="text-sm text-pretty">
               Spunta questa casella per dichiarare di aver letto l'
-                <button
-                  type="button"
+
+                <button type="button"
                   onClick={() => setIsPrivacyPopupOpen(true)}
                   className="text-blue-500 underline">
                   informativa sulla privacy
-                </button> ed autorizzare lo Studio al trattamento dei tuoi dati per le finalità indicate
+                </button> 
+                
+                ed autorizzare lo Studio al trattamento dei tuoi dati per le finalità indicate
               </span>
             </label>
 
@@ -226,9 +240,8 @@ La informiamo, infine, che potrà proporre reclamo all’Autorità Garante per l
             <button
               type="submit"
               disabled={!isPrivacyChecked}
-              className={`bg-blue-500 text-white py-2 px-4 rounded ${
-                !isPrivacyChecked && 'opacity-50 cursor-not-allowed'
-              } hover:bg-blue-600`}
+              className={`bg-blue-500 text-white py-2 px-4 rounded 
+                ${ !isPrivacyChecked && 'opacity-50 cursor-not-allowed'} hover:bg-blue-600`}
             >
               Invia
             </button>
@@ -245,7 +258,9 @@ La informiamo, infine, che potrà proporre reclamo all’Autorità Garante per l
           )}
 
           <div className="flex flex-col items-center justify-center p-2">
-            <p> Se vuoi inviarci una mail, puoi scriverci a: brunonero74@gmail.com </p>
+            <p> Se vuoi inviarci una mail, puoi scriverci a: brunonero74@gmail.com 
+
+            </p>
           </div>
         </div>
       </div>
