@@ -31,7 +31,7 @@ const CardPic = (foto: MyProps) => {
     <div className='px-2 pt-5 rounded-xl '>
 
         <Image className='rounded-xl object-cover object-top
-        h-[500px] lg:h-[650px] w-[800px]
+        h-[500px] w-[800px]
         border-2 border-sky-500
         '
         key={key} src={src} alt={txt} width={420} height={550}/>
