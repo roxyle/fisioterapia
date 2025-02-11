@@ -14,9 +14,17 @@ const BtnTel = () => {
       setIsWhite(!isWhite)
     },500)
 
+    const handleClick = () => {
+      if (isClicked) {window.location.href = `tel:${ourContact.telephone}`;
+      } setIsClicked(!isClicked);
+    };
+
   return (
     <div className='flex flex-row items-center text-white p-5'>
-        <button onClick={() => {setIsClicked(!isClicked)}}
+        <button onClick={
+          // () => {BtnTxtContent==ourContact.telephone? window.location.href = `tel:${ourContact.telephone}` : setIsClicked(!isClicked)}
+          handleClick
+        }
         className='flex flex-row items-center justify-center
         outline outline-white rounded-sm
         py-2 px-2 w-64
