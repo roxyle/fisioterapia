@@ -391,42 +391,42 @@ export const TerapieManuali: Terapie[] = [
     export const OurStaff: Staff[] = [
         {
             id: "Beniamino",
-            nome: "Beniamino Bruno",
+            nome: "Dr. Beniamino Bruno",
             foto: "/staff/Beniamino.jpg"
         },
         {
             id: "Antonia",
-            nome: "Antonia Piccolo",
+            nome: "Dr.ssa Antonia Piccolo",
             foto: "/staff/Antonia.jpeg"
         },
         {
             id: "Giovanni",
-            nome: "Giovanni Carandente",
+            nome: "Dr. Giovanni Carandente",
             foto: "/staff/Carandente.jpeg"
         },
         {
             id: "Fabio",
-            nome: "Fabio Viscardi",
+            nome: "Dr. Fabio Viscardi",
             foto: "/staff/Viscardi.jpeg"
         },
         {
             id: "Luigi",
-            nome: "Luigi Carandente",
+            nome: "Dr. Luigi Carandente",
             foto: "/staff/CarandenteL.jpg"
         },
         {
             id: "Alfredo",
-            nome: "Alfredo Bruno",
+            nome: "Dr. Alfredo Bruno",
             foto: "/staff/Alfredo.jpeg"
         },
         {
             id: "Francesca",
-            nome: "Francesca D'Agostino",
+            nome: "Dr.ssa Francesca D'Agostino",
             foto: "/staff/Francesca.jpeg"
         },
         {
             id: "Federica",
-            nome: "Federica Tambelli",
+            nome: "Dr.ssa Federica Tambelli",
             foto: "/staff/Federica.jpeg"
         },
     ]
