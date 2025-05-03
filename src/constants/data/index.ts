@@ -175,7 +175,7 @@ export const Paragrafi: ParagrContent[] = [
     {
         id: "/",
         titolo: "A Caserta, fisioterapista esperto in riabilitazione sportiva",
-        testo: "A dirigere con successo lo studio Fisioterapia Bruno a Caserta, il fisioterapista Beniamino Bruno, che insieme ai suoi qualificati collaboratori è in grado di fornire un servizio completo e professionale a chi necessita di risolvere patologie acute e croniche anche molto dolorose. Il fisioterapista è un esperto di osteopatia, riabilitazione da patologie ortopediche e riabilitazione sportiva e parallelamente alla professione svolta presso il centro è medico ufficiale della Casertana Calcio e della Volalto 2.0 Caserta. Inoltre lavora per la squadra di pallavolo di serie A1."
+        testo: "Lo studio Fisioterapia Bruno a Caserta è diretto dal fisioterapista Beniamino Bruno, professionista affermato che, insieme a uno staff altamente qualificato, propone percorsi riabilitativi efficaci per affrontare disturbi muscolo-scheletrici di diversa natura, sia acuti che cronici. Con una lunga esperienza nel campo della riabilitazione ortopedica e sportiva, ha collaborato come fisioterapista con realtà sportive di primo piano come la Casertana Calcio e la Volalto 2.0 Caserta. Attualmente, lo studio è punto di riferimento anche per la Juve Caserta 2021, squadra di pallacanestro impegnata nel campionato nazionale di Serie B."
     },
     {
         id: "/Servizi",
