@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'hero-pattern1': "url('/fisio6.mp4')",
+        'hero-pattern1': "url('/fisio6.gif')",
         'terapie-pattern':"url('/Fisio1921.jpg')",
         'terapie-strum-pattern':"url('/Fisiok6.jpg')",
 
