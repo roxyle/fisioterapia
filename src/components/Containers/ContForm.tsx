@@ -120,7 +120,7 @@ const ContForm: React.FC = () => {
         <div className="inset-0 flex items-center justify-center z-50 h-[200px] m-10 p-5">
           <div className="bg-white p-6 rounded-lg text-black text-pretty shadow-md shadow-black">
             <h2 className="text-xl font-bold mb-4">Informativa Privacy</h2>
-            <p className="text-sm">
+            {/* <p className="text-sm">
             Informativa privacy ai sensi degli artt. 13-14 del Regolamento Europeo “Privacy” (GDPR)
 I dati personali da Lei inseriti, sono trattati da Studio di fisioterapia - Via Caduti sul Lavoro 38 - 81100 Caserta (CE) - +393392476524 in qualità di Titolare, per finalità connesse alla fornitura dei servizi da Lei richiesti (a titolo esemplificativo: richiedere informazioni, registrarsi al sito per ricevere vantaggi e offerte, ottenere preventivi, effettuare pagamenti, acquistare beni e riceverli presso un domicilio da Lei indicato, effettuare una prenotazione, scambiare documenti).
 
@@ -135,7 +135,31 @@ Per modificare o cancellare i soli dati che sono archiviati sui sistemi che erog
 Nel caso di richiesta di cancellazione dei suoi dati, La informiamo che potrebbe non essere più possibile continuare a fornirLe il servizio richiestoci.
 
 La informiamo, infine, che potrà proporre reclamo all'Autorità Garante per la Protezione dei Dati, qualora ritenesse siano stati violati i suoi diritti.
-            </p>
+            </p> */}
+            <div className="max-h-[400px] overflow-y-auto">
+            <p className="text-sm whitespace-pre-line leading-relaxed">
+  {`Informativa privacy ai sensi degli artt. 13-14 del Regolamento Europeo "Privacy" (GDPR)
+
+I dati personali da Lei inseriti sono trattati da Studio di fisioterapia - Via Caduti sul Lavoro 38 - 81100 Caserta (CE) - +393392476524 in qualita' di Titolare, per finalita' connesse alla fornitura dei servizi da Lei richiesti (es. richiedere informazioni, registrarsi al sito, ottenere preventivi, effettuare pagamenti, acquistare beni, effettuare prenotazioni, scambiare documenti).
+
+Inoltre, i dati da Lei forniti potrebbero essere trattati, solo su Suo esplicito consenso, al fine di inviarLe comunicazioni di natura commerciale via email o SMS relativamente ai servizi offerti dal Titolare.
+
+- Nel primo caso, la base giuridica del trattamento e' l'esecuzione di un accordo.
+- Nel secondo caso e' il consenso.
+
+I trattamenti avverranno con modalita' elettroniche e potranno essere condivisi con terze parti (Responsabili Esterni) nell’ambito dell’Unione Europea o in Paesi extra-UE, che offrono adeguate garanzie di sicurezza. Tali soggetti (es. sviluppatori software, gestori del sito, spedizionieri) sono contrattualizzati e il loro elenco e' disponibile su richiesta.
+I dati saranno utilizzati anche per analisi statistiche e marketing diretto in forma anonima, come indicato nella cookie policy. Si tratta di trattamenti legittimi e necessari per garantire un servizio all’altezza delle Sue aspettative.
+I dati saranno conservati per il tempo necessario all’erogazione dei servizi o secondo quanto previsto dalla legge.
+
+In qualsiasi momento potra' esercitare i Suoi diritti ai sensi degli artt. 15–22 del GDPR contattando il Titolare.
+Per modificare o cancellare i dati archiviati nei sistemi del presente sito, cliccare qui.
+Le informazioni inserite nel form (incluso l’indirizzo email) potranno essere comunicate a una societa' terza, nominata Responsabile esterno, che supporta il Titolare nella gestione tecnica del sito e delle richieste.
+
+In caso di richiesta di cancellazione, il servizio potrebbe non essere piu' erogabile.
+
+Infine, si informa che potra' proporre reclamo all'Autorita' Garante per la Protezione dei Dati, qualora ritenga che i Suoi diritti siano stati violati.`}
+</p>
+</div>
             <button onClick={() => setIsPrivacyPopupOpen(false)}
               className="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
               Chiudi
