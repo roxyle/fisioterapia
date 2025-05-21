@@ -16,10 +16,10 @@ export default function CardIntro(testo: MyProps){
   return (
     <div className='rounded-lg flex flex-col items-center justify-center p-5 text-black '>
 
-      <fieldset className='max-w-12 bg-white bg-opacity-25'
+      <fieldset className='max-w-12 bg-white bg-opacity-15'
       style={{ borderWidth: 3, borderColor: '#04A4D4', borderRadius: 4 }} >
 
-        <legend>
+        <legend >
           <Image className='m-2' key={testo.id}
           src={testo.immagine} alt={testo.alt} width={30} height={60}/>
         </legend>
