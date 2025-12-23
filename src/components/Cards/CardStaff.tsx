@@ -15,7 +15,7 @@ const CardStaff = (dettaglioStaff: MyProps) => {
     <div className='flex flex-col p-5 inset-0 rounded-xl '>
 
         <Image className='rounded-t-xl object-cover object-top
-        h-80 w-64
+        h-96 w-80
         brightness-[.85] hover:filter-none
         border-t-2 border-x-2 border-sky-500
         ' key={dettaglioStaff.id} src={dettaglioStaff.immagine} alt={dettaglioStaff.nome} width={420} height={700}/>
