@@ -424,11 +424,11 @@ export const TerapieManuali: Terapie[] = [
             nome: "Dr.ssa Francesca D'Agostino",
             foto: "/staff/Francesca.jpeg"
         },
-        {
-            id: "Federica",
-            nome: "Dr.ssa Federica Tambelli",
-            foto: "/staff/Federica.jpeg"
-        },
+        // {
+        //     id: "Federica",
+        //     nome: "Dr.ssa Federica Tambelli",
+        //     foto: "/staff/Federica.jpeg"
+        // },
     ]
 
     export const EspProf: ImgEspProf[] = [
