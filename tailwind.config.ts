@@ -71,6 +71,7 @@ const config: Config = {
         'card':'0 2px 16px rgba(0,0,0,0.07)',
         'card-lg':'0 4px 32px rgba(0,0,0,0.10)',
         'sky':'0 4px 20px rgba(14,165,233,0.30)',
+        'sky-glow': '0 4px 20px rgba(14, 165, 233, 0.12)',
       },
 
       keyframes: {

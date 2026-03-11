@@ -1,9 +1,15 @@
+
 export type Contacts = {
     id: string,
     company: string,
     telephone: string,
     address: string,
     email: string,
+    mapsHref: string,
+    mapsEmbed: string
+    orari: OrarioApertura[],
+    partitaIva: string,
+    telefonoHref: string
 }
 
 export type TextContent = {
@@ -25,6 +31,7 @@ export type Terapia = {
     id: string,
     tipologia: string,
     nomeTerapia: string,
+    descrizione?:string
 }
 
 export type ElencoTerapie = {
@@ -93,4 +100,20 @@ export type ContactFormData= {
     telefono:string,
     email:string,
     messaggio:string
+}
+
+
+export type Partnership= {
+    id: string,
+    nome: string,
+    sport: string,
+    logo?: string
+}
+
+
+
+export type OrarioApertura = {
+    giorni: string
+    ore: string
+    chiuso: boolean
 }

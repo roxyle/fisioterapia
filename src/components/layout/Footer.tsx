@@ -1,6 +1,8 @@
 import {ourContact, navItems} from '@/constants/data'
 import {NavItem} from '@/constants/types'
 import Link from 'next/link'
+import Image from 'next/image'
+
 
 export function Footer () {
     return(
@@ -11,14 +13,16 @@ export function Footer () {
                     {/*Colonna 1 */}
                     <div>
                         <Link href={'/'} className='flex items-center gap-3 mb-4'>
-                            <div className='w-9 h-9 rounded-lg bg-brand
-                            flex items-center justify-center flex-shrink-0'>
-                                <span className='text-white font-bold text-sm tracking-tight'>
-                                    FB
-                                </span>
-                            </div>
+                            <Image
+                                src='/favicon.ico'
+                                alt='Fisioterapia Bruno logo'
+                                width={120}
+                                height={40}
+                                className='h-8 md:h-9 w-auto'
+                                priority
+                            />
                             <span className='font-bold text-white text-[15px]'>
-                                Fisioterapia Bruno
+                                {ourContact.company}
                             </span>
                         </Link>
 
@@ -29,7 +33,7 @@ export function Footer () {
 
                     {/*Colonna2 */}
                     <div>
-                        <h3 className='text-xs font-bold tracking-widest uppercase text-gray-500 mb-4'>
+                        <h3 className='text-xs font-bold font-sans tracking-widest uppercase text-gray-300 mb-4'>
                             Navigazione
                         </h3>
 
@@ -50,7 +54,7 @@ export function Footer () {
 
                     {/*Colonna3 */}
                     <div>
-                        <h3 className='text-xs font-bold tracking-widest uppercase text-gray-500 mb-4'>
+                        <h3 className='text-xs font-sans font-bold tracking-widest uppercase text-gray-300 mb-4'>
                             Contatti
                         </h3>
 
@@ -63,12 +67,12 @@ export function Footer () {
                             </li>
                             <li className='flex items-center gap-2 text-sm text-gray-400'>
                                 <PhoneIcon/>
-                                <a href={`tel:${ourContact.telephone.replace(/\s/g, '')}`}
+                                <a href={ourContact.telefonoHref}
                                 className='hover:text-brand transition-colors'>
                                     {ourContact.telephone}
                                 </a>
                             </li>
-                            <li>
+                            <li className='flex items-center gap-2 text-sm text-gray-400'>
                                 <MailIcon/>
                                 <a href={`mailto:${ourContact.email}`}
                                 className='hover:text-brand transition-colors'>
@@ -78,14 +82,24 @@ export function Footer () {
                         </ul>
 
 
-                        {/*Orari */}
-                        <div className='mt-5 inline-flex items-center gap-2
+                        <div className='mt-5 flex items-center gap-3
                         bg-brand/10 border border-brand/20
-                        px-3 py-1.5 rounded-full'>
+                        px-3 py-2 rounded-xl'>
                             <ClockIcon/>
-                            <span className='text-xs font-semibold text-sky-400'>
-                                Lun - Sab &nbsp; 8:30 - 20:00
-                            </span>
+                            <div className=''>
+                                <div className='flex flex-col gap-0.5'>
+                                    {
+                                        ourContact.orari.map(
+                                            o => (
+                                                <p key={o.giorni}
+                                                    className={`text-xs font-semibold ${o.chiuso ? 'text-red-400' : 'text-sky-400'}`}>
+                                                    {o.giorni}&nbsp;{o.chiuso ? 'Chiusi' : o.ore}
+                                                </p>
+                                            )
+                                        )
+                                    }
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -94,14 +108,14 @@ export function Footer () {
 
 
 
-            {/*p.iva */}
+
             <div className='border-t border-white/5'>
                 <div className='container-main py-5 flex flex-col md:flex-row items-center justify-between gap-3'>
                     <p className='text-xs text-gray-600'>
-                        P.I. 04432730614 &copy; {new Date().getFullYear()} Fisioterapia Bruno
+                        P.I. {ourContact.partitaIva} &copy; {new Date().getFullYear()} {ourContact.company}
                     </p>
                     <p className='text-xs text-gray-600'>
-                        Via Caduti sul Lavoro, 38 &mdash; 81100 Caserta (CE)
+                        {ourContact.address}
                     </p>
                 </div>
             </div>

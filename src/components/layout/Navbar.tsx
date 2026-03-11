@@ -3,6 +3,7 @@ import Link from 'next/link'
 import {useState} from 'react'
 import {navItems, ourContact} from '@/constants/data'
 import { NavItem } from '@/constants/types'
+import Image from 'next/image'
 
 
 export function Navbar() {
@@ -12,30 +13,34 @@ export function Navbar() {
         <>
 
             <header className='sticky top-0 z-50
-            bg-white/95 backdrop-blur-sm
-            border-b border-gray-100'>
+            bg-brand backdrop-blur-sm
+            border-b border-brand-dark'>
                 <div className='container-main 
                 flex items-center justify-between 
                 h-16 md:h-[68px]'>
 
-                    {/* Logo */}
 
-                    <Link href='/' className='flex items-center gap-3 flex-shrink-0'> 
-                        <div className='w-9 h-9 md:w-10 md:h-10 
-                        rounded-lg bg-brand
-                        flex items-center justify-center flex-shrink-0'>
-                            <span className='text-white font-bold text-sm md:text-base tracking-tight'>
-                                FB
-                            </span>
-                        </div>
-                        <div className='flex flex-col'>
-                            <span className='font-sans font-bold text-gray-900 text-sm md:text-[15px] leading-tight'>
-                                Fisioterapia Bruno
-                            </span>
-                            <span className='hidden md:block text-[10px] text-gray-400 font-medium tracking-widest uppercase'>
-                                Studio specializzato &bull; Caserta
-                            </span>
-                        </div>
+                    {/* Logo */}
+                    <Link href='/' className='flex items-center gap-3 flex-shrink-0'>
+                    <div className='bg-brand rounded-lg p-1 flex-shrink-0'>
+                        <Image
+                        src='/favicon.ico'
+                        alt='Fisioterapia Bruno logo'
+                        width={120}
+                        height={40}
+                        className='h-8 md:h-9 w-auto'
+                        priority
+                        />
+                    </div>
+                    <div className='flex flex-col'>
+                        <span className='font-sans font-bold text-white text-sm md:text-[15px] leading-tight'>
+                        Fisioterapia Bruno
+                        </span>
+                        <span className='hidden md:block text-[10px] text-white/70 
+                        font-medium tracking-widest uppercase'>
+                        Studio specializzato &bull; Caserta
+                        </span>
+                    </div>
                     </Link>
 
                     {/* Nav desktop */}
@@ -46,8 +51,8 @@ export function Navbar() {
                                 key={item.href}
                                 className='px-4 py-2
                                 rounded-lg
-                                text-sm font-medium text-gray-600
-                                hover:text-brand hover:bg:sky-50 transition-colors'>
+                                text-sm font-medium text-white/80
+                                hover:text-white hover:bg-brand-dark transition-colors'>
                                     {item.label}
                                 </Link>
                             )
@@ -56,11 +61,11 @@ export function Navbar() {
 
 
                     {/* CTA telefono desktop */}
-                    <a href={`tel:${ourContact.telephone.replace(/\s/g, '')}`}
+                    <a href={ourContact.telefonoHref}
                     className='hidden 
                     min-[840px]:inline-flex items-center gap-2
-                    bg-brand hover:bg-brand-dark
-                    text-white font-semibold text-sm
+                    bg-brand text-white 
+                    hover:bg-sky-50 hover:text-sky-700
                     px-5 py-2.5
                     rounded-xl transition-colors shadow-sky'>
                         <PhoneIcon/>
@@ -68,7 +73,7 @@ export function Navbar() {
                     </a>
 
                     <div className='flex min-[840px]:hidden items-center gap-2'>
-                        <a href={`tel:${ourContact.telephone.replace(/\s/g, '')}`}
+                        <a href={ourContact.telefonoHref}
                         aria-label='Chiama ora'
                         className='w-10 h-10
                         rounded-xl bg-brand text-white
@@ -128,7 +133,7 @@ export function Navbar() {
                         )
                     )}
 
-                    <a href={`tel:${ourContact.telephone.replace(/\s/g,'')}`}
+                    <a href={ourContact.telefonoHref}
                     className='mt-2
                     flex items-center justify-center gap-2
                     bg-brand py-3 rounded-xl

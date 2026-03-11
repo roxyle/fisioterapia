@@ -65,7 +65,7 @@
 
 
 
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 
@@ -165,7 +165,7 @@ textarea {
 	width: 100%;
 }
 
-/* accordion */
+
 .colonna-faq{
   padding-top: 144px;
   padding-bottom: 140px;
@@ -231,4 +231,4 @@ textarea {
           padding-top: 90px;
           padding-bottom: 80px;
       }
-  }
+  } */
