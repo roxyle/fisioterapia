@@ -1,11 +1,19 @@
 'use client'
-import { ContactFormData } from '@/constants/types'
+import {ContactFormData} from '@/constants/types'
 import {useForm} from 'react-hook-form'
-import { SectionHeader } from '../ui/SectionHeader'
-import { ourContact } from '@/constants/data'
+import {SectionHeader} from '../ui/SectionHeader'
+import {ourContact} from '@/constants/data'
+import {useState} from 'react'
 
 
 export function Contact(){
+
+    const [submitStatus,setSubmitStatus]= useState<'idle'|'ok'|'error'>('idle')
+    const [privacy,setPrivacy]= useState(false)
+    const [privacyModal,setPrivacyModal]= useState(false)
+
+
+
     const {
         register,
         handleSubmit,
@@ -13,18 +21,36 @@ export function Contact(){
         formState: {
             errors,
             isSubmitting,
-            isSubmitSuccessful
+            //isSubmitSuccessful
         }
     } = useForm<ContactFormData>()
 
 
 
-    async function onSubmit(data:ContactFormData) {
-        //EmailJs
-        console.log('Form data:',data)
-        //sim
-        await new Promise(resolve=>setTimeout(resolve,800))
-        reset()
+    async function onSubmit(data: ContactFormData) {
+        setSubmitStatus('idle')
+        try {
+            const response = await fetch('/api/sendEmail', 
+                {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(
+                        {
+                            name: `${data.nome} ${data.cognome}`,
+                            email: data.email,
+                            phone: data.telefono,
+                            message: data.messaggio,
+                        }
+                    ),
+                }
+            )
+            if (!response.ok) throw new Error()
+                setSubmitStatus('ok')
+            reset()
+            setPrivacy(false)
+        } catch {
+            setSubmitStatus('error')
+        }
     }
 
 
@@ -32,6 +58,11 @@ export function Contact(){
 
     return(
         <section id='form' className='section-padding bg-white'>
+            {
+                privacyModal&&(
+                    <PrivacyModal onClose={()=> setPrivacyModal(false)}/>
+                )
+            }
             <div className='container-main'>
                 <div className='grid grid-cols-1 lg:grid-cols-2
                 gap-12 lg:gap-20
@@ -113,7 +144,7 @@ export function Contact(){
 
                     <div className='bg-gray-50 rounded-3xl p-6 md:p-8'>
                         {
-                            isSubmitSuccessful? (
+                            submitStatus==='ok'? (
                                 <div className='flex flex-col items-center justify-center gap-4 py-12 text-center'>
                                     <div className='w-14 h-14 rounded-full bg-brand/10
                                     flex items-center justify-center'>
@@ -260,14 +291,38 @@ export function Contact(){
                                         }
                                     </div>
 
+                                    <label className='flex items-start gap-3 cursor-pointer'>
+                                        <input type='checkbox' checked={privacy} onChange={()=>setPrivacy(p=>!p)}
+                                        className='mt-0.5 w-4 h-4 accent-brand'/>
+                                        <span className='text-sm text-gray-600 leading-relaxed'>
+                                            Ho letto e accetto l'
+                                            <button type='button' onClick={()=> setPrivacyModal(true)}
+                                                className='text-brand underline underline-offset-2 hover:text-sky-600 transition-colors'>
+                                                informativa sulla privacy
+                                            </button>
+                                            {' '}e autorizzo lo Studio al trattamento dei dati per le finalità indicate.
+                                        </span>
+                                    </label>
 
-                                    <button type='submit' disabled={isSubmitting}
+
+                                    <button type='submit' disabled={isSubmitting||!privacy}
                                     className='mt-2 w-full py-3 rounded-xl shadow-sky
                                     bg-brand hover:bg-brand-dark transition-colors
                                     text-white font-semibold text-sm
                                     disabled:opacity-60 disabled:cursor-not-allowed'>
                                         {isSubmitting?'Invio in corso...':'Invia messaggio'}
                                     </button>
+
+                                    {
+                                        submitStatus==='error'&&(
+                                            <p className='text-sm text-red-500 font-medium text-center'>
+                                                Si è verificato un errore. Riprova o contattaci per telefono.
+                                            </p>
+                                        )
+                                    }
+
+
+
                                     <p className='text-xs text-gray-400 text-center'>
                                         I campi contrassegnati con <span className='text-brand'>*</span> sono obbligatori
                                     </p>
@@ -283,6 +338,40 @@ export function Contact(){
 
 
 
+
+function PrivacyModal({ onClose }: { onClose: () => void }) {
+    return (
+        <div className='fixed inset-0 z-50 flex items-center justify-center bg-black/40 px-4'>
+            <div className='bg-white rounded-2xl shadow-xl max-w-lg w-full p-6 flex flex-col gap-4 max-h-[80vh]'>
+                <h2 className='font-display text-lg font-bold text-gray-900'>
+                    Informativa Privacy
+                </h2>
+                <div className='overflow-y-auto text-sm text-gray-600 leading-relaxed flex-1 pr-1'>
+                    <p>
+                        Informativa privacy ai sensi degli artt. 13-14 del Regolamento Europeo "Privacy" (GDPR).
+                    </p>
+                    <p className='mt-3'>
+                        I dati personali da Lei inseriti sono trattati da Studio di Fisioterapia - Via Caduti sul Lavoro, 38 - 81100 Caserta (CE) - +39 339 247 6524 in qualità di Titolare, per finalità connesse alla fornitura dei servizi da Lei richiesti (es. richiedere informazioni, ottenere preventivi, effettuare prenotazioni).
+                    </p>
+                    <p className='mt-3'>
+                        I dati forniti potrebbero essere trattati, solo su Suo esplicito consenso, per inviarLe comunicazioni commerciali via email o SMS relativamente ai servizi offerti.
+                    </p>
+                    <p className='mt-3'>
+                        I trattamenti avverranno con modalità elettroniche e potranno essere condivisi con terze parti nell'ambito dell'UE o in Paesi extra-UE che offrono adeguate garanzie di sicurezza. I dati saranno conservati per il tempo necessario all'erogazione dei servizi o secondo quanto previsto dalla legge.
+                    </p>
+                    <p className='mt-3'>
+                        In qualsiasi momento potrà esercitare i diritti previsti agli artt. 15-22 del GDPR contattando il Titolare. Potrà inoltre proporre reclamo all'Autorità Garante per la Protezione dei Dati.
+                    </p>
+                </div>
+                <button
+                    onClick={onClose}
+                    className='w-full py-2.5 rounded-xl bg-brand text-white font-semibold text-sm hover:bg-brand-dark transition-colors'>
+                    Chiudi
+                </button>
+            </div>
+        </div>
+    )
+}
 
 
 //icone
