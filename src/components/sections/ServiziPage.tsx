@@ -92,9 +92,7 @@ function CategoriaAccordion({categoria, defaultOpen}:{categoria:ElencoTerapie, d
                         <p>
                             {categoria.tipologia}
                         </p>
-                        <p>
-                            Più di {categoria.elenco.length} trattamenti disponibili
-                        </p>
+
                     </div>
                 </div>
 
@@ -190,10 +188,12 @@ function DescServiziSection() {
                         descServizi.map(
                             (item, index) => (
                                 <div key={item.id}
-                                className={cn(
-                                    'grid grid-cols-1 md:grid-cols-2 gap-8 items-center',
-                                    index % 2 === 1 && 'md:[&>*:first-child]:order-2'
-                                )}>
+                                className={
+                                    cn(
+                                        'grid grid-cols-1 md:grid-cols-2 gap-8 items-center',
+                                        index % 2 === 1 && 'md:[&>*:first-child]:order-2'
+                                    )
+                                }>
                                 <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden">
                                     <Image
                                         fill
