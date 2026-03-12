@@ -15,12 +15,12 @@ const nextConfig: NextConfig = {
       {
         source: '/Servizi',
         destination: '/servizi',
-        permanent: true,
+        permanent: false,
       },
       {
         source: '/Contatti',
         destination: '/contatti',
-        permanent: true,
+        permanent: false,
       },
     ]
   },
