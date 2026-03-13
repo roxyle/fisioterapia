@@ -116,10 +116,10 @@ Uno degli aspetti chiave del progetto è stata la **manutenzione post-deploy**. 
 
 | Metrica | Desktop | Mobile | Obiettivo |
 |---------|---------|--------|-----------|
-| Performance | 100 | 82 | ⚡ Eccellente su desktop |
-| Accessibilità | 96 | 96 | ♿ Notevolmente migliorata |
-| Best Practices | 100 | 100 | ✅ Standard elevati |
-| SEO | 63 | 63 | 📈 In ottimizzazione |
+| Performance | 100 | 82 | Eccellente su desktop |
+| Accessibilità | 96 | 96 | Notevolmente migliorata |
+| Best Practices | 100 | 100 | Standard elevati |
+| SEO | 63 | 63 | In ottimizzazione |
 
 *Il punteggio SEO attuale del restyling è in fase di miglioramento - lavoro attualmente su questo aspetto per garantire che la nuova versione mantenga (e possibilmente superi) l'ottimo posizionamento raggiunto.*
 
@@ -134,7 +134,7 @@ Uno degli aspetti chiave del progetto è stata la **manutenzione post-deploy**. 
 
 ---
 
-## 💻 Installazione Locale
+## Installazione Locale
 
 ```bash
 # Clona il repository
