@@ -225,25 +225,25 @@ export const terapieStrumentali: Terapia[] = [
         id: "ts1",
         tipologia: "Terapia Strumentale",
         nomeTerapia: "Onde d'urto",
-        descrizione: "Trattamento non invasivo che utilizza onde acustiche ad alta energia per agire su tendinopatie croniche, calcificazioni e fascite plantare. Produce effetti antidolorifico e rigenerativo stimolando i processi di riparazione nei tessuti interessati.",
+        descrizione: "Trattamento non invasivo che utilizza onde acustiche ad alta energia per agire su tendinopatie croniche, calcificazioni e fascite plantare. Produce effetti antidolorifici e rigenerativi stimolando i processi di riparazione nei tessuti interessati.",
     },
     {
         id: "ts2",
         tipologia: "Terapia Strumentale",
         nomeTerapia: "Tecarterapia",
-        descrizione: "Forma di diatermia endogena che trasferisce energia ai tessuti tramite radiofrequenza. Agisce in modalita' capacitiva sui tessuti molli come muscoli e legamenti, e in modalita' resistiva su strutture piu' dense come ossa, cartilagini e tendini. Indicata per contratture, infiammazioni, tendinopatie e recupero post-traumatico.",
+        descrizione: "Forma di diatermia endogena che trasferisce energia ai tessuti tramite radiofrequenza. Agisce in modalità capacitiva sui tessuti molli come muscoli e legamenti, e in modalità resistiva su strutture più dense come ossa, cartilagini e tendini. Indicata per contratture, infiammazioni, tendinopatie e recupero post-traumatico.",
     },
     {
         id: "ts3",
         tipologia: "Terapia Strumentale",
         nomeTerapia: "Laserterapia",
-        descrizione: "Terapia fisica che utilizza radiazioni elettromagnetiche monocromatiche e coerenti per indurre effetti antidolorifico, antinfiammatorio e biostimolante. In fisioterapia si distinguono LLLT a bassa potenza, con azione prevalentemente antinfiammatoria, e HILT ad alta potenza, capace di raggiungere i tessuti profondi. Indicata per tendinopatie, lesioni muscolari, artrosi e recupero post-operatorio.",
+        descrizione: "Terapia fisica che utilizza radiazioni elettromagnetiche monocromatiche e coerenti per indurre effetti antidolorifici, antinfiammatori e biostimolanti. In fisioterapia si distinguono LLLT a bassa potenza, con azione prevalentemente antinfiammatoria, e HILT ad alta potenza, capace di raggiungere i tessuti profondi. Indicata per tendinopatie, lesioni muscolari, artrosi e recupero post-operatorio.",
     },
     {
         id: "ts4",
         tipologia: "Terapia Strumentale",
         nomeTerapia: "Magnetoterapia",
-        descrizione: "Utilizza campi magnetici pulsati a bassa frequenza per favorire la rigenerazione ossea e cartilaginea e ridurre l'edema. Agisce sui tessuti in profondita' senza contatto diretto. Indicata per patologie articolari, fratture e processi infiammatori cronici.",
+        descrizione: "Utilizza campi magnetici pulsati a bassa frequenza per favorire la rigenerazione ossea e cartilaginea e ridurre l'edema. Agisce sui tessuti in profondità senza contatto diretto. Indicata per patologie articolari, fratture e processi infiammatori cronici.",
     },
     {
         id: "ts5",
@@ -294,7 +294,7 @@ export const terapieManuali: Terapia[] = [
         id: "tm1",
         tipologia: "Terapia Manuale",
         nomeTerapia: "Massaggi Linfodrenanti",
-        descrizione: "Metodica terapeutica che favorisce il drenaggio della linfa dalla periferia verso il cuore, eseguita con manovre lente e ritmiche che rispettano i parametri fisiologici del deflusso linfatico. Indicata come terapia d'elezione per linfedemi primari e secondari e come trattamento complementare nella gestione degli edemi post-traumatici e post-chirurgici.",
+        descrizione: "Metodica terapeutica che favorisce il drenaggio della linfa dalla periferia verso il cuore, eseguita con manovre lente e ritmiche che rispettano i parametri fisiologici del deflusso linfatico. Indicata come terapia d'elezione per linfedemi primari e secondari, e come trattamento complementare nella gestione degli edemi post-traumatici e post-chirurgici.",
     },
     {
         id: "tm2",
@@ -312,25 +312,25 @@ export const terapieManuali: Terapia[] = [
         id: "tm4",
         tipologia: "Terapia Manuale",
         nomeTerapia: "Rieducazione Posturale Globale",
-        descrizione: "Programma terapeutico che corregge gli squilibri posturali attraverso esercizi specifici e tecniche manuali, lavorando sull'essere umano nella sua globalita'. Adatto a tutte le eta', dalla scoliosi in eta' evolutiva alle patologie degenerative dell'adulto.",
+        descrizione: "Programma terapeutico che corregge gli squilibri posturali attraverso esercizi specifici e tecniche manuali, lavorando sull'essere umano nella sua globalità. Adatto a tutte le età, dalla scoliosi in età evolutiva alle patologie degenerative dell'adulto.",
     },
     {
         id: "tm5",
         tipologia: "Terapia Manuale",
         nomeTerapia: "Metodo Kabat",
-        descrizione: "Tecnica di facilitazione neuromuscolare propriocettiva (PNF) che mira ad attivare o riattivare i recettori del sistema nervoso periferico e centrale attraverso schemi di movimento diagonali e spiraliformi. Indicata per il rinforzo muscolare, l'aumento del range articolare, la riduzione della spasticita' e il miglioramento della coordinazione.",
+        descrizione: "Tecnica di facilitazione neuromuscolare propriocettiva (PNF) che mira ad attivare o riattivare i recettori del sistema nervoso periferico e centrale attraverso schemi di movimento diagonali e spiraliformi. Indicata per il rinforzo muscolare, l'aumento del range articolare, la riduzione della spasticità e il miglioramento della coordinazione.",
     },
     {
         id: "tm6",
         tipologia: "Terapia Manuale",
         nomeTerapia: "Massoterapia",
-        descrizione: "Insieme di tecniche manuali terapeutiche che agiscono su muscoli, tendini e tessuto connettivo per ridurre il dolore, migliorare la mobilita' e accelerare il recupero funzionale.",
+        descrizione: "Insieme di tecniche manuali terapeutiche che agiscono su muscoli, tendini e tessuto connettivo per ridurre il dolore, migliorare la mobilità e accelerare il recupero funzionale.",
     },
     {
         id: "tm7",
         tipologia: "Terapia Manuale",
         nomeTerapia: "Riabilitazione e Gestione del Dolore",
-        descrizione: "Approccio integrato che combina tecniche manuali e strumentali per il controllo del dolore acuto e cronico, con l'obiettivo di migliorare la qualita' di vita del paziente attraverso un piano di trattamento personalizzato.",
+        descrizione: "Approccio integrato che combina tecniche manuali e strumentali per il controllo del dolore acuto e cronico, con l'obiettivo di migliorare la qualità di vita del paziente attraverso un piano di trattamento personalizzato.",
     },
 ]
 
@@ -339,7 +339,7 @@ export const terapieOrtopediche: Terapia[] = [
         id: "to1",
         tipologia: "Terapia Ortopedica",
         nomeTerapia: "Visite Ortopediche",
-        descrizione: "Valutazione specialistica dell'apparato muscolo-scheletrico eseguita dal Medico Chirurgo Ortopedico per diagnosi accurata e definizione del percorso terapeutico piu' adatto alle esigenze del paziente.",
+        descrizione: "Valutazione specialistica dell'apparato muscolo-scheletrico eseguita dal Medico Chirurgo Ortopedico per diagnosi accurata e definizione del percorso terapeutico più adatto alle esigenze del paziente.",
     },
     {
         id: "to2",

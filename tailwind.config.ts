@@ -78,8 +78,8 @@ const config: Config = {
           '100%': { opacity: '1' },
         },
         marquee: {
-          '0%': { transform: 'translateX(0%)' },
-          '100%': { transform: 'translateX(-25%)' },
+          '0%': { transform: 'translateX(0px)' },
+          '100%': { transform: 'translateX(var(--marquee-width, -50%))' },
         },
       },
       animation: {

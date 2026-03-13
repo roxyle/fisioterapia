@@ -1,6 +1,8 @@
+'use client'
 import {partnership} from '@/constants/data'
 import {SectionHeader} from '@/components/ui/SectionHeader'
 import { PartnershipItem } from '@/constants/types'
+import { useEffect, useRef } from 'react'
 
 function BasketballIcon() {
     return (
@@ -58,14 +60,24 @@ function PartnerCard({p}: {p: PartnershipItem}){
 }
 
 export function Partnership() {
-    const items= Array(32).fill(partnership).flat()
+    const trackRef = useRef<HTMLDivElement>(null)
+
+    useEffect(() => {
+        const track = trackRef.current
+        if (!track) return
+        const singleWidth = track.scrollWidth / 8
+        track.style.setProperty('--marquee-width', `-${singleWidth}px`)
+    }, [])
+
+
+    const items= Array(8).fill(partnership).flat()
     return (
         <section className='py-6 bg-gray-50 border-y border-gray-200 overflow-hidden'>
             <p className='text-xs font-bold tracking-widest uppercase text-gray-400 text-center mb-4'>
                 Partnership e Collaborazioni sportive
             </p>
             <div className='relative'>
-                <div className='flex animate-marquee'>
+                <div ref={trackRef} className='flex animate-marquee'>
                     {
                         items.map(
                             (partnership, index) => (

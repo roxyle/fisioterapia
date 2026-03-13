@@ -85,7 +85,7 @@ export function SliderEsperienze(){
                     <p className="section-label">
                         Esperienza sul campo
                     </p>
-                    <h2 className="font-display text-display-md text-gray-900 mt-1">Fisioterapia dentro e fuori dallo studio</h2>
+                    <h2 className="font-display text-display-md text-gray-900 mt-1 md:whitespace-nowrap">Fisioterapia dentro e fuori dallo studio</h2>
                     <p className="text-gray-500 text-sm mt-3">
                         Anni di collaborazioni con realtà sportive di primo piano nel territorio campano
                     </p>
