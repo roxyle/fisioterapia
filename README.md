@@ -8,7 +8,7 @@
   ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
   
   [Sito in Produzione](https://www.fisioterapistacaserta.it/) | 
-  [Preview Nuova Versione](https://fisioterapia02-3e9irv662-yles-projects.vercel.app/) | 
+  [Preview Nuova Versione](https://fisioterapia-rak0n0sah-yles-projects.vercel.app/) | 
   [Repository](https://github.com/roxyle/fisioterapia)
   
   *Un progetto che evolve: dalla manutenzione di un sito esistente al restyling completo con Next.js App Router*
@@ -116,10 +116,10 @@ Uno degli aspetti chiave del progetto è stata la **manutenzione post-deploy**. 
 
 | Metrica | Desktop | Mobile | Obiettivo |
 |---------|---------|--------|-----------|
-| Performance | 100 | 82 | ⚡ Eccellente su desktop |
-| Accessibilità | 96 | 96 | ♿ Notevolmente migliorata |
-| Best Practices | 100 | 100 | ✅ Standard elevati |
-| SEO | 63 | 63 | 📈 In ottimizzazione |
+| Performance | 100 | 82 | Eccellente su desktop |
+| Accessibilità | 96 | 96 | Notevolmente migliorata |
+| Best Practices | 100 | 100 | Standard elevati |
+| SEO | 63 | 63 | In ottimizzazione |
 
 *Il punteggio SEO attuale del restyling è in fase di miglioramento - lavoro attualmente su questo aspetto per garantire che la nuova versione mantenga (e possibilmente superi) l'ottimo posizionamento raggiunto.*
 
@@ -134,7 +134,7 @@ Uno degli aspetti chiave del progetto è stata la **manutenzione post-deploy**. 
 
 ---
 
-## 💻 Installazione Locale
+## Installazione Locale
 
 ```bash
 # Clona il repository
@@ -156,4 +156,4 @@ yarn dev
 # Per vedere la versione in restyling
 git checkout dev
 npm run dev
-
+⚠️🚧 sito E readme in aggiornamento 🚧⚠️
