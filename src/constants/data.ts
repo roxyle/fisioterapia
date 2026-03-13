@@ -511,7 +511,7 @@ export const espProf: SliderImage[] = [
 },
 {
     id: 5,
-    image: '/slider/studio2.jpg',
+    image: '/slider/studio2.jpeg',
     testo: 'in Studio'
 },
 {
@@ -536,17 +536,17 @@ export const espProf: SliderImage[] = [
 },
 {
     id:10,
-    image: '/slider/juvecaserta2.jpg',
+    image: '/slider/juvecaserta2.png',
     testo: 'Juve Caserta'
 },
 {
     id:11,
-    image: '/slider/juvecaserta3.jpg',
+    image: '/slider/juvecaserta3.png',
     testo: 'Juve Caserta'
 },
 {
     id:12,
-    image: '/slider/Carandente.jpg',
+    image: '/slider/Carandente.jpeg',
     testo: 'Fisioterapista Sportivo'
 },
 {
@@ -561,7 +561,7 @@ export const espProf: SliderImage[] = [
 },
 {
     id:15,
-    image: '/slider/juvecaserta1.jpg',
+    image: '/slider/juvecaserta1.jpeg',
     testo: 'Juve caserta'
 },
 {

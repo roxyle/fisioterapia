@@ -98,18 +98,16 @@ export function SliderEsperienze(){
                         {
                             espProf.map(
                                 foto=>(
-                                    <div key={foto.id} className="w-full flex-shrink-0 flex justify-center">
-        <div className="rounded-2xl overflow-hidden">
-            <Image
-                src={foto.image}
-                alt={foto.testo}
-                width={800}
-                height={600}
-                className="w-full h-auto max-h-[560px] object-contain"
-                sizes="672px"
-            />
-        </div>
-    </div>
+                                    <div key={foto.id} className="w-full flex-shrink-0">
+                                        <div className="relative rounded-2xl overflow-hidden h-[400px] md:h-[500px]">
+                                            <Image src={foto.image} alt={foto.testo} fill
+                                                // width={800}
+                                                // height={600}
+                                                className="w-full h-auto object-cover object-top"
+                                                sizes="672px"
+                                            />
+                                        </div>
+                                    </div>
                                 )
                             )
                         }
