@@ -139,7 +139,7 @@ export function Navbar() {
                     bg-brand py-3 rounded-xl
                     text-white font-semibold'>
                         <PhoneIcon/>
-                        Chiama ora &bull; {ourContact.telephone}
+                        Chiama ora!
                     </a>
                 </div>
             </nav>

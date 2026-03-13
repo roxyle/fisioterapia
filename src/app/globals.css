@@ -62,7 +62,9 @@
   }
 }
 
-
+.marquee-track {
+    animation: marquee 18s linear infinite;
+}
 
 
 /* :root {

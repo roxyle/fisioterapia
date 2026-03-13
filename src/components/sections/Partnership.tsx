@@ -1,5 +1,6 @@
 import {partnership} from '@/constants/data'
 import {SectionHeader} from '@/components/ui/SectionHeader'
+import { PartnershipItem } from '@/constants/types'
 
 function BasketballIcon() {
     return (
@@ -38,41 +39,40 @@ function VolleyballIcon() {
     )
 }
 
-function SportIcon({ sport }: { sport: string }) {
+function SportIcon({sport}: {sport: string}) {
     if (sport.toLowerCase().includes('calcio')) return <SoccerIcon />
     if (sport.toLowerCase().includes('pallavolo')) return <VolleyballIcon />
     return <BasketballIcon />
 }
 
+function PartnerCard({p}: {p: PartnershipItem}){
+    return(
+        <span className='flex items-center gap-2 px-6'>
+            <SportIcon sport={p.sport}/>
+            <span className='text-sm font-medium text-gray-700 whitespace-nowrap'>
+                {p.nome}
+            </span>
+            <span className='text-gray-300 ml-4'>|</span>
+        </span>
+    )
+}
+
 export function Partnership() {
+    const items= Array(32).fill(partnership).flat()
     return (
-        <section className='py-8 bg-gray-50 border-y border-gray-200'>
-            <div className='container-main'>
-                <div className='flex flex-col flex-wrap items-center gap-3'>
-                    <p className='text-xs font-bold tracking-widest uppercase
-                    text-gray-400 mr-2'>
-                        Partnership e Collaborazioni sportive
-                    </p>
-                    <div className='flex gap-3'>
-                        {
-                            partnership.map(
-                                p => (
-                                    <div key={p.id}
-                                        className='flex items-center gap-2
-                                        bg-white border border-gray-200 rounded-full
-                                        px-4 py-2'>
-                                        <SportIcon sport={p.sport} />
-                                        <span className='text-sm text-gray-700'>
-                                            {p.nome}
-                                        </span>
-                                        <span className='text-xs text-gray-400'>
-                                            &bull; {p.sport}
-                                        </span>
-                                    </div>
-                                )
+        <section className='py-6 bg-gray-50 border-y border-gray-200 overflow-hidden'>
+            <p className='text-xs font-bold tracking-widest uppercase text-gray-400 text-center mb-4'>
+                Partnership e Collaborazioni sportive
+            </p>
+            <div className='relative'>
+                <div className='flex animate-marquee'>
+                    {
+                        items.map(
+                            (partnership, index) => (
+                                <PartnerCard key={index} p={partnership}/>
                             )
-                        }
-                    </div>
+                        )
+                    }
                 </div>
             </div>
         </section>

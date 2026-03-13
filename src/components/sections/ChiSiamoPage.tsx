@@ -8,7 +8,7 @@ import {Partnership} from '@/components/sections/Partnership'
 
 
 function Intro() {
-    const paragrafo = paragrafiSeo.find(paragrafo => paragrafo.id === '/About')
+    const paragrafo = paragrafiSeo.find(paragrafo => paragrafo.id === '/chi-siamo')
 
     return (
         <section className='section-padding bg-white'>
@@ -97,48 +97,6 @@ function ParagrafoSeo() {
         </section>
     )
 }
-
-// function EsperienzaProfessionale(){
-//     return(
-//         <section className='section-padding bg-white'>
-//             <div className='container-main'>
-//                 <div className='max-w-2xl mb-10'>
-//                     <SectionHeader label='Esperienza sul campo' title='Fisioterapia dentro e fuori dallo studio' sub='Anni di collaborazioni con realtà sportive di primo piano nel territorio campano.'
-//                     />
-//                 </div>
-
-//                 <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3'>
-//                     {
-//                         espProf.map(
-//                             foto => (
-//                                 <div key={foto.id} className='relative aspect-square rounded-xl overflow-hidden group'>
-//                                     <Image fill src={foto.image} alt={foto.testo}
-//                                         className='object-cover object-center
-//                                         transition-transform duration-300 group-hover:scale-105'
-//                                         sizes='(max-width:640px) 50vw,
-//                                         (max-width:1024px) 33vw,
-//                                         25vw'
-//                                     />
-//                                     <div className='absolute inset-0 bg-sky-950/0 group-hover:bg-sky-950/40
-//                                     transition-colors duration-300 flex items-end p-3'>
-//                                         <p className='text-white text-xs font-semibold
-//                                         opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
-//                                             {foto.testo}
-//                                         </p>
-//                                     </div>
-//                                 </div>
-//                             )
-//                         )
-//                     }
-//                 </div>
-//             </div>
-//         </section>
-//     )
-// }
-
-// ---- sezione partnership ----
-// TODO: in attesa di conferma dal cliente sulle partnership attive
-// {/* <Partnership /> */}
 
 
 

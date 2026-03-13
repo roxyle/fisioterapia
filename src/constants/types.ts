@@ -103,7 +103,7 @@ export type ContactFormData= {
 }
 
 
-export type Partnership= {
+export type PartnershipItem= {
     id: string,
     nome: string,
     sport: string,

@@ -10,7 +10,7 @@ import type {
     TrustItem,
     SliderImage,
     FaqItem,
-    Partnership,
+    PartnershipItem,
 } from "./types";
 
 export const ourContact: Contacts = {
@@ -211,7 +211,12 @@ export const paragrafiSeo: ParagrafoSeo[] = [
         id: "/Contatti",
         titolo: "Fisioterapia, Osteopatia e Fisiokinesiterapia a Caserta",
         testo: "Se stai cercando un fisioterapista a Caserta, non esitare a contattare lo studio Fisioterapia Bruno. Situato nel cuore della città, lo studio è facilmente raggiungibile e pronto ad accoglierti con trattamenti fisioterapici personalizzati. Che tu abbia bisogno di riabilitazione sportiva, fisioterapia ortopedica o trattamenti osteopatici, il nostro team di esperti è a tua disposizione per aiutarti a recuperare il benessere fisico e migliorare la qualità della tua vita. Compila il modulo per richiedere un incontro con l'osteopata esperto e valutare i percorsi di riabilitazione sportiva. Prenota una visita oggi stesso e scopri come possiamo aiutarti a ritrovare la forma fisica ideale."
-    }
+    },
+    {
+    id: '/chi-siamo',
+    titolo: 'Lo staff di Fisioterapia Bruno: esperienza e passione per la riabilitazione',
+    testo: "Il team dello studio Fisioterapia Bruno a Caserta è composto da sette fisioterapisti laureati e un medico chirurgo ortopedico, tutti accomunati da una lunga esperienza clinica e da una costante formazione professionale. Oltre all'attività ambulatoriale, lo studio è da anni il punto di riferimento per società sportive del territorio campano, collaborando con realtà come la Juve Caserta 2021 in Serie B di basket, la Casertana FC e la Volalto 2.0 Caserta. Questa doppia competenza, clinica e sportiva, permette allo staff di affrontare con precisione sia le patologie muscolo-scheletriche quotidiane che gli infortuni di atleti professionisti e amatoriali."
+}
 ]
 
 
@@ -625,7 +630,7 @@ export const trustItems: TrustItem[] = [
 ]
 
 
-export const partnership: Partnership[] = [
+export const partnership: PartnershipItem[] = [
     {
         id: 'juve-caserta',
         nome: 'Juve Caserta 2021',
