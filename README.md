@@ -8,7 +8,7 @@
   ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
   
   [Sito in Produzione](https://www.fisioterapistacaserta.it/) | 
-  [Preview Nuova Versione](https://fisioterapia-rak0n0sah-yles-projects.vercel.app/) | 
+  [Preview Nuova Versione](https://fisioterapia02-qdpieejww-yles-projects.vercel.app/) | 
   [Repository](https://github.com/roxyle/fisioterapia)
   
   *Un progetto che evolve: dalla manutenzione di un sito esistente al restyling completo con Next.js App Router*
