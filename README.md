@@ -116,7 +116,7 @@ Uno degli aspetti chiave del progetto è stata la **manutenzione post-deploy**. 
 
 | Metrica | Desktop | Mobile | Obiettivo |
 |---------|---------|--------|-----------|
-| Performance | 100 | 82 | Eccellente su desktop |
+| Performance | 100 | 89 | Eccellente su desktop |
 | Accessibilità | 96 | 96 | Notevolmente migliorata |
 | Best Practices | 100 | 100 | Standard elevati |
 | SEO | 63 | 63 | In ottimizzazione |
@@ -127,8 +127,8 @@ Uno degli aspetti chiave del progetto è stata la **manutenzione post-deploy**. 
 
 ## Sviluppi Futuri
 
-- [ ] **Completamento restyling UI** con design definitivo
-- [ ] **Ottimizzazione SEO** per raggiungere/almeno eguagliare i punteggi attuali
+- [] **Completamento restyling UI** con design definitivo
+- [ ] **Ottimizzazione SEO** per eguagliare i punteggi attuali
 - [ ] **Possibile implementazione dark mode** (in valutazione)
 - [ ] **Test A/B** con il cliente per decidere se migrare alla nuova versione
 
@@ -156,4 +156,14 @@ yarn dev
 # Per vedere la versione in restyling
 git checkout dev
 npm run dev
+
+Il Mio Approccio
+Questo progetto rappresenta la mia esperienza frontend con React/Next.js, ma è parte di un percorso professionale più ampio che include:
+Java e programmazione OOP, SQL e Mulesoft (con progetti personali disponibili qui su GitHub), Automazione RPA (esperienza professionale in somministrazione ad Engineering). Questa visione cross-stack (più che fullstack tradizionale) mi permette di affrontare lo sviluppo frontend con una prospettiva sistemica: scrivo codice pensando alla manutenibilità, alla scalabilità e all'integrazione, competenze che ritengo preziose anche in contesti SaaS ed e-commerce.
+
+📬 Contatti
+GitHub: github.com/roxyle
+LinkedIn: [mio profilo](https://www.linkedin.com/in/ylerox/)
+
+<div align="center"> <sub>Progetto sviluppato e mantenuto con ❤️ per Fisioterapia Bruno - Caserta</sub> <br> <sub>📅 2024 - In corso</sub> </div> ```
 ⚠️🚧 sito E readme in aggiornamento 🚧⚠️
