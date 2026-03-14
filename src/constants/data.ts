@@ -198,7 +198,7 @@ export const paragrafiSeo: ParagrafoSeo[] = [
         testo: "Lo studio Fisioterapia Bruno a Caserta è diretto dal fisioterapista Beniamino Bruno, professionista affermato che, insieme a uno staff altamente qualificato, propone percorsi riabilitativi efficaci per affrontare disturbi muscolo-scheletrici di diversa natura, sia acuti che cronici. Con una lunga esperienza nel campo della riabilitazione ortopedica e sportiva, ha collaborato come fisioterapista con realtà sportive di primo piano come la Casertana Calcio e la Volalto 2.0 Caserta. Attualmente, lo studio è punto di riferimento anche per la Juve Caserta 2021, squadra di pallacanestro impegnata nel campionato nazionale di Serie B."
     },
     {
-        id: "/Servizi",
+        id: "/servizi",
         titolo: "Un moderno e attrezzato ambulatorio di fisioterapia a Caserta",
         testo: "L'obiettivo del centro Fisioterapia Bruno a Caserta è, sin dalla sua apertura, il benessere dei suoi pazienti: al centro del suo operato vi è infatti la piena soddisfazione del cliente, che può sentirsi a suo completo agio sapendo di poter contare su un sostegno solido e sempre presente per la cura delle patologie ossee, muscolari e articolari, oltre che per la riabilitazione sportiva e da patologie ortopediche. Lo studio è specializzato in fisioterapia e osteopatia e aiuta migliaia di pazienti con trattamenti personalizzati: ascolto, disponibilità e sensibilità caratterizzano lo staff dell'ambulatorio di fisioterapia, pronto a formulare percorsi ad personam per aiutare ogni paziente nel recupero della salute e della forma fisica secondo le sue più specifiche necessità."
     },
@@ -208,7 +208,7 @@ export const paragrafiSeo: ParagrafoSeo[] = [
         testo: "Lo studio Fisioterapia Bruno a Caserta è un punto di riferimento per tutti coloro che desiderano affidarsi a veri esperti nella riabilitazione sportiva e nella rieducazione posturale. Presso il centro è possibile rivolgersi a fisioterapisti dalla lunga esperienza, attenti alle necessità dei pazienti e disponibili nel trovare il percorso fisioterapico più idoneo alle loro necessità, con terapie manuali e strumentali come la terapia a onde d'urto, la ionoforesi, l'elettroterapia e la magnetoterapia, anche a domicilio. Per richiedere una visita presso lo studio chiamate il nostro recapito telefonico."
     },
     {
-        id: "/Contatti",
+        id: "/contatti",
         titolo: "Fisioterapia, Osteopatia e Fisiokinesiterapia a Caserta",
         testo: "Se stai cercando un fisioterapista a Caserta, non esitare a contattare lo studio Fisioterapia Bruno. Situato nel cuore della città, lo studio è facilmente raggiungibile e pronto ad accoglierti con trattamenti fisioterapici personalizzati. Che tu abbia bisogno di riabilitazione sportiva, fisioterapia ortopedica o trattamenti osteopatici, il nostro team di esperti è a tua disposizione per aiutarti a recuperare il benessere fisico e migliorare la qualità della tua vita. Compila il modulo per richiedere un incontro con l'osteopata esperto e valutare i percorsi di riabilitazione sportiva. Prenota una visita oggi stesso e scopri come possiamo aiutarti a ritrovare la forma fisica ideale."
     },
