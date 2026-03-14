@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import {useState} from 'react'
 import {navItems, ourContact} from '@/constants/data'
-import { NavItem } from '@/constants/types'
+import {NavItem} from '@/constants/types'
 import Image from 'next/image'
 
 
@@ -20,7 +20,8 @@ export function Navbar() {
                 h-16 md:h-[68px]'>
 
 
-                    {/* Logo */}
+
+
                     <Link href='/' className='flex items-center gap-3 flex-shrink-0'>
                     <div className='bg-brand rounded-lg p-1 flex-shrink-0'>
                         <Image
@@ -43,64 +44,56 @@ export function Navbar() {
                     </div>
                     </Link>
 
-                    {/* Nav desktop */}
+
+
+
                     <nav className='hidden md:flex items-center'>
-                        {navItems.map(
-                            (item: NavItem) => (
-                                <Link href={item.href}
-                                key={item.href}
-                                className='px-4 py-2
-                                rounded-lg
-                                text-sm font-medium text-white/80
-                                hover:text-white hover:bg-brand-dark transition-colors'>
-                                    {item.label}
-                                </Link>
+                        {
+                            navItems.map(
+                                (item: NavItem) => (
+                                    <Link href={item.href}
+                                    key={item.href}
+                                    className='px-4 py-2
+                                    rounded-lg
+                                    text-sm font-medium text-white/80
+                                    hover:text-white hover:bg-brand-dark transition-colors'>
+                                        {item.label}
+                                    </Link>
+                                )
                             )
-                        )}
+                        }
                     </nav>
 
 
-                    {/* CTA telefono desktop */}
-                    <a href={ourContact.telefonoHref}
-                    className='hidden 
-                    min-[840px]:inline-flex items-center gap-2
-                    bg-brand text-white 
-                    hover:bg-sky-50 hover:text-sky-700
-                    px-5 py-2.5
-                    rounded-xl transition-colors shadow-sky'>
-                        <PhoneIcon/>
-                        {ourContact.telephone}
-                    </a>
+
+                    <TelButton/>
+
 
                     <div className='flex min-[840px]:hidden items-center gap-2'>
                         <a href={ourContact.telefonoHref}
-                        aria-label='Chiama ora'
-                        className='w-10 h-10
-                        rounded-xl bg-brand text-white
-                        flex items-center justify-center'>
+                        className='hidden 
+                        min-[840px]:inline-flex items-center gap-2
+                        bg-brand text-white 
+                        hover:bg-sky-50 hover:text-sky-700
+                        px-5 py-2.5
+                        rounded-xl transition-colors shadow-sky'>
                             <PhoneIcon/>
                         </a>
                         <button onClick={()=> setIsMenuOpen(!isMenuOpen)}
-                        aria-label={isMenuOpen? "Chiudi menu": "Apri menu"}
-                        aria-expanded={isMenuOpen}
-                        className='w-10 h-10 rounded-xl
-                        flex flex-col items-center justify-center
-                        gap-[5px] hover:bg-gray-100 transition-colors'>
-
-                            <span className={`block w-5 h-0.5
-                            bg-gray-700 transition-all duration-300
-                            ${isMenuOpen? 'translate-y-[7px] rotate-45' : ''} `}/>
-
-                            <span className={`block w-5 h-0.5 
-                            bg-gray-700 transition-all duration-300
-                            ${isMenuOpen? 'opacity-0' : ''}`}/>
-
-                            <span className={`block w-5 h-0.5
-                            bg-gray-700 transition-all duration-300
-                            ${isMenuOpen? '-translate-y-[7px] -rotate-45' : ''}`}/>
+                            aria-label={isMenuOpen? "chiudi menu":"Apri menu"}
+                            aria-expanded={isMenuOpen}
+                            className='flex flex-col items-center justify-center w-10 h-10 rounded-xl
+                            gap-[5px] hover:bg-gray-100 transition-colors'>
+                                <span className={`block w-5 h- bg-gray-700 transition-all duration-300
+                                ${isMenuOpen?'translate-y-[7px] rotate-45':''}`}/>
+                                <span className={`block w-5 h-0.5 bg-gray-700 transition all duration-300
+                                ${isMenuOpen?'opacity-0':''}`}/>
+                                <span className={`block w-5 h-0.5 bg-gray-700 transition all duration-300
+                                ${isMenuOpen?'-translate-y-[7px] -rotate-45':''}`}/>
                         </button>
                     </div>
                 </div>
+
             </header>
 
 
@@ -148,6 +141,31 @@ export function Navbar() {
 
         
         </>
+    )
+}
+
+
+
+function TelButton() {
+const [clicked, setClicked] = useState(false)
+
+function handleClick(e: React.MouseEvent) {
+    if (!clicked) {
+        e.preventDefault()
+        setClicked(true)
+    }
+}
+    return (
+        <a href={ourContact.telefonoHref} onClick={handleClick}
+        className='hidden min-[840px]:inline-flex items-center gap-2
+        bg-brand text-white
+        hover:bg-sky-50 hover:text-sky-700
+        px-5 py-2.5
+        rounded-xl transition-colors shadow-sky
+        min-w-[180px] justify-center'>
+            <PhoneIcon />
+            {clicked? ourContact.telephone : 'Chiama ora'}
+        </a>
     )
 }
 
