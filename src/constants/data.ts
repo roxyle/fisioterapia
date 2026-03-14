@@ -16,7 +16,7 @@ import type {
 export const ourContact: Contacts = {
     id: 'studio',
     company: 'Fisioterapia Bruno',
-    telephone: '+39 347 3288921',
+    telephone: '+39 339 2476524',
     address: 'Via Caduti sul Lavoro, 38 - 81100 Caserta (CE)',
     email: 'brunonero74@gmail.com',
     mapsHref: 'https://maps.google.com/?q=Fisioterapia+Bruno+Caserta',
@@ -26,7 +26,7 @@ export const ourContact: Contacts = {
         { giorni: 'Domenica', ore: '', chiuso: true },
     ],
     partitaIva: '04432730614',
-    telefonoHref: 'tel:+393473288921',
+    telefonoHref: 'tel:+393392476524',
 }
 
 
@@ -75,7 +75,7 @@ export const cardCTATxt: TextContent[] = [
         immagine: '/chiamaci.svg',
         text: "Il tuo medico ti ha prescritto un piano terapia? Oppure desideri fare dei massaggi? Qualunque sia la tua necessità, Contattaci per fissare un consulto e scoprire i trattamenti più adatti a te!",
         bottone: 'Chiama subito! ►',
-        goToPage: 'tel:3473288921',
+        goToPage: 'tel:3392476524',
     },
     {
         id: 'testo2',

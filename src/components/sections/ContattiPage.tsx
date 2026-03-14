@@ -252,7 +252,7 @@ function ContattiForm() {
                     <Field label="Telefono *" onChange={handleChange}
                         name="phone"
                         type="tel"
-                        placeholder="es. 3473288921"
+                        placeholder="es. 3392476524"
                         value={data.phone}
                         error={errors.phone}
                         onBlur={handleBlur}

@@ -217,7 +217,7 @@ Infine, si informa che potra' proporre reclamo all'Autorita' Garante per la Prot
                 value={formData.phone}
                 onChange={handleChange}
                 onBlur={handleBlur}
-                placeholder="es. 3473288921"
+                placeholder="es. 3392476524"
                 className="border border-gray-300 p-2 rounded"
               />
               {errors.phone && <p className="text-red-500 text-sm">{errors.phone}</p>}
