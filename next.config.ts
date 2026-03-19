@@ -12,16 +12,7 @@ const nextConfig: NextConfig = {
         destination: '/chi-siamo',
         permanent: true,
       },
-      {
-        source: '/Servizi',
-        destination: '/servizi',
-        permanent: false,
-      },
-      {
-        source: '/Contatti',
-        destination: '/contatti',
-        permanent: false,
-      },
+
     ]
   },
 };
