@@ -574,6 +574,11 @@ export const espProf: SliderImage[] = [
     image: '/slider/terapiamanuale.JPG',
     testo: 'terapie manuali e strumentali'
 },
+{
+    id:17,
+    image: '/slider/juvecaserta.JPG',
+    testo: 'Juve Caserta torna in A2 🏆'
+},
 
 ]
 
