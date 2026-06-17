@@ -576,7 +576,7 @@ export const espProf: SliderImage[] = [
 },
 {
     id:17,
-    image: '/slider/juvecaserta.JPG',
+    image: '/slider/juvecaserta.jpeg',
     testo: 'Juve Caserta torna in A2 🏆'
 },
 
