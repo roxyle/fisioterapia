@@ -11,18 +11,21 @@
   "dependencies": {
     "clsx": "^2.1.1",
     "next": "^16.2.4",
-    "nodemailer": "^8.0.5",
+    "nodemailer": "^9.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.71.2",
     "tailwind-merge": "^3.5.0"
   },
+  "overrides": {
+  "postcss": "$postcss"
+},
   "devDependencies": {
     "@types/node": "^20",
     "@types/nodemailer": "^6.4.23",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "postcss": "^8",
+    "postcss": "^8.5.16",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }
